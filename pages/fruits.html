@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruits</title>
+
+    <!--Our style-->
+    <link rel="stylesheet" href="/css/friuts.css" type="text/css">
+
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+    <!--Google Font-->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg  fixed-top">
+
+        <div class="container-fluid">
+            <span>
+                Learn fruits with me
+            </span>
+        </div>
+    </nav>
+
+    <main>
+        <section class="back">
+            <a href="/index.html">Home</a><!--back button-->
+        </section>
+
+        <article class="container-fluid fruits">
+            <div class="row">
+                <section class="col-12 text-center">
+                    <h2>Fruits</h2>
+                </section>
+
+                <section class="col-12 text-center">
+                    <div class="row">
+                        <div class="col text-center">
+                            <img src="https://banner2.cleanpng.com/20171127/888/peeled-banana-png-clipart-image-5a1c0c618a1819.3654289715117876175656.jpg" alt="" class="images">
+                            <br>
+                            <button class="btn" type="button" id="banana">
+                                <img
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAACXBIWXMAAAsTAAALEwEAmpwYAAACVklEQVR4nO2Vz2sTQRTHxyxCEUQPemirCIL3/gGit1Yh3Q0kOeihxR/FU1KRwiY5uDOJKEgle7RmJR5ENkuLevCkIt2JVqXgj9naqyiCokVLdncyG2Rk0jYWTJE021u/8C6P3ffh/RwAtrWVyt2406/qpdNX3nj9wsIHFG8NqHrpU0YvXUekHocO+4VIQKDDxiyLS10DMrqRVIuGl9ENLiDCp3EeQQuNk4iwOUjYywLxD24uOuc7MkVDVXXj9wpgBRKz/eMKphfkKt8tYNAJNEiCj4UF/1BH8bVyuUfVS3f/BjdaEKXqDijYfyDb9Jtcrcvie+QEl0VGU/N8Z9uAyVR2fyKdvZ1IZa01m5icevQvwGiVSyiG/aOKTb8qthdrls9hz0WP2kIS6cyZRDrH19vE5M3XG0EiFXdUMmt5oPFIE4Tpd+XZz70aaQwiJ1hsC4mPZ8c6gYAZtzdScW3JrF0T/8uYTivYuyimDBL2Q3tPD3cPEbrn9UmmWwNl3jOM/VEZ0/vCDQl7opFGFIQCAQBIZu0zmF4+EqvSQQXTqvAhElh5wka2NBNE2NNwMplxeyOmi6VK7epaT2RcHxc9QYQtte1Jx9NluiNSpQbFdMmz/jGxL8nHfA8ijSHoBB9AO526pO2Lp3JGp3sybNMTsk2XYnY92twTwubyhJ0HoW287T9UbPpFmaVDq72AArLhxnd6u2RRIkzPRuf5ruZuOKywqdv1vytsWVwSU4QIewUd9kJ75x0AYb8niLBl6ARvIWHnRD+6BrRA615GbdHrCy3wtsCq/gBle4V3jJQxGQAAAABJRU5ErkJggg==">
+                            </button>
+                            <h4><strong>Banana</strong></h4>
+                        </div>
+
+                        <div class="col text-center">
+                            <img src="https://banner2.cleanpng.com/20180202/chq/kisspng-apple-accessory-fruit-food-fresh-apple-5a7457739a8f80.9200115415175740036331.jpg" alt="" class="images">
+                            <br>
+                            <button class="btn" type="button" id="apple">
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAACXBIWXMAAAsTAAALEwEAmpwYAAACVklEQVR4nO2Vz2sTQRTHxyxCEUQPemirCIL3/gGit1Yh3Q0kOeihxR/FU1KRwiY5uDOJKEgle7RmJR5ENkuLevCkIt2JVqXgj9naqyiCokVLdncyG2Rk0jYWTJE021u/8C6P3ffh/RwAtrWVyt2406/qpdNX3nj9wsIHFG8NqHrpU0YvXUekHocO+4VIQKDDxiyLS10DMrqRVIuGl9ENLiDCp3EeQQuNk4iwOUjYywLxD24uOuc7MkVDVXXj9wpgBRKz/eMKphfkKt8tYNAJNEiCj4UF/1BH8bVyuUfVS3f/BjdaEKXqDijYfyDb9Jtcrcvie+QEl0VGU/N8Z9uAyVR2fyKdvZ1IZa01m5icevQvwGiVSyiG/aOKTb8qthdrls9hz0WP2kIS6cyZRDrH19vE5M3XG0EiFXdUMmt5oPFIE4Tpd+XZz70aaQwiJ1hsC4mPZ8c6gYAZtzdScW3JrF0T/8uYTivYuyimDBL2Q3tPD3cPEbrn9UmmWwNl3jOM/VEZ0/vCDQl7opFGFIQCAQBIZu0zmF4+EqvSQQXTqvAhElh5wka2NBNE2NNwMplxeyOmi6VK7epaT2RcHxc9QYQtte1Jx9NluiNSpQbFdMmz/jGxL8nHfA8ijSHoBB9AO526pO2Lp3JGp3sybNMTsk2XYnY92twTwubyhJ0HoW287T9UbPpFmaVDq72AArLhxnd6u2RRIkzPRuf5ruZuOKywqdv1vytsWVwSU4QIewUd9kJ75x0AYb8niLBl6ARvIWHnRD+6BrRA615GbdHrCy3wtsCq/gBle4V3jJQxGQAAAABJRU5ErkJggg==">
+                            </button>
+                            <h4><strong>Apple</strong></h4>
+                        </div>
+
+                        <div class="col text-center">
+                            <img src="https://banner2.cleanpng.com/20171127/854/yellow-pear-png-vector-clipart-image-5a1caa9d48d418.2320262015118281252983.jpg " alt="" class="images">
+                            <br>
+                            <button class="btn" type="button" id="pear">
+                                <img
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAACXBIWXMAAAsTAAALEwEAmpwYAAACVklEQVR4nO2Vz2sTQRTHxyxCEUQPemirCIL3/gGit1Yh3Q0kOeihxR/FU1KRwiY5uDOJKEgle7RmJR5ENkuLevCkIt2JVqXgj9naqyiCokVLdncyG2Rk0jYWTJE021u/8C6P3ffh/RwAtrWVyt2406/qpdNX3nj9wsIHFG8NqHrpU0YvXUekHocO+4VIQKDDxiyLS10DMrqRVIuGl9ENLiDCp3EeQQuNk4iwOUjYywLxD24uOuc7MkVDVXXj9wpgBRKz/eMKphfkKt8tYNAJNEiCj4UF/1BH8bVyuUfVS3f/BjdaEKXqDijYfyDb9Jtcrcvie+QEl0VGU/N8Z9uAyVR2fyKdvZ1IZa01m5icevQvwGiVSyiG/aOKTb8qthdrls9hz0WP2kIS6cyZRDrH19vE5M3XG0EiFXdUMmt5oPFIE4Tpd+XZz70aaQwiJ1hsC4mPZ8c6gYAZtzdScW3JrF0T/8uYTivYuyimDBL2Q3tPD3cPEbrn9UmmWwNl3jOM/VEZ0/vCDQl7opFGFIQCAQBIZu0zmF4+EqvSQQXTqvAhElh5wka2NBNE2NNwMplxeyOmi6VK7epaT2RcHxc9QYQtte1Jx9NluiNSpQbFdMmz/jGxL8nHfA8ijSHoBB9AO526pO2Lp3JGp3sybNMTsk2XYnY92twTwubyhJ0HoW287T9UbPpFmaVDq72AArLhxnd6u2RRIkzPRuf5ruZuOKywqdv1vytsWVwSU4QIewUd9kJ75x0AYb8niLBl6ARvIWHnRD+6BrRA615GbdHrCy3wtsCq/gBle4V3jJQxGQAAAABJRU5ErkJggg==">
+                            </button>
+                            <h4><strong>Pear</strong></h4>
+                        </div>
+
+                        <div class="col text-center">
+                            <img src="https://banner2.cleanpng.com/20171127/b51/cherry-free-png-clip-art-image-5a1c191d5d7be6.1841870915117908773829.jpg" alt="" class="images">
+                            <br>
+                            <button class="btn" type="button" id="cherry">
+                                <img
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAACXBIWXMAAAsTAAALEwEAmpwYAAACVklEQVR4nO2Vz2sTQRTHxyxCEUQPemirCIL3/gGit1Yh3Q0kOeihxR/FU1KRwiY5uDOJKEgle7RmJR5ENkuLevCkIt2JVqXgj9naqyiCokVLdncyG2Rk0jYWTJE021u/8C6P3ffh/RwAtrWVyt2406/qpdNX3nj9wsIHFG8NqHrpU0YvXUekHocO+4VIQKDDxiyLS10DMrqRVIuGl9ENLiDCp3EeQQuNk4iwOUjYywLxD24uOuc7MkVDVXXj9wpgBRKz/eMKphfkKt8tYNAJNEiCj4UF/1BH8bVyuUfVS3f/BjdaEKXqDijYfyDb9Jtcrcvie+QEl0VGU/N8Z9uAyVR2fyKdvZ1IZa01m5icevQvwGiVSyiG/aOKTb8qthdrls9hz0WP2kIS6cyZRDrH19vE5M3XG0EiFXdUMmt5oPFIE4Tpd+XZz70aaQwiJ1hsC4mPZ8c6gYAZtzdScW3JrF0T/8uYTivYuyimDBL2Q3tPD3cPEbrn9UmmWwNl3jOM/VEZ0/vCDQl7opFGFIQCAQBIZu0zmF4+EqvSQQXTqvAhElh5wka2NBNE2NNwMplxeyOmi6VK7epaT2RcHxc9QYQtte1Jx9NluiNSpQbFdMmz/jGxL8nHfA8ijSHoBB9AO526pO2Lp3JGp3sybNMTsk2XYnY92twTwubyhJ0HoW287T9UbPpFmaVDq72AArLhxnd6u2RRIkzPRuf5ruZuOKywqdv1vytsWVwSU4QIewUd9kJ75x0AYb8niLBl6ARvIWHnRD+6BrRA615GbdHrCy3wtsCq/gBle4V3jJQxGQAAAABJRU5ErkJggg==">
+                            </button>
+                            <h4><strong>Cherry</strong></h4>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="col-12 text-center">
+                    <div class="row">
+                        <div class="col text-center">
+                            <img src="https://banner2.cleanpng.com/20171127/79b/prune-clipart-picture-5a1c34c0dcf1e3.089864231511797952905.jpg" alt="" class="images">
+                            <br>
+                            <button class="btn" type="button" id="plum">
+                                <img
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAACXBIWXMAAAsTAAALEwEAmpwYAAACVklEQVR4nO2Vz2sTQRTHxyxCEUQPemirCIL3/gGit1Yh3Q0kOeihxR/FU1KRwiY5uDOJKEgle7RmJR5ENkuLevCkIt2JVqXgj9naqyiCokVLdncyG2Rk0jYWTJE021u/8C6P3ffh/RwAtrWVyt2406/qpdNX3nj9wsIHFG8NqHrpU0YvXUekHocO+4VIQKDDxiyLS10DMrqRVIuGl9ENLiDCp3EeQQuNk4iwOUjYywLxD24uOuc7MkVDVXXj9wpgBRKz/eMKphfkKt8tYNAJNEiCj4UF/1BH8bVyuUfVS3f/BjdaEKXqDijYfyDb9Jtcrcvie+QEl0VGU/N8Z9uAyVR2fyKdvZ1IZa01m5icevQvwGiVSyiG/aOKTb8qthdrls9hz0WP2kIS6cyZRDrH19vE5M3XG0EiFXdUMmt5oPFIE4Tpd+XZz70aaQwiJ1hsC4mPZ8c6gYAZtzdScW3JrF0T/8uYTivYuyimDBL2Q3tPD3cPEbrn9UmmWwNl3jOM/VEZ0/vCDQl7opFGFIQCAQBIZu0zmF4+EqvSQQXTqvAhElh5wka2NBNE2NNwMplxeyOmi6VK7epaT2RcHxc9QYQtte1Jx9NluiNSpQbFdMmz/jGxL8nHfA8ijSHoBB9AO526pO2Lp3JGp3sybNMTsk2XYnY92twTwubyhJ0HoW287T9UbPpFmaVDq72AArLhxnd6u2RRIkzPRuf5ruZuOKywqdv1vytsWVwSU4QIewUd9kJ75x0AYb8niLBl6ARvIWHnRD+6BrRA615GbdHrCy3wtsCq/gBle4V3jJQxGQAAAABJRU5ErkJggg==">
+                            </button>
+                            <h4><strong>Plum</strong></h4>
+                        </div>
+
+                        <div class="col text-center">
+                            <img src="https://banner2.cleanpng.com/20180208/iae/kisspng-kyoho-juice-sultana-grape-frutti-di-bosco-kyoho-grapes-5a7c910497e681.1939349115181130286222.jpg" alt="" class="images">
+                            <br>
+                            <button class="btn" type="button" id="grapes">
+                                <img
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAACXBIWXMAAAsTAAALEwEAmpwYAAACVklEQVR4nO2Vz2sTQRTHxyxCEUQPemirCIL3/gGit1Yh3Q0kOeihxR/FU1KRwiY5uDOJKEgle7RmJR5ENkuLevCkIt2JVqXgj9naqyiCokVLdncyG2Rk0jYWTJE021u/8C6P3ffh/RwAtrWVyt2406/qpdNX3nj9wsIHFG8NqHrpU0YvXUekHocO+4VIQKDDxiyLS10DMrqRVIuGl9ENLiDCp3EeQQuNk4iwOUjYywLxD24uOuc7MkVDVXXj9wpgBRKz/eMKphfkKt8tYNAJNEiCj4UF/1BH8bVyuUfVS3f/BjdaEKXqDijYfyDb9Jtcrcvie+QEl0VGU/N8Z9uAyVR2fyKdvZ1IZa01m5icevQvwGiVSyiG/aOKTb8qthdrls9hz0WP2kIS6cyZRDrH19vE5M3XG0EiFXdUMmt5oPFIE4Tpd+XZz70aaQwiJ1hsC4mPZ8c6gYAZtzdScW3JrF0T/8uYTivYuyimDBL2Q3tPD3cPEbrn9UmmWwNl3jOM/VEZ0/vCDQl7opFGFIQCAQBIZu0zmF4+EqvSQQXTqvAhElh5wka2NBNE2NNwMplxeyOmi6VK7epaT2RcHxc9QYQtte1Jx9NluiNSpQbFdMmz/jGxL8nHfA8ijSHoBB9AO526pO2Lp3JGp3sybNMTsk2XYnY92twTwubyhJ0HoW287T9UbPpFmaVDq72AArLhxnd6u2RRIkzPRuf5ruZuOKywqdv1vytsWVwSU4QIewUd9kJ75x0AYb8niLBl6ARvIWHnRD+6BrRA615GbdHrCy3wtsCq/gBle4V3jJQxGQAAAABJRU5ErkJggg==">
+                            </button>
+                            <h4><strong>Grapes</strong></h4>
+                        </div>
+
+                        <div class="col text-center">
+                            <img src="https://banner2.cleanpng.com/20171202/eae/strawberry-png-images-5a22f496ce4515.9389434015122402788449.jpg" alt="" class="images">
+                            <br>
+                            <button class="btn" type="button" id="strawberry">
+                                <img
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAACXBIWXMAAAsTAAALEwEAmpwYAAACVklEQVR4nO2Vz2sTQRTHxyxCEUQPemirCIL3/gGit1Yh3Q0kOeihxR/FU1KRwiY5uDOJKEgle7RmJR5ENkuLevCkIt2JVqXgj9naqyiCokVLdncyG2Rk0jYWTJE021u/8C6P3ffh/RwAtrWVyt2406/qpdNX3nj9wsIHFG8NqHrpU0YvXUekHocO+4VIQKDDxiyLS10DMrqRVIuGl9ENLiDCp3EeQQuNk4iwOUjYywLxD24uOuc7MkVDVXXj9wpgBRKz/eMKphfkKt8tYNAJNEiCj4UF/1BH8bVyuUfVS3f/BjdaEKXqDijYfyDb9Jtcrcvie+QEl0VGU/N8Z9uAyVR2fyKdvZ1IZa01m5icevQvwGiVSyiG/aOKTb8qthdrls9hz0WP2kIS6cyZRDrH19vE5M3XG0EiFXdUMmt5oPFIE4Tpd+XZz70aaQwiJ1hsC4mPZ8c6gYAZtzdScW3JrF0T/8uYTivYuyimDBL2Q3tPD3cPEbrn9UmmWwNl3jOM/VEZ0/vCDQl7opFGFIQCAQBIZu0zmF4+EqvSQQXTqvAhElh5wka2NBNE2NNwMplxeyOmi6VK7epaT2RcHxc9QYQtte1Jx9NluiNSpQbFdMmz/jGxL8nHfA8ijSHoBB9AO526pO2Lp3JGp3sybNMTsk2XYnY92twTwubyhJ0HoW287T9UbPpFmaVDq72AArLhxnd6u2RRIkzPRuf5ruZuOKywqdv1vytsWVwSU4QIewUd9kJ75x0AYb8niLBl6ARvIWHnRD+6BrRA615GbdHrCy3wtsCq/gBle4V3jJQxGQAAAABJRU5ErkJggg==">
+                            </button>
+                            <h4><strong>Strawberry</strong></h4>
+                        </div>
+
+                        <div class="col text-center">
+                            <img src="https://banner2.cleanpng.com/20171216/57a/melon-png-5a35d4231b8c48.7521633315134771551128.jpg" alt="" class="images">
+                            <br>
+                            <button class="btn" type="button" id="melon">
+                                <img
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAACXBIWXMAAAsTAAALEwEAmpwYAAACVklEQVR4nO2Vz2sTQRTHxyxCEUQPemirCIL3/gGit1Yh3Q0kOeihxR/FU1KRwiY5uDOJKEgle7RmJR5ENkuLevCkIt2JVqXgj9naqyiCokVLdncyG2Rk0jYWTJE021u/8C6P3ffh/RwAtrWVyt2406/qpdNX3nj9wsIHFG8NqHrpU0YvXUekHocO+4VIQKDDxiyLS10DMrqRVIuGl9ENLiDCp3EeQQuNk4iwOUjYywLxD24uOuc7MkVDVXXj9wpgBRKz/eMKphfkKt8tYNAJNEiCj4UF/1BH8bVyuUfVS3f/BjdaEKXqDijYfyDb9Jtcrcvie+QEl0VGU/N8Z9uAyVR2fyKdvZ1IZa01m5icevQvwGiVSyiG/aOKTb8qthdrls9hz0WP2kIS6cyZRDrH19vE5M3XG0EiFXdUMmt5oPFIE4Tpd+XZz70aaQwiJ1hsC4mPZ8c6gYAZtzdScW3JrF0T/8uYTivYuyimDBL2Q3tPD3cPEbrn9UmmWwNl3jOM/VEZ0/vCDQl7opFGFIQCAQBIZu0zmF4+EqvSQQXTqvAhElh5wka2NBNE2NNwMplxeyOmi6VK7epaT2RcHxc9QYQtte1Jx9NluiNSpQbFdMmz/jGxL8nHfA8ijSHoBB9AO526pO2Lp3JGp3sybNMTsk2XYnY92twTwubyhJ0HoW287T9UbPpFmaVDq72AArLhxnd6u2RRIkzPRuf5ruZuOKywqdv1vytsWVwSU4QIewUd9kJ75x0AYb8niLBl6ARvIWHnRD+6BrRA615GbdHrCy3wtsCq/gBle4V3jJQxGQAAAABJRU5ErkJggg==">
+                            </button>
+                            <h4><strong>Melon</strong></h4>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="col-12 text-center">
+                    <div class="row">
+                        <div class="col text-center">
+                            <img src="https://banner2.cleanpng.com/20180202/wfq/kisspng-watermelon-fruit-watermelon-png-photos-5a74d24774c0a1.4159594115176054474782.jpg" alt="" class="images">
+                            <br>
+                            <button class="btn" type="button" id="watermelon">
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAACXBIWXMAAAsTAAALEwEAmpwYAAACVklEQVR4nO2Vz2sTQRTHxyxCEUQPemirCIL3/gGit1Yh3Q0kOeihxR/FU1KRwiY5uDOJKEgle7RmJR5ENkuLevCkIt2JVqXgj9naqyiCokVLdncyG2Rk0jYWTJE021u/8C6P3ffh/RwAtrWVyt2406/qpdNX3nj9wsIHFG8NqHrpU0YvXUekHocO+4VIQKDDxiyLS10DMrqRVIuGl9ENLiDCp3EeQQuNk4iwOUjYywLxD24uOuc7MkVDVXXj9wpgBRKz/eMKphfkKt8tYNAJNEiCj4UF/1BH8bVyuUfVS3f/BjdaEKXqDijYfyDb9Jtcrcvie+QEl0VGU/N8Z9uAyVR2fyKdvZ1IZa01m5icevQvwGiVSyiG/aOKTb8qthdrls9hz0WP2kIS6cyZRDrH19vE5M3XG0EiFXdUMmt5oPFIE4Tpd+XZz70aaQwiJ1hsC4mPZ8c6gYAZtzdScW3JrF0T/8uYTivYuyimDBL2Q3tPD3cPEbrn9UmmWwNl3jOM/VEZ0/vCDQl7opFGFIQCAQBIZu0zmF4+EqvSQQXTqvAhElh5wka2NBNE2NNwMplxeyOmi6VK7epaT2RcHxc9QYQtte1Jx9NluiNSpQbFdMmz/jGxL8nHfA8ijSHoBB9AO526pO2Lp3JGp3sybNMTsk2XYnY92twTwubyhJ0HoW287T9UbPpFmaVDq72AArLhxnd6u2RRIkzPRuf5ruZuOKywqdv1vytsWVwSU4QIewUd9kJ75x0AYb8niLBl6ARvIWHnRD+6BrRA615GbdHrCy3wtsCq/gBle4V3jJQxGQAAAABJRU5ErkJggg==">
+                            </button>
+                            <h4><strong>Watermelon</strong></h4>
+                        </div>
+
+                        <div class="col text-center">
+                            <img src="https://banner2.cleanpng.com/20180125/vsq/kisspng-juice-clafoutis-apricot-peach-grape-apricots-5a69d4086c4bc6.8232753315168850004436.jpg" alt="" class="images">
+                            <br>
+                            <button class="btn" type="button" id="apricot">
+                                <img
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAACXBIWXMAAAsTAAALEwEAmpwYAAACVklEQVR4nO2Vz2sTQRTHxyxCEUQPemirCIL3/gGit1Yh3Q0kOeihxR/FU1KRwiY5uDOJKEgle7RmJR5ENkuLevCkIt2JVqXgj9naqyiCokVLdncyG2Rk0jYWTJE021u/8C6P3ffh/RwAtrWVyt2406/qpdNX3nj9wsIHFG8NqHrpU0YvXUekHocO+4VIQKDDxiyLS10DMrqRVIuGl9ENLiDCp3EeQQuNk4iwOUjYywLxD24uOuc7MkVDVXXj9wpgBRKz/eMKphfkKt8tYNAJNEiCj4UF/1BH8bVyuUfVS3f/BjdaEKXqDijYfyDb9Jtcrcvie+QEl0VGU/N8Z9uAyVR2fyKdvZ1IZa01m5icevQvwGiVSyiG/aOKTb8qthdrls9hz0WP2kIS6cyZRDrH19vE5M3XG0EiFXdUMmt5oPFIE4Tpd+XZz70aaQwiJ1hsC4mPZ8c6gYAZtzdScW3JrF0T/8uYTivYuyimDBL2Q3tPD3cPEbrn9UmmWwNl3jOM/VEZ0/vCDQl7opFGFIQCAQBIZu0zmF4+EqvSQQXTqvAhElh5wka2NBNE2NNwMplxeyOmi6VK7epaT2RcHxc9QYQtte1Jx9NluiNSpQbFdMmz/jGxL8nHfA8ijSHoBB9AO526pO2Lp3JGp3sybNMTsk2XYnY92twTwubyhJ0HoW287T9UbPpFmaVDq72AArLhxnd6u2RRIkzPRuf5ruZuOKywqdv1vytsWVwSU4QIewUd9kJ75x0AYb8niLBl6ARvIWHnRD+6BrRA615GbdHrCy3wtsCq/gBle4V3jJQxGQAAAABJRU5ErkJggg==">
+                            </button>
+                            <h4><strong>Apricot</strong></h4>
+                        </div>
+
+                        <div class="col text-center">
+                            <img src="https://banner2.cleanpng.com/20171127/e8b/transparent-nectarine-png-picture-5a1c189566b194.3406669115117907414206.jpg" alt="" class="images">
+                            <br>
+                            <button class="btn" type="button" id="nectarine">
+                                <img
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAACXBIWXMAAAsTAAALEwEAmpwYAAACVklEQVR4nO2Vz2sTQRTHxyxCEUQPemirCIL3/gGit1Yh3Q0kOeihxR/FU1KRwiY5uDOJKEgle7RmJR5ENkuLevCkIt2JVqXgj9naqyiCokVLdncyG2Rk0jYWTJE021u/8C6P3ffh/RwAtrWVyt2406/qpdNX3nj9wsIHFG8NqHrpU0YvXUekHocO+4VIQKDDxiyLS10DMrqRVIuGl9ENLiDCp3EeQQuNk4iwOUjYywLxD24uOuc7MkVDVXXj9wpgBRKz/eMKphfkKt8tYNAJNEiCj4UF/1BH8bVyuUfVS3f/BjdaEKXqDijYfyDb9Jtcrcvie+QEl0VGU/N8Z9uAyVR2fyKdvZ1IZa01m5icevQvwGiVSyiG/aOKTb8qthdrls9hz0WP2kIS6cyZRDrH19vE5M3XG0EiFXdUMmt5oPFIE4Tpd+XZz70aaQwiJ1hsC4mPZ8c6gYAZtzdScW3JrF0T/8uYTivYuyimDBL2Q3tPD3cPEbrn9UmmWwNl3jOM/VEZ0/vCDQl7opFGFIQCAQBIZu0zmF4+EqvSQQXTqvAhElh5wka2NBNE2NNwMplxeyOmi6VK7epaT2RcHxc9QYQtte1Jx9NluiNSpQbFdMmz/jGxL8nHfA8ijSHoBB9AO526pO2Lp3JGp3sybNMTsk2XYnY92twTwubyhJ0HoW287T9UbPpFmaVDq72AArLhxnd6u2RRIkzPRuf5ruZuOKywqdv1vytsWVwSU4QIewUd9kJ75x0AYb8niLBl6ARvIWHnRD+6BrRA615GbdHrCy3wtsCq/gBle4V3jJQxGQAAAABJRU5ErkJggg==">
+                            </button>
+                            <h4><strong>Nectarine</strong></h4>
+                        </div>
+
+                        <div class="col text-center">
+                            <img src="https://banner2.cleanpng.com/20180202/vuw/kisspng-juice-green-papaya-salad-orange-tropical-fruit-papaya-png-file-5a74b97eb97526.2993962615175991027596.jpg" alt="" class="images">
+                            <br>
+                            <button class="btn" type="button" id="papaya">
+                                <img
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAACXBIWXMAAAsTAAALEwEAmpwYAAACVklEQVR4nO2Vz2sTQRTHxyxCEUQPemirCIL3/gGit1Yh3Q0kOeihxR/FU1KRwiY5uDOJKEgle7RmJR5ENkuLevCkIt2JVqXgj9naqyiCokVLdncyG2Rk0jYWTJE021u/8C6P3ffh/RwAtrWVyt2406/qpdNX3nj9wsIHFG8NqHrpU0YvXUekHocO+4VIQKDDxiyLS10DMrqRVIuGl9ENLiDCp3EeQQuNk4iwOUjYywLxD24uOuc7MkVDVXXj9wpgBRKz/eMKphfkKt8tYNAJNEiCj4UF/1BH8bVyuUfVS3f/BjdaEKXqDijYfyDb9Jtcrcvie+QEl0VGU/N8Z9uAyVR2fyKdvZ1IZa01m5icevQvwGiVSyiG/aOKTb8qthdrls9hz0WP2kIS6cyZRDrH19vE5M3XG0EiFXdUMmt5oPFIE4Tpd+XZz70aaQwiJ1hsC4mPZ8c6gYAZtzdScW3JrF0T/8uYTivYuyimDBL2Q3tPD3cPEbrn9UmmWwNl3jOM/VEZ0/vCDQl7opFGFIQCAQBIZu0zmF4+EqvSQQXTqvAhElh5wka2NBNE2NNwMplxeyOmi6VK7epaT2RcHxc9QYQtte1Jx9NluiNSpQbFdMmz/jGxL8nHfA8ijSHoBB9AO526pO2Lp3JGp3sybNMTsk2XYnY92twTwubyhJ0HoW287T9UbPpFmaVDq72AArLhxnd6u2RRIkzPRuf5ruZuOKywqdv1vytsWVwSU4QIewUd9kJ75x0AYb8niLBl6ARvIWHnRD+6BrRA615GbdHrCy3wtsCq/gBle4V3jJQxGQAAAABJRU5ErkJggg==">
+                            </button>
+                            <h4><strong>Papaya</strong></h4>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="col-12 text-center">
+                    <div class="row">
+                        <div class="col text-center">
+                            <img src="https://banner2.cleanpng.com/20180310/pyq/kisspng-carambola-download-stock-xchng-free-image-pull-carambola-5aa471a9dcbb05.6339702915207264419041.jpg" alt="" class="images">
+                            <br>
+                            <button class="btn" type="button" id="carambola">
+                                <img
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAACXBIWXMAAAsTAAALEwEAmpwYAAACVklEQVR4nO2Vz2sTQRTHxyxCEUQPemirCIL3/gGit1Yh3Q0kOeihxR/FU1KRwiY5uDOJKEgle7RmJR5ENkuLevCkIt2JVqXgj9naqyiCokVLdncyG2Rk0jYWTJE021u/8C6P3ffh/RwAtrWVyt2406/qpdNX3nj9wsIHFG8NqHrpU0YvXUekHocO+4VIQKDDxiyLS10DMrqRVIuGl9ENLiDCp3EeQQuNk4iwOUjYywLxD24uOuc7MkVDVXXj9wpgBRKz/eMKphfkKt8tYNAJNEiCj4UF/1BH8bVyuUfVS3f/BjdaEKXqDijYfyDb9Jtcrcvie+QEl0VGU/N8Z9uAyVR2fyKdvZ1IZa01m5icevQvwGiVSyiG/aOKTb8qthdrls9hz0WP2kIS6cyZRDrH19vE5M3XG0EiFXdUMmt5oPFIE4Tpd+XZz70aaQwiJ1hsC4mPZ8c6gYAZtzdScW3JrF0T/8uYTivYuyimDBL2Q3tPD3cPEbrn9UmmWwNl3jOM/VEZ0/vCDQl7opFGFIQCAQBIZu0zmF4+EqvSQQXTqvAhElh5wka2NBNE2NNwMplxeyOmi6VK7epaT2RcHxc9QYQtte1Jx9NluiNSpQbFdMmz/jGxL8nHfA8ijSHoBB9AO526pO2Lp3JGp3sybNMTsk2XYnY92twTwubyhJ0HoW287T9UbPpFmaVDq72AArLhxnd6u2RRIkzPRuf5ruZuOKywqdv1vytsWVwSU4QIewUd9kJ75x0AYb8niLBl6ARvIWHnRD+6BrRA615GbdHrCy3wtsCq/gBle4V3jJQxGQAAAABJRU5ErkJggg==">
+                            </button>
+                            <h4><strong>Carambola(U.K.) - Starfruit(U.S)</strong></h4>
+                        </div>
+
+                        <div class="col text-center">
+                            <img src="https://banner2.cleanpng.com/20171202/419/mango-free-png-image-5a230a479ce762.3889703315122458316427.jpg" alt="" class="images">
+                            <br>
+                            <button class="btn" type="button" id="mango">
+                                <img
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAACXBIWXMAAAsTAAALEwEAmpwYAAACVklEQVR4nO2Vz2sTQRTHxyxCEUQPemirCIL3/gGit1Yh3Q0kOeihxR/FU1KRwiY5uDOJKEgle7RmJR5ENkuLevCkIt2JVqXgj9naqyiCokVLdncyG2Rk0jYWTJE021u/8C6P3ffh/RwAtrWVyt2406/qpdNX3nj9wsIHFG8NqHrpU0YvXUekHocO+4VIQKDDxiyLS10DMrqRVIuGl9ENLiDCp3EeQQuNk4iwOUjYywLxD24uOuc7MkVDVXXj9wpgBRKz/eMKphfkKt8tYNAJNEiCj4UF/1BH8bVyuUfVS3f/BjdaEKXqDijYfyDb9Jtcrcvie+QEl0VGU/N8Z9uAyVR2fyKdvZ1IZa01m5icevQvwGiVSyiG/aOKTb8qthdrls9hz0WP2kIS6cyZRDrH19vE5M3XG0EiFXdUMmt5oPFIE4Tpd+XZz70aaQwiJ1hsC4mPZ8c6gYAZtzdScW3JrF0T/8uYTivYuyimDBL2Q3tPD3cPEbrn9UmmWwNl3jOM/VEZ0/vCDQl7opFGFIQCAQBIZu0zmF4+EqvSQQXTqvAhElh5wka2NBNE2NNwMplxeyOmi6VK7epaT2RcHxc9QYQtte1Jx9NluiNSpQbFdMmz/jGxL8nHfA8ijSHoBB9AO526pO2Lp3JGp3sybNMTsk2XYnY92twTwubyhJ0HoW287T9UbPpFmaVDq72AArLhxnd6u2RRIkzPRuf5ruZuOKywqdv1vytsWVwSU4QIewUd9kJ75x0AYb8niLBl6ARvIWHnRD+6BrRA615GbdHrCy3wtsCq/gBle4V3jJQxGQAAAABJRU5ErkJggg==">
+                            </button>
+                            <h4><strong>Mango</strong></h4>
+                        </div>
+
+                        <div class="col text-center">
+                            <img src="https://banner2.cleanpng.com/20171127/c9e/coconut-png-vector-clipart-image-5a1c0251b7bee3.8220739415117850417526.jpg" alt="" class="images">
+                            <br>
+                            <button class="btn" type="button" id="coconut">
+                                <img
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAACXBIWXMAAAsTAAALEwEAmpwYAAACVklEQVR4nO2Vz2sTQRTHxyxCEUQPemirCIL3/gGit1Yh3Q0kOeihxR/FU1KRwiY5uDOJKEgle7RmJR5ENkuLevCkIt2JVqXgj9naqyiCokVLdncyG2Rk0jYWTJE021u/8C6P3ffh/RwAtrWVyt2406/qpdNX3nj9wsIHFG8NqHrpU0YvXUekHocO+4VIQKDDxiyLS10DMrqRVIuGl9ENLiDCp3EeQQuNk4iwOUjYywLxD24uOuc7MkVDVXXj9wpgBRKz/eMKphfkKt8tYNAJNEiCj4UF/1BH8bVyuUfVS3f/BjdaEKXqDijYfyDb9Jtcrcvie+QEl0VGU/N8Z9uAyVR2fyKdvZ1IZa01m5icevQvwGiVSyiG/aOKTb8qthdrls9hz0WP2kIS6cyZRDrH19vE5M3XG0EiFXdUMmt5oPFIE4Tpd+XZz70aaQwiJ1hsC4mPZ8c6gYAZtzdScW3JrF0T/8uYTivYuyimDBL2Q3tPD3cPEbrn9UmmWwNl3jOM/VEZ0/vCDQl7opFGFIQCAQBIZu0zmF4+EqvSQQXTqvAhElh5wka2NBNE2NNwMplxeyOmi6VK7epaT2RcHxc9QYQtte1Jx9NluiNSpQbFdMmz/jGxL8nHfA8ijSHoBB9AO526pO2Lp3JGp3sybNMTsk2XYnY92twTwubyhJ0HoW287T9UbPpFmaVDq72AArLhxnd6u2RRIkzPRuf5ruZuOKywqdv1vytsWVwSU4QIewUd9kJ75x0AYb8niLBl6ARvIWHnRD+6BrRA615GbdHrCy3wtsCq/gBle4V3jJQxGQAAAABJRU5ErkJggg==">
+                            </button>
+                            <h4><strong>Coconut</strong></h4>
+                        </div>
+
+                        <div class="col text-center">
+                            <img src="https://banner2.cleanpng.com/20180130/pqq/kisspng-tangerine-clementine-orange-fruit-orange-fruit-5a7035ec61cf74.4484110415173032764006.jpg" alt="" class="images">
+                            <br>
+                            <button class="btn" type="button" id="orange">
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAACXBIWXMAAAsTAAALEwEAmpwYAAACVklEQVR4nO2Vz2sTQRTHxyxCEUQPemirCIL3/gGit1Yh3Q0kOeihxR/FU1KRwiY5uDOJKEgle7RmJR5ENkuLevCkIt2JVqXgj9naqyiCokVLdncyG2Rk0jYWTJE021u/8C6P3ffh/RwAtrWVyt2406/qpdNX3nj9wsIHFG8NqHrpU0YvXUekHocO+4VIQKDDxiyLS10DMrqRVIuGl9ENLiDCp3EeQQuNk4iwOUjYywLxD24uOuc7MkVDVXXj9wpgBRKz/eMKphfkKt8tYNAJNEiCj4UF/1BH8bVyuUfVS3f/BjdaEKXqDijYfyDb9Jtcrcvie+QEl0VGU/N8Z9uAyVR2fyKdvZ1IZa01m5icevQvwGiVSyiG/aOKTb8qthdrls9hz0WP2kIS6cyZRDrH19vE5M3XG0EiFXdUMmt5oPFIE4Tpd+XZz70aaQwiJ1hsC4mPZ8c6gYAZtzdScW3JrF0T/8uYTivYuyimDBL2Q3tPD3cPEbrn9UmmWwNl3jOM/VEZ0/vCDQl7opFGFIQCAQBIZu0zmF4+EqvSQQXTqvAhElh5wka2NBNE2NNwMplxeyOmi6VK7epaT2RcHxc9QYQtte1Jx9NluiNSpQbFdMmz/jGxL8nHfA8ijSHoBB9AO526pO2Lp3JGp3sybNMTsk2XYnY92twTwubyhJ0HoW287T9UbPpFmaVDq72AArLhxnd6u2RRIkzPRuf5ruZuOKywqdv1vytsWVwSU4QIewUd9kJ75x0AYb8niLBl6ARvIWHnRD+6BrRA615GbdHrCy3wtsCq/gBle4V3jJQxGQAAAABJRU5ErkJggg==">
+                            </button>
+                            <h4><strong>Orange</strong></h4>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="col-12 text-center">
+                    <div class="row">
+                        <div class="col text-center">
+                            <img src="https://banner2.cleanpng.com/20180131/vue/kisspng-kiwifruit-leaf-vegetable-kiwi-fruit-5a71822751b9c1.1752595815173883273348.jpg" alt="" class="images">
+                            <br>
+                            <button class="btn" type="button" id="kiwi">
+                                <img
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAACXBIWXMAAAsTAAALEwEAmpwYAAACVklEQVR4nO2Vz2sTQRTHxyxCEUQPemirCIL3/gGit1Yh3Q0kOeihxR/FU1KRwiY5uDOJKEgle7RmJR5ENkuLevCkIt2JVqXgj9naqyiCokVLdncyG2Rk0jYWTJE021u/8C6P3ffh/RwAtrWVyt2406/qpdNX3nj9wsIHFG8NqHrpU0YvXUekHocO+4VIQKDDxiyLS10DMrqRVIuGl9ENLiDCp3EeQQuNk4iwOUjYywLxD24uOuc7MkVDVXXj9wpgBRKz/eMKphfkKt8tYNAJNEiCj4UF/1BH8bVyuUfVS3f/BjdaEKXqDijYfyDb9Jtcrcvie+QEl0VGU/N8Z9uAyVR2fyKdvZ1IZa01m5icevQvwGiVSyiG/aOKTb8qthdrls9hz0WP2kIS6cyZRDrH19vE5M3XG0EiFXdUMmt5oPFIE4Tpd+XZz70aaQwiJ1hsC4mPZ8c6gYAZtzdScW3JrF0T/8uYTivYuyimDBL2Q3tPD3cPEbrn9UmmWwNl3jOM/VEZ0/vCDQl7opFGFIQCAQBIZu0zmF4+EqvSQQXTqvAhElh5wka2NBNE2NNwMplxeyOmi6VK7epaT2RcHxc9QYQtte1Jx9NluiNSpQbFdMmz/jGxL8nHfA8ijSHoBB9AO526pO2Lp3JGp3sybNMTsk2XYnY92twTwubyhJ0HoW287T9UbPpFmaVDq72AArLhxnd6u2RRIkzPRuf5ruZuOKywqdv1vytsWVwSU4QIewUd9kJ75x0AYb8niLBl6ARvIWHnRD+6BrRA615GbdHrCy3wtsCq/gBle4V3jJQxGQAAAABJRU5ErkJggg==">
+                            </button>
+                            <h4><strong>Kiwi</strong></h4>
+                        </div>
+
+                        <div class="col text-center">
+                            <img src="https://banner2.cleanpng.com/20171127/569/lemon-transparent-png-clip-art-5a1c359d8ba281.349900611511798173572.jpg" alt="" class="images">
+                            <br>
+                            <button class="btn" type="button" id="lemon">
+                                <img
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAACXBIWXMAAAsTAAALEwEAmpwYAAACVklEQVR4nO2Vz2sTQRTHxyxCEUQPemirCIL3/gGit1Yh3Q0kOeihxR/FU1KRwiY5uDOJKEgle7RmJR5ENkuLevCkIt2JVqXgj9naqyiCokVLdncyG2Rk0jYWTJE021u/8C6P3ffh/RwAtrWVyt2406/qpdNX3nj9wsIHFG8NqHrpU0YvXUekHocO+4VIQKDDxiyLS10DMrqRVIuGl9ENLiDCp3EeQQuNk4iwOUjYywLxD24uOuc7MkVDVXXj9wpgBRKz/eMKphfkKt8tYNAJNEiCj4UF/1BH8bVyuUfVS3f/BjdaEKXqDijYfyDb9Jtcrcvie+QEl0VGU/N8Z9uAyVR2fyKdvZ1IZa01m5icevQvwGiVSyiG/aOKTb8qthdrls9hz0WP2kIS6cyZRDrH19vE5M3XG0EiFXdUMmt5oPFIE4Tpd+XZz70aaQwiJ1hsC4mPZ8c6gYAZtzdScW3JrF0T/8uYTivYuyimDBL2Q3tPD3cPEbrn9UmmWwNl3jOM/VEZ0/vCDQl7opFGFIQCAQBIZu0zmF4+EqvSQQXTqvAhElh5wka2NBNE2NNwMplxeyOmi6VK7epaT2RcHxc9QYQtte1Jx9NluiNSpQbFdMmz/jGxL8nHfA8ijSHoBB9AO526pO2Lp3JGp3sybNMTsk2XYnY92twTwubyhJ0HoW287T9UbPpFmaVDq72AArLhxnd6u2RRIkzPRuf5ruZuOKywqdv1vytsWVwSU4QIewUd9kJ75x0AYb8niLBl6ARvIWHnRD+6BrRA615GbdHrCy3wtsCq/gBle4V3jJQxGQAAAABJRU5ErkJggg==">
+                            </button>
+                            <h4><strong>Lemon</strong></h4>
+                        </div>
+
+                        <div class="col text-center">
+                            <img src="https://banner2.cleanpng.com/20171216/758/grapefruit-png-5a35d1ded8a619.1236875915134765748874.jpg" alt="" class="images">
+                            <br>
+                            <button class="btn" type="button" id="grapefruit">
+                                <img
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAACXBIWXMAAAsTAAALEwEAmpwYAAACVklEQVR4nO2Vz2sTQRTHxyxCEUQPemirCIL3/gGit1Yh3Q0kOeihxR/FU1KRwiY5uDOJKEgle7RmJR5ENkuLevCkIt2JVqXgj9naqyiCokVLdncyG2Rk0jYWTJE021u/8C6P3ffh/RwAtrWVyt2406/qpdNX3nj9wsIHFG8NqHrpU0YvXUekHocO+4VIQKDDxiyLS10DMrqRVIuGl9ENLiDCp3EeQQuNk4iwOUjYywLxD24uOuc7MkVDVXXj9wpgBRKz/eMKphfkKt8tYNAJNEiCj4UF/1BH8bVyuUfVS3f/BjdaEKXqDijYfyDb9Jtcrcvie+QEl0VGU/N8Z9uAyVR2fyKdvZ1IZa01m5icevQvwGiVSyiG/aOKTb8qthdrls9hz0WP2kIS6cyZRDrH19vE5M3XG0EiFXdUMmt5oPFIE4Tpd+XZz70aaQwiJ1hsC4mPZ8c6gYAZtzdScW3JrF0T/8uYTivYuyimDBL2Q3tPD3cPEbrn9UmmWwNl3jOM/VEZ0/vCDQl7opFGFIQCAQBIZu0zmF4+EqvSQQXTqvAhElh5wka2NBNE2NNwMplxeyOmi6VK7epaT2RcHxc9QYQtte1Jx9NluiNSpQbFdMmz/jGxL8nHfA8ijSHoBB9AO526pO2Lp3JGp3sybNMTsk2XYnY92twTwubyhJ0HoW287T9UbPpFmaVDq72AArLhxnd6u2RRIkzPRuf5ruZuOKywqdv1vytsWVwSU4QIewUd9kJ75x0AYb8niLBl6ARvIWHnRD+6BrRA615GbdHrCy3wtsCq/gBle4V3jJQxGQAAAABJRU5ErkJggg==">
+                            </button>
+                            <h4><strong>Grapefruit</strong></h4>
+                        </div>
+
+                        <div class="col text-center">
+                            <img src="https://banner2.cleanpng.com/20230606/plq/transparent-mandarins-fruit-basket-oranges-fruit-natural-647f03f26e5773.194706921686045682452.jpg" alt="" class="images">
+                            <br>
+                            <button class="btn" type="button" id="mandarins">
+                                <img
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAACXBIWXMAAAsTAAALEwEAmpwYAAACVklEQVR4nO2Vz2sTQRTHxyxCEUQPemirCIL3/gGit1Yh3Q0kOeihxR/FU1KRwiY5uDOJKEgle7RmJR5ENkuLevCkIt2JVqXgj9naqyiCokVLdncyG2Rk0jYWTJE021u/8C6P3ffh/RwAtrWVyt2406/qpdNX3nj9wsIHFG8NqHrpU0YvXUekHocO+4VIQKDDxiyLS10DMrqRVIuGl9ENLiDCp3EeQQuNk4iwOUjYywLxD24uOuc7MkVDVXXj9wpgBRKz/eMKphfkKt8tYNAJNEiCj4UF/1BH8bVyuUfVS3f/BjdaEKXqDijYfyDb9Jtcrcvie+QEl0VGU/N8Z9uAyVR2fyKdvZ1IZa01m5icevQvwGiVSyiG/aOKTb8qthdrls9hz0WP2kIS6cyZRDrH19vE5M3XG0EiFXdUMmt5oPFIE4Tpd+XZz70aaQwiJ1hsC4mPZ8c6gYAZtzdScW3JrF0T/8uYTivYuyimDBL2Q3tPD3cPEbrn9UmmWwNl3jOM/VEZ0/vCDQl7opFGFIQCAQBIZu0zmF4+EqvSQQXTqvAhElh5wka2NBNE2NNwMplxeyOmi6VK7epaT2RcHxc9QYQtte1Jx9NluiNSpQbFdMmz/jGxL8nHfA8ijSHoBB9AO526pO2Lp3JGp3sybNMTsk2XYnY92twTwubyhJ0HoW287T9UbPpFmaVDq72AArLhxnd6u2RRIkzPRuf5ruZuOKywqdv1vytsWVwSU4QIewUd9kJ75x0AYb8niLBl6ARvIWHnRD+6BrRA615GbdHrCy3wtsCq/gBle4V3jJQxGQAAAABJRU5ErkJggg==">
+                            </button>
+                            <h4><strong>Mandarins</strong></h4>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="col-12 text-center">
+                    <div class="row">
+                        <div class="col text-center">
+                            <img src="https://banner2.cleanpng.com/20171202/b94/avocado-png-clipart-5a22f56b2feb29.4596606915122404911963.jpg" alt="" class="images">
+                            <br>
+                            <button class="btn" type="button" id="avocado">
+                                <img
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAACXBIWXMAAAsTAAALEwEAmpwYAAACVklEQVR4nO2Vz2sTQRTHxyxCEUQPemirCIL3/gGit1Yh3Q0kOeihxR/FU1KRwiY5uDOJKEgle7RmJR5ENkuLevCkIt2JVqXgj9naqyiCokVLdncyG2Rk0jYWTJE021u/8C6P3ffh/RwAtrWVyt2406/qpdNX3nj9wsIHFG8NqHrpU0YvXUekHocO+4VIQKDDxiyLS10DMrqRVIuGl9ENLiDCp3EeQQuNk4iwOUjYywLxD24uOuc7MkVDVXXj9wpgBRKz/eMKphfkKt8tYNAJNEiCj4UF/1BH8bVyuUfVS3f/BjdaEKXqDijYfyDb9Jtcrcvie+QEl0VGU/N8Z9uAyVR2fyKdvZ1IZa01m5icevQvwGiVSyiG/aOKTb8qthdrls9hz0WP2kIS6cyZRDrH19vE5M3XG0EiFXdUMmt5oPFIE4Tpd+XZz70aaQwiJ1hsC4mPZ8c6gYAZtzdScW3JrF0T/8uYTivYuyimDBL2Q3tPD3cPEbrn9UmmWwNl3jOM/VEZ0/vCDQl7opFGFIQCAQBIZu0zmF4+EqvSQQXTqvAhElh5wka2NBNE2NNwMplxeyOmi6VK7epaT2RcHxc9QYQtte1Jx9NluiNSpQbFdMmz/jGxL8nHfA8ijSHoBB9AO526pO2Lp3JGp3sybNMTsk2XYnY92twTwubyhJ0HoW287T9UbPpFmaVDq72AArLhxnd6u2RRIkzPRuf5ruZuOKywqdv1vytsWVwSU4QIewUd9kJ75x0AYb8niLBl6ARvIWHnRD+6BrRA615GbdHrCy3wtsCq/gBle4V3jJQxGQAAAABJRU5ErkJggg==">
+                            </button>
+                            <h4><strong>Avocado</strong></h4>
+                        </div>
+
+                        <div class="col text-center">
+                            <img src="https://banner2.cleanpng.com/20171219/8d3/lime-png-5a38d5340e8713.4217547415136740360595.jpg" alt="" class="images">
+                            <br>
+                            <button class="btn" type="button" id="lime">
+                                <img
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAACXBIWXMAAAsTAAALEwEAmpwYAAACVklEQVR4nO2Vz2sTQRTHxyxCEUQPemirCIL3/gGit1Yh3Q0kOeihxR/FU1KRwiY5uDOJKEgle7RmJR5ENkuLevCkIt2JVqXgj9naqyiCokVLdncyG2Rk0jYWTJE021u/8C6P3ffh/RwAtrWVyt2406/qpdNX3nj9wsIHFG8NqHrpU0YvXUekHocO+4VIQKDDxiyLS10DMrqRVIuGl9ENLiDCp3EeQQuNk4iwOUjYywLxD24uOuc7MkVDVXXj9wpgBRKz/eMKphfkKt8tYNAJNEiCj4UF/1BH8bVyuUfVS3f/BjdaEKXqDijYfyDb9Jtcrcvie+QEl0VGU/N8Z9uAyVR2fyKdvZ1IZa01m5icevQvwGiVSyiG/aOKTb8qthdrls9hz0WP2kIS6cyZRDrH19vE5M3XG0EiFXdUMmt5oPFIE4Tpd+XZz70aaQwiJ1hsC4mPZ8c6gYAZtzdScW3JrF0T/8uYTivYuyimDBL2Q3tPD3cPEbrn9UmmWwNl3jOM/VEZ0/vCDQl7opFGFIQCAQBIZu0zmF4+EqvSQQXTqvAhElh5wka2NBNE2NNwMplxeyOmi6VK7epaT2RcHxc9QYQtte1Jx9NluiNSpQbFdMmz/jGxL8nHfA8ijSHoBB9AO526pO2Lp3JGp3sybNMTsk2XYnY92twTwubyhJ0HoW287T9UbPpFmaVDq72AArLhxnd6u2RRIkzPRuf5ruZuOKywqdv1vytsWVwSU4QIewUd9kJ75x0AYb8niLBl6ARvIWHnRD+6BrRA615GbdHrCy3wtsCq/gBle4V3jJQxGQAAAABJRU5ErkJggg==">
+                            </button>
+                            <h4><strong>Lime</strong></h4>
+                        </div>
+
+                        <div class="col text-center">
+                            <img src="https://banner2.cleanpng.com/20171203/ab4/raspberry-png-5a24b4786c3836.2123968515123549364433.jpg" alt="" class="images">
+                            <br>
+                            <button class="btn" type="button" id="raspberry">
+                                <img
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAACXBIWXMAAAsTAAALEwEAmpwYAAACVklEQVR4nO2Vz2sTQRTHxyxCEUQPemirCIL3/gGit1Yh3Q0kOeihxR/FU1KRwiY5uDOJKEgle7RmJR5ENkuLevCkIt2JVqXgj9naqyiCokVLdncyG2Rk0jYWTJE021u/8C6P3ffh/RwAtrWVyt2406/qpdNX3nj9wsIHFG8NqHrpU0YvXUekHocO+4VIQKDDxiyLS10DMrqRVIuGl9ENLiDCp3EeQQuNk4iwOUjYywLxD24uOuc7MkVDVXXj9wpgBRKz/eMKphfkKt8tYNAJNEiCj4UF/1BH8bVyuUfVS3f/BjdaEKXqDijYfyDb9Jtcrcvie+QEl0VGU/N8Z9uAyVR2fyKdvZ1IZa01m5icevQvwGiVSyiG/aOKTb8qthdrls9hz0WP2kIS6cyZRDrH19vE5M3XG0EiFXdUMmt5oPFIE4Tpd+XZz70aaQwiJ1hsC4mPZ8c6gYAZtzdScW3JrF0T/8uYTivYuyimDBL2Q3tPD3cPEbrn9UmmWwNl3jOM/VEZ0/vCDQl7opFGFIQCAQBIZu0zmF4+EqvSQQXTqvAhElh5wka2NBNE2NNwMplxeyOmi6VK7epaT2RcHxc9QYQtte1Jx9NluiNSpQbFdMmz/jGxL8nHfA8ijSHoBB9AO526pO2Lp3JGp3sybNMTsk2XYnY92twTwubyhJ0HoW287T9UbPpFmaVDq72AArLhxnd6u2RRIkzPRuf5ruZuOKywqdv1vytsWVwSU4QIewUd9kJ75x0AYb8niLBl6ARvIWHnRD+6BrRA615GbdHrCy3wtsCq/gBle4V3jJQxGQAAAABJRU5ErkJggg==">
+                            </button>
+                            <h4><strong>Raspberry</strong></h4>
+                        </div>
+
+                        <div class="col text-center">
+                            <img src="https://banner2.cleanpng.com/20171216/ec3/blueberries-png-5a35cf4aa2bf98.4550498915134759146666.jpg" alt="" class="images">
+                            <br>
+                            <button class="btn" type="button" id="blueberry">
+                                <img
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAACXBIWXMAAAsTAAALEwEAmpwYAAACVklEQVR4nO2Vz2sTQRTHxyxCEUQPemirCIL3/gGit1Yh3Q0kOeihxR/FU1KRwiY5uDOJKEgle7RmJR5ENkuLevCkIt2JVqXgj9naqyiCokVLdncyG2Rk0jYWTJE021u/8C6P3ffh/RwAtrWVyt2406/qpdNX3nj9wsIHFG8NqHrpU0YvXUekHocO+4VIQKDDxiyLS10DMrqRVIuGl9ENLiDCp3EeQQuNk4iwOUjYywLxD24uOuc7MkVDVXXj9wpgBRKz/eMKphfkKt8tYNAJNEiCj4UF/1BH8bVyuUfVS3f/BjdaEKXqDijYfyDb9Jtcrcvie+QEl0VGU/N8Z9uAyVR2fyKdvZ1IZa01m5icevQvwGiVSyiG/aOKTb8qthdrls9hz0WP2kIS6cyZRDrH19vE5M3XG0EiFXdUMmt5oPFIE4Tpd+XZz70aaQwiJ1hsC4mPZ8c6gYAZtzdScW3JrF0T/8uYTivYuyimDBL2Q3tPD3cPEbrn9UmmWwNl3jOM/VEZ0/vCDQl7opFGFIQCAQBIZu0zmF4+EqvSQQXTqvAhElh5wka2NBNE2NNwMplxeyOmi6VK7epaT2RcHxc9QYQtte1Jx9NluiNSpQbFdMmz/jGxL8nHfA8ijSHoBB9AO526pO2Lp3JGp3sybNMTsk2XYnY92twTwubyhJ0HoW287T9UbPpFmaVDq72AArLhxnd6u2RRIkzPRuf5ruZuOKywqdv1vytsWVwSU4QIewUd9kJ75x0AYb8niLBl6ARvIWHnRD+6BrRA615GbdHrCy3wtsCq/gBle4V3jJQxGQAAAABJRU5ErkJggg==">
+                            </button>
+                            <h4><strong>Blueberry</strong></h4>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="col-12 text-center">
+                    <div class="row">
+                        <div class="col text-center">
+                            <img src="https://banner2.cleanpng.com/20171202/44b/pineapple-png-5a22fef3dc1c72.0928604615122429319016.jpg" alt="" class="images">
+                            <br>
+                            <button class="btn" type="button" id="pineapple">
+                                <img
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAACXBIWXMAAAsTAAALEwEAmpwYAAACVklEQVR4nO2Vz2sTQRTHxyxCEUQPemirCIL3/gGit1Yh3Q0kOeihxR/FU1KRwiY5uDOJKEgle7RmJR5ENkuLevCkIt2JVqXgj9naqyiCokVLdncyG2Rk0jYWTJE021u/8C6P3ffh/RwAtrWVyt2406/qpdNX3nj9wsIHFG8NqHrpU0YvXUekHocO+4VIQKDDxiyLS10DMrqRVIuGl9ENLiDCp3EeQQuNk4iwOUjYywLxD24uOuc7MkVDVXXj9wpgBRKz/eMKphfkKt8tYNAJNEiCj4UF/1BH8bVyuUfVS3f/BjdaEKXqDijYfyDb9Jtcrcvie+QEl0VGU/N8Z9uAyVR2fyKdvZ1IZa01m5icevQvwGiVSyiG/aOKTb8qthdrls9hz0WP2kIS6cyZRDrH19vE5M3XG0EiFXdUMmt5oPFIE4Tpd+XZz70aaQwiJ1hsC4mPZ8c6gYAZtzdScW3JrF0T/8uYTivYuyimDBL2Q3tPD3cPEbrn9UmmWwNl3jOM/VEZ0/vCDQl7opFGFIQCAQBIZu0zmF4+EqvSQQXTqvAhElh5wka2NBNE2NNwMplxeyOmi6VK7epaT2RcHxc9QYQtte1Jx9NluiNSpQbFdMmz/jGxL8nHfA8ijSHoBB9AO526pO2Lp3JGp3sybNMTsk2XYnY92twTwubyhJ0HoW287T9UbPpFmaVDq72AArLhxnd6u2RRIkzPRuf5ruZuOKywqdv1vytsWVwSU4QIewUd9kJ75x0AYb8niLBl6ARvIWHnRD+6BrRA615GbdHrCy3wtsCq/gBle4V3jJQxGQAAAABJRU5ErkJggg==">
+                            </button>
+                            <h4><strong>Pineapple</strong></h4>
+                        </div>
+
+                        <div class="col text-center">
+                            <img src="https://banner2.cleanpng.com/20171127/4fd/pomegranate-png-clipart-picture-5a1c46758f4b53.2161532815118024855869.jpg" alt="" class="images">
+                            <br>
+                            <button class="btn" type="button" id="pomegranate">
+                                <img
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAACXBIWXMAAAsTAAALEwEAmpwYAAACVklEQVR4nO2Vz2sTQRTHxyxCEUQPemirCIL3/gGit1Yh3Q0kOeihxR/FU1KRwiY5uDOJKEgle7RmJR5ENkuLevCkIt2JVqXgj9naqyiCokVLdncyG2Rk0jYWTJE021u/8C6P3ffh/RwAtrWVyt2406/qpdNX3nj9wsIHFG8NqHrpU0YvXUekHocO+4VIQKDDxiyLS10DMrqRVIuGl9ENLiDCp3EeQQuNk4iwOUjYywLxD24uOuc7MkVDVXXj9wpgBRKz/eMKphfkKt8tYNAJNEiCj4UF/1BH8bVyuUfVS3f/BjdaEKXqDijYfyDb9Jtcrcvie+QEl0VGU/N8Z9uAyVR2fyKdvZ1IZa01m5icevQvwGiVSyiG/aOKTb8qthdrls9hz0WP2kIS6cyZRDrH19vE5M3XG0EiFXdUMmt5oPFIE4Tpd+XZz70aaQwiJ1hsC4mPZ8c6gYAZtzdScW3JrF0T/8uYTivYuyimDBL2Q3tPD3cPEbrn9UmmWwNl3jOM/VEZ0/vCDQl7opFGFIQCAQBIZu0zmF4+EqvSQQXTqvAhElh5wka2NBNE2NNwMplxeyOmi6VK7epaT2RcHxc9QYQtte1Jx9NluiNSpQbFdMmz/jGxL8nHfA8ijSHoBB9AO526pO2Lp3JGp3sybNMTsk2XYnY92twTwubyhJ0HoW287T9UbPpFmaVDq72AArLhxnd6u2RRIkzPRuf5ruZuOKywqdv1vytsWVwSU4QIewUd9kJ75x0AYb8niLBl6ARvIWHnRD+6BrRA615GbdHrCy3wtsCq/gBle4V3jJQxGQAAAABJRU5ErkJggg==">
+                            </button>
+                            <h4><strong>Pomegranate</strong></h4>
+                        </div>
+
+                        <div class="col text-center">
+                            <img src="https://banner2.cleanpng.com/20180227/wwq/kisspng-sanya-jackfruit-pineapple-bun-cempedak-pineapple-tree-5a94eda708c8a1.714955901519709607036.jpg" alt="" class="images">
+                            <br>
+                            <button class="btn" type="button" id="jackfruit">
+                                <img
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAACXBIWXMAAAsTAAALEwEAmpwYAAACVklEQVR4nO2Vz2sTQRTHxyxCEUQPemirCIL3/gGit1Yh3Q0kOeihxR/FU1KRwiY5uDOJKEgle7RmJR5ENkuLevCkIt2JVqXgj9naqyiCokVLdncyG2Rk0jYWTJE021u/8C6P3ffh/RwAtrWVyt2406/qpdNX3nj9wsIHFG8NqHrpU0YvXUekHocO+4VIQKDDxiyLS10DMrqRVIuGl9ENLiDCp3EeQQuNk4iwOUjYywLxD24uOuc7MkVDVXXj9wpgBRKz/eMKphfkKt8tYNAJNEiCj4UF/1BH8bVyuUfVS3f/BjdaEKXqDijYfyDb9Jtcrcvie+QEl0VGU/N8Z9uAyVR2fyKdvZ1IZa01m5icevQvwGiVSyiG/aOKTb8qthdrls9hz0WP2kIS6cyZRDrH19vE5M3XG0EiFXdUMmt5oPFIE4Tpd+XZz70aaQwiJ1hsC4mPZ8c6gYAZtzdScW3JrF0T/8uYTivYuyimDBL2Q3tPD3cPEbrn9UmmWwNl3jOM/VEZ0/vCDQl7opFGFIQCAQBIZu0zmF4+EqvSQQXTqvAhElh5wka2NBNE2NNwMplxeyOmi6VK7epaT2RcHxc9QYQtte1Jx9NluiNSpQbFdMmz/jGxL8nHfA8ijSHoBB9AO526pO2Lp3JGp3sybNMTsk2XYnY92twTwubyhJ0HoW287T9UbPpFmaVDq72AArLhxnd6u2RRIkzPRuf5ruZuOKywqdv1vytsWVwSU4QIewUd9kJ75x0AYb8niLBl6ARvIWHnRD+6BrRA615GbdHrCy3wtsCq/gBle4V3jJQxGQAAAABJRU5ErkJggg==">
+                            </button>
+                            <h4><strong>Jackfruit</strong></h4>
+                        </div>
+
+                        <div class="col text-center">
+                            <img src="https://banner2.cleanpng.com/20180131/kow/kisspng-juice-peach-fruit-crisp-food-peach-5a71e5ebaf4ca5.9431794515174138677181.jpg" alt="" class="images">
+                            <br>
+                            <button class="btn" type="button" id="peach">
+                                <img
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAACXBIWXMAAAsTAAALEwEAmpwYAAACVklEQVR4nO2Vz2sTQRTHxyxCEUQPemirCIL3/gGit1Yh3Q0kOeihxR/FU1KRwiY5uDOJKEgle7RmJR5ENkuLevCkIt2JVqXgj9naqyiCokVLdncyG2Rk0jYWTJE021u/8C6P3ffh/RwAtrWVyt2406/qpdNX3nj9wsIHFG8NqHrpU0YvXUekHocO+4VIQKDDxiyLS10DMrqRVIuGl9ENLiDCp3EeQQuNk4iwOUjYywLxD24uOuc7MkVDVXXj9wpgBRKz/eMKphfkKt8tYNAJNEiCj4UF/1BH8bVyuUfVS3f/BjdaEKXqDijYfyDb9Jtcrcvie+QEl0VGU/N8Z9uAyVR2fyKdvZ1IZa01m5icevQvwGiVSyiG/aOKTb8qthdrls9hz0WP2kIS6cyZRDrH19vE5M3XG0EiFXdUMmt5oPFIE4Tpd+XZz70aaQwiJ1hsC4mPZ8c6gYAZtzdScW3JrF0T/8uYTivYuyimDBL2Q3tPD3cPEbrn9UmmWwNl3jOM/VEZ0/vCDQl7opFGFIQCAQBIZu0zmF4+EqvSQQXTqvAhElh5wka2NBNE2NNwMplxeyOmi6VK7epaT2RcHxc9QYQtte1Jx9NluiNSpQbFdMmz/jGxL8nHfA8ijSHoBB9AO526pO2Lp3JGp3sybNMTsk2XYnY92twTwubyhJ0HoW287T9UbPpFmaVDq72AArLhxnd6u2RRIkzPRuf5ruZuOKywqdv1vytsWVwSU4QIewUd9kJ75x0AYb8niLBl6ARvIWHnRD+6BrRA615GbdHrCy3wtsCq/gBle4V3jJQxGQAAAABJRU5ErkJggg==">
+                            </button>
+                            <h4><strong>Peach</strong></h4>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </article>
+    </main>
+
+
+    <!--Footer section-->
+    <footer id="footer">
+        <div class="container-fluid">
+            <div class="row">
+                <h6 class="col-9">&copy; 2023 Tutti i diritti riservati</h6>
+                <h6 class="col-3">
+                    Creato con &hearts; da <a href="https://bluebutterflies.github.io/ButterflyTech/" target="_blank"
+                        rel="noopener noreferrer">Butterfly Tech Crative Solution</a>
+                    <br>
+                    <a href="">Privacy</a>
+                </h6>
+            </div>
+        </div>
+
+        <div class="floating-button-div">
+            <a class="btn top" type="button" href="#">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAr0lEQVR4nGNgGAWjYFAAvtmPhPhmPM/mmflUhCYW8Mx9Jso3/ekl/hnP/vNPf3ada+YrSapawD3tuRjfjKeXwRbMePoXRIP4IHGa+EBg6mM9qvoII4imvJTAKk6uRbgsgAGKLSJkAcUWEWsB2RaRagHJFpFrAdEWgXIwLB9Qkv65kfITiEYpGfhnPCuiVgbjRsm4z4pQfMI/42kBtcokHqh5vJOfCFPDvFEwChhwAgBQ2+JJPmitlQAAAABJRU5ErkJggg==">
+            </a>
+        </div>
+    </footer>
+
+    <!--Bootstrap script-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+
+    <!--Our script-->
+    <script src="/js/fruits.js"></script>
+</body>
+
+</html>

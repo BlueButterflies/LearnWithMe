@@ -1,0 +1,212 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+body{
+    background-size: 100% 100%;
+}
+
+main{
+    margin: 0 2%;
+}
+
+/*Navbar section*/
+.navbar{
+    background-color: deepskyblue;
+}
+
+.navbar span{
+    justify-content: center;
+    text-align: center;
+    font-size: 25px;
+    color: whitesmoke;
+}
+
+.images{
+    margin-top: 5%;
+    width: 150px;
+    height: 150px;
+}
+.back{
+    margin-top: 5%;
+    margin-left: 1%;
+    font-size: 1.5em;
+}
+
+.back a{
+    text-decoration: none;
+    color: rgb(173, 43, 177);
+}
+
+/*Farm Animals section*/
+.farm-animals{
+    border: 3mm ridge pink;
+    padding: 2% 0;
+    border-radius: 40px;
+    margin-top: 3%;
+}
+
+.farm-animals section h2{
+    color: rgb(52, 157, 157);
+    font-size: 2.4em;
+    margin-bottom: 2%;
+}
+.farm-animals section div h4{
+    color:rgb(19, 136, 97);
+    font-size: 2em;
+}
+
+/*Forest Animal section*/
+.forest-animals{
+    border: 3mm ridge rgb(52, 224, 49);
+    padding: 2% 0;
+    border-radius: 40px;
+    margin-top: 3%;
+}
+.forest-animals section h2{
+    margin-bottom: 2%;
+    color: rgb(170, 19, 99);
+    font-size: 2.4em;
+}
+
+.forest-animals section div h4{
+    color:rgb(207, 112, 18);
+    font-size: 2em;
+}
+
+/*Savannah animals*/
+.savannah-animals{
+    border: 3mm ridge rgb(101, 183, 251);
+    padding: 2% 0;
+    border-radius: 40px;
+    margin-top: 3%;
+}
+.savannah-animals section h2{
+    margin-bottom: 2%;
+    color: rgb(139, 6, 112);
+    font-size: 2.4em;
+
+}
+
+.savannah-animals section div h4{
+    color:rgb(13, 197, 28);
+    font-size: 2em;
+}
+
+/*Bugs animals*/
+.bugs-animals{
+    border: 3mm ridge rgb(246, 197, 36);
+    padding: 2% 0;
+    border-radius: 40px;
+    margin-top: 3%;
+}
+
+.bugs-animals section h2{
+    margin-bottom: 2%;
+    color: rgb(251, 154, 8);
+    font-size: 2.4em;
+
+}
+
+.bugs-animals section div h4{
+    color:rgb(200, 91, 96);
+    font-size: 2em;
+}
+
+/*Sea animals*/
+.sea-animals{
+    border: 3mm ridge rgb(46, 246, 36);
+    padding: 2% 0;
+    border-radius: 40px;
+    margin-top: 3%;
+}
+
+.sea-animals section h2{
+    margin-bottom: 2%;
+    color: rgb(178, 22, 205);
+    font-size: 2.4em;
+
+}
+
+.sea-animals section div h4{
+    color:rgb(86, 44, 223);
+    font-size: 2em;
+}
+
+/*Jungle animals*/
+.jungle-animals{
+    border: 3mm ridge rgb(255, 123, 0);
+    padding: 2% 0;
+    border-radius: 40px;
+    margin-top: 3%;
+}
+
+.jungle-animals section h2{
+    margin-bottom: 2%;
+    color: rgb(1, 174, 15);
+    font-size: 2.4em;
+
+}
+
+.jungle-animals section div h4{
+    color:rgb(213, 223, 8);
+    font-size: 2em;
+}
+
+/*Footer section*/
+#footer{
+    background-color: deepskyblue;
+    margin-top: 5%;
+    padding: 2% 0;
+    color: whitesmoke;
+}
+
+#footer a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+.floating-button-div {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+  }
+  
+  .top {
+    background-color:transparent;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+  }
+  
+@media screen and (min-width: 200px) and (max-width: 767px) {
+    body{
+        background-size: auto;
+    }
+
+    .back{
+        margin-top: 17%;
+        margin-left: 1.5%;
+    }
+
+    .navbar span{
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+    body{
+        background-size: auto;
+    }
+    
+    
+    .back{
+        margin-top: 8%;
+        margin-left: 1.5%;
+    }
+}

@@ -1,0 +1,151 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+body{
+    background-size: 100% 100%;
+}
+
+.navbar{
+    background-color: deepskyblue;
+}
+
+.navbar span{
+    justify-content: center;
+    text-align: center;
+    font-size: 25px;
+    color: whitesmoke;
+}
+
+
+main{
+    margin: 0 3%;
+}
+
+.back{
+    margin: 5% 0 3% 0;
+    font-size: 1.5em;
+
+}
+
+.back a{
+    color: rgb(22, 22, 23);
+    text-decoration: none;
+}
+
+.images{
+    width: 220px;
+    height: 120px;
+    margin-top: 15%;
+}
+
+.seasons{
+    border: 3mm ridge #6393e7;
+    border-radius: 30px;
+    margin-top: 4%;
+    padding: 2% 0;
+}
+
+.seasons section h2{
+    color: rgba(106, 188, 5, 0.714);
+    font-size: 2.8em;
+    margin-top: 2%;
+}
+
+.seasons section .row h4{
+    color: goldenrod;
+    font-size: 2em;
+}
+
+.week{
+    border: 3mm ridge #e001bf;
+    border-radius: 30px;
+    margin-top: 4%;
+    padding: 2% 0;
+}
+
+.week section h2{
+    color: rgba(250, 110, 3, 0.714);
+    font-size: 2.8em;
+    margin-top: 2%;
+}
+
+.week section .row h4{
+    color: rgba(4, 225, 111, 0.803);
+    font-size: 2em;
+}
+
+.months{
+    border: 3mm ridge #ecec00d7;
+    border-radius: 30px;
+    margin-top: 4%;
+    padding: 2% 0;
+}
+
+.months section h2{
+    color: rgba(80, 51, 142, 0.714);
+    font-size: 2.8em;
+    margin-top: 2%;
+}
+
+.months section .row h4{
+    color: rgba(4, 225, 199, 0.803);
+    font-size: 2em;
+}
+
+/*Footer section*/
+#footer{
+    background-color: deepskyblue;
+    margin-top: 5%;
+    padding: 2% 0;
+    color: whitesmoke;
+}
+#footer a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+.floating-button-div {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+  }
+  
+  .top {
+    background-color:transparent;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+  }
+  
+@media screen and (min-width: 200px) and (max-width: 767px) {
+    body{
+        background-size: auto;
+    }
+
+    .back{
+        margin-top: 20%;
+    }
+
+    .vegetables section h2{
+        font-size: 2.5em;
+    }
+
+    .navbar span{
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+    body{
+        background-size: auto;
+    }
+    .back{
+        margin-top: 10%;
+    }
+}

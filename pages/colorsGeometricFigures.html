@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colors and Geometric figurs</title>
+
+    <!--Our style-->
+    <link rel="stylesheet" href="/css/colorsGeometricFigures.css" type="text/css">
+
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+    <!--Google Font-->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg  fixed-top">
+
+        <div class="container-fluid">
+            <span>
+                Learn colors and geometric figures with me
+            </span>
+
+        </div>
+    </nav>
+
+    <main>
+        <section class="back">
+            <a href="/index.html">Home</a><!--back button-->
+        </section>
+
+        <!--Colors-->
+        <article class="container-fluid colors">
+            <div class="row">
+                <section class="col-12 text-center">
+                    <h2>Colors</h2>
+                </section>
+
+                <section class="col-12 text-center">
+                    <div class="row">
+                        <div class="col">
+                            <img class="images" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAACXBIWXMAAAsTAAALEwEAmpwYAAAE3ElEQVR4nO2dC08TQRDH/f7fZIvKQ1DEKC+jIJBIQC2IBLnS64MW2uvjHr0bMyck0qakAt3Zmd1/sgmh7bE7P7Z7Ozsz98xTClxTxtjgGXUHXFMOiGfwP4KbIYoeAlsg/uvX0Nzdhc7JCYTVKiRBAGkUQZamecOf8Xf4WnBykr8XP0Pdb1FAKm/fQvvoCAa9HjxUg24X2sVifi3q8bAFUt/YgKheh6cWXhOvTT0+NkCqKysQNRpPDmIEzOUlVFZWyMdrLJDS8+cQHB8DZBloU5ZBcHQEpZkZ8vEbBcRfWoK42QQq4d/GPlDbwQgg1XfvIA1DoFYaRVB9/95uIPX1dciSBExRliRQX1uzEwjODJNg3CobDEhnCgkQ/L7GrwhTlYYh+IuLdgDBOxrKBXxS4a03xd2XdiD5rS0TtYtF2UBw06d1n/FYZZn2zaNWIDp24NNwtYgEgv4jrqqvr8sDMg1HoS6FtZosIJXlZeCuyvKyHCB4nsFd7R8/5AB5zOGSKcJDLhFA8AhVinwNHuGpA8FzbSlq7uzwB4IBCVIU/PzJHwhGgEhRWKnwB5J0OiBFSafDH4jJbvaHuOXZA8EANinK0tQBMUkigKRxDFKURhF/ILjDlaKBht361IFghKAUhRrORqYOpPv7N0hR9+yMP5DW4SFIUevggD+Qy48fQYrqm5v8gZRfvQIpKi8s8AcixX2SBMHU7aQNSOf0FLir8+uXHCCNz5+BuxqfPskBcvHyJWufVpam+RjEAMHWL5eBq3qlkhYbaQXS3N4GrmpsbckDgjmEHB2NaRznfRcHhOv5enB8rM0+2oFg4j43Vd68kQuE2+Leu7jQahsSILUPH4CLagS5hiQ5hhhOY7r6vq/dLmRA8rXE8EyqClHZDbK0aJMPrroaDqKMA1KenzdyX5LGsRY3u3FAsF3t7YGNAdWeqUC8QgH6Bi3wfaKF3Bwg6Amem4NBv29EmGh5ft4BQSiY5Up615VlUCMuOmPMDLlt+N1NJVzLqMdvHBBsAUFyKEX5DDZAPM21UPAfgHq8xgPxMI26WBST5iwCiIeBEVtbeTGxaZyPN798IR8fOyDeTdW5+Pr6yWDgtfCa1ONiC8S7KXiG8cGPKQeIn8VrmFQOli0Q758NZOvbt/+qYIrvxc9czM6S918cEO+2FQr5Idd91YXwNXwPvpe8v+KBqL8tvroaCwRfo+6fVUD8Ceqn+JqDE6wG0pogCUhHco0Dov4aYZJb4aTdJjeuNTPEG1NUE6PsqftkLRB/cZEsQt0BUaNGuN7fvwMETx6pjWn1DAmHyj5Rn4VbDyQd2rHrjsF1QNRdIwxnZOlMGXBA1KgRhgMjuD2vUNwaEg35sq6/fiXvk9VAWgcHo+X3GDoTxQDxl5ZGQofcxpAYSu/8XIyXl/0M8cakyJn8WFXxQDxMkfN90gewOCDqrhFqq6tGpKK5GaLGlxHUncrsgKj7q0TgeQm1Ya1dQ7ybiJThLCjqPlkNpPTixR0gGPFI3Sergfi4SfxH6Oei7pPVQGpDd1q4yFP3yWog7e/ftT94xQFRY4xQKOQFKqkeBOlmiLo/FQ4L5nMIqhb7lTUYeiSfaSlqVgNJ4zjfk1D3yWog9Y2N/DESCIa7p1cEEE9Yc0AUPQQHRNEb3gFR9MaeBMgf9MEh/A7dhOUAAAAASUVORK5CYII=">
+                            <br>
+                            <button class="btn" id="white" type="button">
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAACXBIWXMAAAsTAAALEwEAmpwYAAABcklEQVR4nM3Wvy41QRzG8a8/BXEDNCQUmtcFEFHQ0JC4AS5BlK/EKyEKjVBIVEIizLM0lIQLUTkFQuheCc0ju5lzcjjI4awTk2x2dndmPvvbnd/Owm8rPqfZYsfiwQkD+QOiyWLXwnGbzxcwDRabZYAdWMgb2HgF5I6ItQpA7yNOmHTC2FeBlXcBfYCIfotLi9nqgMDih4AqEYv24j6D3kbkwLLFU3GA2NjVIt7nj8WNE0ZKEQWuLFrL76IEfAdJi8WgxbUP6IrHRxbT2cV44tUA1SJOZ15gtTRw+ogD67H/uAOntSP/aHTgrwPnsU+vxUVWP6Db4q5mhLTdDm0O/I99Wi0ey+rP+UQi5izOKiLZo8fiNv93IpbS5M3qCRMWJ/nOrn2GstklOuMkOHZgqhxZqilPRF+WJ2I4RjGQ5ckWLfxIxh/SYVGwGP0UqPHbVbCYqQqo21e4butJXVbGuq3xFKH0byWwbXGfvuQfQb5bXgASUqzLkBw65QAAAABJRU5ErkJggg==">
+                            </button>
+                            <h4>
+                                <strong>White</strong>
+                            </h4>
+                        </div>
+
+                        <div class="col">
+                            <img class="images" src="data:image/png;base64,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">
+                            <br>
+                            <button class="btn" id="black" type="button">
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAACXBIWXMAAAsTAAALEwEAmpwYAAABcklEQVR4nM3Wvy41QRzG8a8/BXEDNCQUmtcFEFHQ0JC4AS5BlK/EKyEKjVBIVEIizLM0lIQLUTkFQuheCc0ju5lzcjjI4awTk2x2dndmPvvbnd/Owm8rPqfZYsfiwQkD+QOiyWLXwnGbzxcwDRabZYAdWMgb2HgF5I6ItQpA7yNOmHTC2FeBlXcBfYCIfotLi9nqgMDih4AqEYv24j6D3kbkwLLFU3GA2NjVIt7nj8WNE0ZKEQWuLFrL76IEfAdJi8WgxbUP6IrHRxbT2cV44tUA1SJOZ15gtTRw+ogD67H/uAOntSP/aHTgrwPnsU+vxUVWP6Db4q5mhLTdDm0O/I99Wi0ey+rP+UQi5izOKiLZo8fiNv93IpbS5M3qCRMWJ/nOrn2GstklOuMkOHZgqhxZqilPRF+WJ2I4RjGQ5ckWLfxIxh/SYVGwGP0UqPHbVbCYqQqo21e4butJXVbGuq3xFKH0byWwbXGfvuQfQb5bXgASUqzLkBw65QAAAABJRU5ErkJggg==">
+                            </button>
+                            <h4>
+                                <strong>Black</strong>
+                            </h4>
+                        </div>
+
+                        <div class="col">
+                            <img class="images" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAACXBIWXMAAAsTAAALEwEAmpwYAAAFAUlEQVR4nO2deW/TaBDG+/2liXM5d5M6l/tCEex2l1viRuIQiALl7u7WH+RdjQkSNaSExJnnvf54pKo5PJ5f3ntmvJMppYOUMT7YQRsQpAKQzOAfQmghCg/BWiDHs5m+OxzqK52Onsax7tZquhFFukKUi//m//FrV7rd/L38GbTdTgF5PZ3qw15Pt2s1TURrqV2t6sNuN/8u9P1YC+TJ3p5OGo21ISwTf+fTJIHfnzVAjiYTPdoCiKL2Gg19ZGCLMQbIv/v7edfEYwEJia/FXdl/+/vw+zcKyLvZTA/rdTEQRfG12Qa0H4wA8moy0c0ogsGghXiG9nIy8RvI8/FY1yoVOAxaiG15Dh7wd5AtwyQYtFC1UoG2FAgQ7q+5i0A7n5aIu9D3oDFFHAjPaJADOK0othEx+xIHwlNbtLNpRfGU2GkgvOiTXGfQhmJbpRePokAkVuC0ha0WJ4Hw3hTaubSmnglOhcWAbGOjkBxsJSJA3kyncKfShuJ7cAaITTMrWqK/ez13gGxyuESGqFOruQGEj1DRzqSSJLEjvHUgfK6NdiSVpLu7u/YD4YAEtCOpJP0hsHLfOpBJswl3JJWkabNpPxCO+EA7kiwa2LcOxORtdlpjW956IJGBh1C0pvherAdi0+4u+QCk7lCX1XChywqDujILCEcIon/ZVJISF6a9F1otuCOpJB202/YDud7vwx1JJelGv28/kCdJAncklSS+F+uBfJjP4Y6kkvRxPrcfiCszra4r5yGsS+023KG0oS53Ou4AeTQawR1KG+rxaOQOkJM0tXpPK6pU9D9CYaViYUDzOIY7ltZUGsciPhIF8sDio9yHQt2VKBDOIbRxo7EeRbntzgGx9Xz9T+EIeFEgnLiPdjD9pt66HP1u2+CetlqivoEAeTEewx1NK+rleOw+EBaH06CdTb/QTHCqCwfCY4npZ+1HoLIbsLToiwbvbx0IHEQZB+TTfG7kuqQeRSLb7MYBMTUQ+95wCPMHHMgpD/AGTYNnoIHcGCDfuq7YgAOsuFrNbcl8B/KtCA1yez7iojOANYexQFjcdxMIyB2BRBzrgLD+AiSH8jXR920skEypfHfV5Vom1gHJhFqKVJqzE0AypfJTOi4mto0B/D54rWElkGxRda5fYo77oF43sjSsNUCyRcEzjg/epBwgf5a/w6RysNYCyRb6nKb6aq/3W4tIfu+1fl9/SVO4/c4Byb7bbuFDrvOqC/Fr/J5TA+x1Hki20O45dRv5NbR9XgE5XqF+yltDKlV7AeT6CklAEsk1AYj66oRVpsJ9S7stK1tItqSoJkfZo23yFsj7wjjCQRMcZY+2y1sgtwaDM0D45BFtk9dApoWjX/RZuPdA4sKKXToGNwBRZ51QPPKVTBkIQNSvW4htzyt0bgxJClPe24MB3CavgdwszLI4F96G7XVngbybzX4I2A4LQzCUC4VKQzbv8lrfQrIlKXImP1bVeSDZT5J/pB/AEoCos07g5w6akIoWWohaXkZQOpU5AFHnV4ngcB+0Y70dQ7JFSkMxCwptk9dATtL0DBCOeETb5DWQ48L0V6JGewCiVp9p8SCPdqzXLeRqIVqei9ygbfIWyKlSeYFK1IMgAxB1fiocF8y3MYTUmRbSLrQO01LUvAPS+u7kkNMOOEoebZPXQJ4mSf5sKAbDD0BG2+M9kMwAJwYgCu+4AEThnRWAKLyDpIH8D5g/e6pWfWGJAAAAAElFTkSuQmCC">
+                            <br>
+                            <button class="btn" id="gray" type="button">
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAACXBIWXMAAAsTAAALEwEAmpwYAAABcklEQVR4nM3Wvy41QRzG8a8/BXEDNCQUmtcFEFHQ0JC4AS5BlK/EKyEKjVBIVEIizLM0lIQLUTkFQuheCc0ju5lzcjjI4awTk2x2dndmPvvbnd/Owm8rPqfZYsfiwQkD+QOiyWLXwnGbzxcwDRabZYAdWMgb2HgF5I6ItQpA7yNOmHTC2FeBlXcBfYCIfotLi9nqgMDih4AqEYv24j6D3kbkwLLFU3GA2NjVIt7nj8WNE0ZKEQWuLFrL76IEfAdJi8WgxbUP6IrHRxbT2cV44tUA1SJOZ15gtTRw+ogD67H/uAOntSP/aHTgrwPnsU+vxUVWP6Db4q5mhLTdDm0O/I99Wi0ey+rP+UQi5izOKiLZo8fiNv93IpbS5M3qCRMWJ/nOrn2GstklOuMkOHZgqhxZqilPRF+WJ2I4RjGQ5ckWLfxIxh/SYVGwGP0UqPHbVbCYqQqo21e4butJXVbGuq3xFKH0byWwbXGfvuQfQb5bXgASUqzLkBw65QAAAABJRU5ErkJggg==">
+                            </button>
+                            <h4>
+                                <strong>Gray</strong>
+                            </h4>
+                        </div>
+
+                        <div class="col">
+                            <img class="images" src="data:image/png;base64,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">
+                            <br>
+                            <button class="btn" id="red" type="button">
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAACXBIWXMAAAsTAAALEwEAmpwYAAABcklEQVR4nM3Wvy41QRzG8a8/BXEDNCQUmtcFEFHQ0JC4AS5BlK/EKyEKjVBIVEIizLM0lIQLUTkFQuheCc0ju5lzcjjI4awTk2x2dndmPvvbnd/Owm8rPqfZYsfiwQkD+QOiyWLXwnGbzxcwDRabZYAdWMgb2HgF5I6ItQpA7yNOmHTC2FeBlXcBfYCIfotLi9nqgMDih4AqEYv24j6D3kbkwLLFU3GA2NjVIt7nj8WNE0ZKEQWuLFrL76IEfAdJi8WgxbUP6IrHRxbT2cV44tUA1SJOZ15gtTRw+ogD67H/uAOntSP/aHTgrwPnsU+vxUVWP6Db4q5mhLTdDm0O/I99Wi0ey+rP+UQi5izOKiLZo8fiNv93IpbS5M3qCRMWJ/nOrn2GstklOuMkOHZgqhxZqilPRF+WJ2I4RjGQ5ckWLfxIxh/SYVGwGP0UqPHbVbCYqQqo21e4butJXVbGuq3xFKH0byWwbXGfvuQfQb5bXgASUqzLkBw65QAAAABJRU5ErkJggg==">
+                            </button>
+                            <h4>
+                                <strong>Red</strong>
+                            </h4>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="col-12 text-center">
+                    <div class="row">
+                        <div class="col">
+                            <img class="images" src="data:image/png;base64,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">
+                            <br>
+                            <button class="btn" id="blue" type="button">
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAACXBIWXMAAAsTAAALEwEAmpwYAAABcklEQVR4nM3Wvy41QRzG8a8/BXEDNCQUmtcFEFHQ0JC4AS5BlK/EKyEKjVBIVEIizLM0lIQLUTkFQuheCc0ju5lzcjjI4awTk2x2dndmPvvbnd/Owm8rPqfZYsfiwQkD+QOiyWLXwnGbzxcwDRabZYAdWMgb2HgF5I6ItQpA7yNOmHTC2FeBlXcBfYCIfotLi9nqgMDih4AqEYv24j6D3kbkwLLFU3GA2NjVIt7nj8WNE0ZKEQWuLFrL76IEfAdJi8WgxbUP6IrHRxbT2cV44tUA1SJOZ15gtTRw+ogD67H/uAOntSP/aHTgrwPnsU+vxUVWP6Db4q5mhLTdDm0O/I99Wi0ey+rP+UQi5izOKiLZo8fiNv93IpbS5M3qCRMWJ/nOrn2GstklOuMkOHZgqhxZqilPRF+WJ2I4RjGQ5ckWLfxIxh/SYVGwGP0UqPHbVbCYqQqo21e4butJXVbGuq3xFKH0byWwbXGfvuQfQb5bXgASUqzLkBw65QAAAABJRU5ErkJggg==">
+                            </button>
+                            <h4>
+                                <strong>Blue</strong>
+                            </h4>
+                        </div>
+
+                        <div class="col">
+                            <img class="images" src="data:image/png;base64,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">
+                            <br>
+                            <button class="btn" id="yellow" type="button">
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAACXBIWXMAAAsTAAALEwEAmpwYAAABcklEQVR4nM3Wvy41QRzG8a8/BXEDNCQUmtcFEFHQ0JC4AS5BlK/EKyEKjVBIVEIizLM0lIQLUTkFQuheCc0ju5lzcjjI4awTk2x2dndmPvvbnd/Owm8rPqfZYsfiwQkD+QOiyWLXwnGbzxcwDRabZYAdWMgb2HgF5I6ItQpA7yNOmHTC2FeBlXcBfYCIfotLi9nqgMDih4AqEYv24j6D3kbkwLLFU3GA2NjVIt7nj8WNE0ZKEQWuLFrL76IEfAdJi8WgxbUP6IrHRxbT2cV44tUA1SJOZ15gtTRw+ogD67H/uAOntSP/aHTgrwPnsU+vxUVWP6Db4q5mhLTdDm0O/I99Wi0ey+rP+UQi5izOKiLZo8fiNv93IpbS5M3qCRMWJ/nOrn2GstklOuMkOHZgqhxZqilPRF+WJ2I4RjGQ5ckWLfxIxh/SYVGwGP0UqPHbVbCYqQqo21e4butJXVbGuq3xFKH0byWwbXGfvuQfQb5bXgASUqzLkBw65QAAAABJRU5ErkJggg==">
+                            </button>
+                            <h4>
+                                <strong>Yellow</strong>
+                            </h4>
+                        </div>
+
+                        <div class="col">
+                            <img class="images" src="data:image/png;base64,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">
+                            <br>
+                            <button class="btn" id="green" type="button">
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAACXBIWXMAAAsTAAALEwEAmpwYAAABcklEQVR4nM3Wvy41QRzG8a8/BXEDNCQUmtcFEFHQ0JC4AS5BlK/EKyEKjVBIVEIizLM0lIQLUTkFQuheCc0ju5lzcjjI4awTk2x2dndmPvvbnd/Owm8rPqfZYsfiwQkD+QOiyWLXwnGbzxcwDRabZYAdWMgb2HgF5I6ItQpA7yNOmHTC2FeBlXcBfYCIfotLi9nqgMDih4AqEYv24j6D3kbkwLLFU3GA2NjVIt7nj8WNE0ZKEQWuLFrL76IEfAdJi8WgxbUP6IrHRxbT2cV44tUA1SJOZ15gtTRw+ogD67H/uAOntSP/aHTgrwPnsU+vxUVWP6Db4q5mhLTdDm0O/I99Wi0ey+rP+UQi5izOKiLZo8fiNv93IpbS5M3qCRMWJ/nOrn2GstklOuMkOHZgqhxZqilPRF+WJ2I4RjGQ5ckWLfxIxh/SYVGwGP0UqPHbVbCYqQqo21e4butJXVbGuq3xFKH0byWwbXGfvuQfQb5bXgASUqzLkBw65QAAAABJRU5ErkJggg==">
+                            </button>
+                            <h4>
+                                <strong>Green</strong>
+                            </h4>
+                        </div>
+
+                        <div class="col">
+                            <img class="images" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAACXBIWXMAAAsTAAALEwEAmpwYAAAFe0lEQVR4nO2d2W8bVRTGnaRlCVRFoAokoJQ1lSiFB15AfUACCpSAEBAhwRtQlgfgCbWiIDZBKWUrCAkKggoBzXf+rYnjjbi1ncV2Yh90JgZih6SuPbnnLvPwSVE8ts/9fr5z9zOZCOBUsMaDjHYAqZACiSz+IaQ1BPoQnAWSw9dcpsM8Tw9znfbxMl3LLbqC2zQWS/6W/8lrNToYX5vDN+pxewUkTye5SpO8QtcwU2YgyXurmIw/S7s8jgKZ5hKOcAN3DAxhIzVogks4Gn+HfjkdAFLAcW7QbYmDWA/mds7jM/XyWgtkBr9zjQ4x0+iWw/hPo1zDofi7tctvFZAcTnETewyC6FaTbuYcvlX3wQogBXzKLdqhBoM7kh5aAR+FDaREx7hNl6rD4I4klhKOhQmkgE+sgsFroBTo47CASJvRoivVzecNb1871NoU40CkRyONqLbpfAE1cItK78s4kNWubcYJVTHpNxAZ9JkdZ2SG1Cjn6YSvQKaNjMA56VsXTfgJROamtM3lAVXCO/4B2YqJQjakOvb6BSSPL9RN5SGVx0l/gMh6hrahPKSqeNIfIMMsLrElWqFdfgCRZVdtMzkhyQyD80DKeFndSE5IZRx2H4hsSNA2khNSjR5xH0id7lQ3khNSne5yH8gy7VI3khOSbDFyHojN0+w8wLS880DatE3dSE5IbdruA5Axj4Bscx9Ii8bVjeSEJLdf54H4MEpng6P1LQfSIHdneblHddrrPpAF3K9uJCekBRxwH0gFz6obyQmpgin3gfxFb6sbyQmpREfcBzKL79WN5IQ0ix/cB+LL9MmygWkTY0Dm8YC6oTyk5ulBf4DM4U11Q3lIzeEtf4Bk8avTc1pt2s5ZnPEHiGgJ96gbywNqEfca8cgokDJeVzeWB9QcveEfkBn8Fp9S0jaXL1ISs8TuHRDRPB5SN5gvUjU8aswf40Dk4D7TiLrJ3LdGOI8v/QXiWuO+SOYaczUgRbyvbjT3qSI+9B+ISLbTaJvNF9AS3W3cFzUgeZywvC0ZUUu7oXYseoEOWGB8Rm0hyjogs/jRynFJi8aNTLNbB0R0jl5SB8A9KuMVNT/UgchB0CXarw6Buxry6bCTz2RxmlfoKnUYLdoZ30a1/VAH8k8SGlbd4TjGRbyr7oM1QERy72YlIOfwonr5rQMiqtHjxmFU6Qn1clsLJMI01+gxYzAkvZ92I245EMQGya/WzDFnu2BYCgSxZJWuTZdsyfp4Ga+pl885IFEnH2MTNyQGo0k3coGOq5fLWSBRvPT7R7w/eJh0gG26jCs0FX+WdnmcBxJ1lMXPXMHT8QCuXxBybYWeid+rHb93QKJ/dTZe5Nosu5C8VsQH8bX68XoPBLGa2L1JW3GTenxBAcn1kT8lh6/U4wwGSIWmrDhckwLBqgn9dIWX6Xp1c4OpIVFHDbq1C4LssteOKVggOXzXtVFCEhRk8Yt6XMECOY/nu2qHrDxqxxQ0kDrt6wJSplfVYwoaSKtnxG56D24KBN0m9J7IMnlkIAWC9Sb0boxw7XmF3t2yGjTRBeQ8XlCPKWggFXquZyAomXr+VI8rWCA5nFr36It0YKgMZZHu65nl3WPlOnkQNSSKjzV8vu5Yw+pjVfVjCxJIFB+R279ucUo7pqCBFPGeFUfRUiDYOI2gbLbTNjbYGhL9T5aIJu1WjyloIFmc7tltMq4eU9BAZnDGeAbqFAg2NkHmsdYCWaGd6sYGXUOKPT0taeS1YwoaSBVPdfeycFA9poCBnOVluk7tQZApEGx+FG41v5W7s77O15CVnmT/th1RCxDI1Wtqx+WcxU/qMQUNpISj8WMkBIw8AFk7nuCBRBaYmAKBvnEpEOiblQKBvkGmgfwNDWyQFCNM10sAAAAASUVORK5CYII=">
+                            <br>
+                            <button class="btn" id="orange" type="button">
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAACXBIWXMAAAsTAAALEwEAmpwYAAABcklEQVR4nM3Wvy41QRzG8a8/BXEDNCQUmtcFEFHQ0JC4AS5BlK/EKyEKjVBIVEIizLM0lIQLUTkFQuheCc0ju5lzcjjI4awTk2x2dndmPvvbnd/Owm8rPqfZYsfiwQkD+QOiyWLXwnGbzxcwDRabZYAdWMgb2HgF5I6ItQpA7yNOmHTC2FeBlXcBfYCIfotLi9nqgMDih4AqEYv24j6D3kbkwLLFU3GA2NjVIt7nj8WNE0ZKEQWuLFrL76IEfAdJi8WgxbUP6IrHRxbT2cV44tUA1SJOZ15gtTRw+ogD67H/uAOntSP/aHTgrwPnsU+vxUVWP6Db4q5mhLTdDm0O/I99Wi0ey+rP+UQi5izOKiLZo8fiNv93IpbS5M3qCRMWJ/nOrn2GstklOuMkOHZgqhxZqilPRF+WJ2I4RjGQ5ckWLfxIxh/SYVGwGP0UqPHbVbCYqQqo21e4butJXVbGuq3xFKH0byWwbXGfvuQfQb5bXgASUqzLkBw65QAAAABJRU5ErkJggg==">
+                            </button>
+                            <h4>
+                                <strong>Orange</strong>
+                            </h4>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="col-12 text-center">
+                    <div class="row">
+                        <div class="col">
+                            <img class="images" src="data:image/png;base64,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">
+                            <br>
+                            <button class="btn" id="brown" type="button">
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAACXBIWXMAAAsTAAALEwEAmpwYAAABcklEQVR4nM3Wvy41QRzG8a8/BXEDNCQUmtcFEFHQ0JC4AS5BlK/EKyEKjVBIVEIizLM0lIQLUTkFQuheCc0ju5lzcjjI4awTk2x2dndmPvvbnd/Owm8rPqfZYsfiwQkD+QOiyWLXwnGbzxcwDRabZYAdWMgb2HgF5I6ItQpA7yNOmHTC2FeBlXcBfYCIfotLi9nqgMDih4AqEYv24j6D3kbkwLLFU3GA2NjVIt7nj8WNE0ZKEQWuLFrL76IEfAdJi8WgxbUP6IrHRxbT2cV44tUA1SJOZ15gtTRw+ogD67H/uAOntSP/aHTgrwPnsU+vxUVWP6Db4q5mhLTdDm0O/I99Wi0ey+rP+UQi5izOKiLZo8fiNv93IpbS5M3qCRMWJ/nOrn2GstklOuMkOHZgqhxZqilPRF+WJ2I4RjGQ5ckWLfxIxh/SYVGwGP0UqPHbVbCYqQqo21e4butJXVbGuq3xFKH0byWwbXGfvuQfQb5bXgASUqzLkBw65QAAAABJRU5ErkJggg==">
+                            </button>
+                            <h4>
+                                <strong>Brown</strong>
+                            </h4>
+                        </div>
+
+                        <div class="col">
+                            <img class="images" src="data:image/png;base64,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">
+                            <br>
+                            <button class="btn" id="pink" type="button">
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAACXBIWXMAAAsTAAALEwEAmpwYAAABcklEQVR4nM3Wvy41QRzG8a8/BXEDNCQUmtcFEFHQ0JC4AS5BlK/EKyEKjVBIVEIizLM0lIQLUTkFQuheCc0ju5lzcjjI4awTk2x2dndmPvvbnd/Owm8rPqfZYsfiwQkD+QOiyWLXwnGbzxcwDRabZYAdWMgb2HgF5I6ItQpA7yNOmHTC2FeBlXcBfYCIfotLi9nqgMDih4AqEYv24j6D3kbkwLLFU3GA2NjVIt7nj8WNE0ZKEQWuLFrL76IEfAdJi8WgxbUP6IrHRxbT2cV44tUA1SJOZ15gtTRw+ogD67H/uAOntSP/aHTgrwPnsU+vxUVWP6Db4q5mhLTdDm0O/I99Wi0ey+rP+UQi5izOKiLZo8fiNv93IpbS5M3qCRMWJ/nOrn2GstklOuMkOHZgqhxZqilPRF+WJ2I4RjGQ5ckWLfxIxh/SYVGwGP0UqPHbVbCYqQqo21e4butJXVbGuq3xFKH0byWwbXGfvuQfQb5bXgASUqzLkBw65QAAAABJRU5ErkJggg==">
+                            </button>
+                            <h4>
+                                <strong>Pink</strong>
+                            </h4>
+                        </div>
+
+                        <div class="col">
+                            <img class="images" src="data:image/png;base64,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">
+                            <br>
+                            <button class="btn" id="purple" type="button">
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAACXBIWXMAAAsTAAALEwEAmpwYAAABcklEQVR4nM3Wvy41QRzG8a8/BXEDNCQUmtcFEFHQ0JC4AS5BlK/EKyEKjVBIVEIizLM0lIQLUTkFQuheCc0ju5lzcjjI4awTk2x2dndmPvvbnd/Owm8rPqfZYsfiwQkD+QOiyWLXwnGbzxcwDRabZYAdWMgb2HgF5I6ItQpA7yNOmHTC2FeBlXcBfYCIfotLi9nqgMDih4AqEYv24j6D3kbkwLLFU3GA2NjVIt7nj8WNE0ZKEQWuLFrL76IEfAdJi8WgxbUP6IrHRxbT2cV44tUA1SJOZ15gtTRw+ogD67H/uAOntSP/aHTgrwPnsU+vxUVWP6Db4q5mhLTdDm0O/I99Wi0ey+rP+UQi5izOKiLZo8fiNv93IpbS5M3qCRMWJ/nOrn2GstklOuMkOHZgqhxZqilPRF+WJ2I4RjGQ5ckWLfxIxh/SYVGwGP0UqPHbVbCYqQqo21e4butJXVbGuq3xFKH0byWwbXGfvuQfQb5bXgASUqzLkBw65QAAAABJRU5ErkJggg==">
+                            </button>
+                            <h4>
+                                <strong>Purple</strong>
+                            </h4>
+                        </div>
+
+                        <div class="col">
+                            <img class="images" src="data:image/png;base64,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">
+                            <br>
+                            <button class="btn" id="lightBlue" type="button">
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAACXBIWXMAAAsTAAALEwEAmpwYAAABcklEQVR4nM3Wvy41QRzG8a8/BXEDNCQUmtcFEFHQ0JC4AS5BlK/EKyEKjVBIVEIizLM0lIQLUTkFQuheCc0ju5lzcjjI4awTk2x2dndmPvvbnd/Owm8rPqfZYsfiwQkD+QOiyWLXwnGbzxcwDRabZYAdWMgb2HgF5I6ItQpA7yNOmHTC2FeBlXcBfYCIfotLi9nqgMDih4AqEYv24j6D3kbkwLLFU3GA2NjVIt7nj8WNE0ZKEQWuLFrL76IEfAdJi8WgxbUP6IrHRxbT2cV44tUA1SJOZ15gtTRw+ogD67H/uAOntSP/aHTgrwPnsU+vxUVWP6Db4q5mhLTdDm0O/I99Wi0ey+rP+UQi5izOKiLZo8fiNv93IpbS5M3qCRMWJ/nOrn2GstklOuMkOHZgqhxZqilPRF+WJ2I4RjGQ5ckWLfxIxh/SYVGwGP0UqPHbVbCYqQqo21e4butJXVbGuq3xFKH0byWwbXGfvuQfQb5bXgASUqzLkBw65QAAAABJRU5ErkJggg==">
+                            </button>
+                            <h4>
+                                <strong>Light blue</strong>
+                            </h4>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </article>
+
+        <!--Figures-->
+        <article class="container-fluid figures">
+            <section class="col-12 text-center">
+                <h2>Geometric Figures</h2>
+            </section>
+
+            <section class="col-12 text-center">
+                <div class="row">
+                    <div class="col">
+                        <img height="100px" src="https://banner2.cleanpng.com/20180207/vee/kisspng-picture-frame-icon-square-frame-5a7afaa2480d03.4722604215180089942951.jpg" alt="" class="images">
+                        <br>
+                        <button class="btn" id="square">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAACXBIWXMAAAsTAAALEwEAmpwYAAABcklEQVR4nM3Wvy41QRzG8a8/BXEDNCQUmtcFEFHQ0JC4AS5BlK/EKyEKjVBIVEIizLM0lIQLUTkFQuheCc0ju5lzcjjI4awTk2x2dndmPvvbnd/Owm8rPqfZYsfiwQkD+QOiyWLXwnGbzxcwDRabZYAdWMgb2HgF5I6ItQpA7yNOmHTC2FeBlXcBfYCIfotLi9nqgMDih4AqEYv24j6D3kbkwLLFU3GA2NjVIt7nj8WNE0ZKEQWuLFrL76IEfAdJi8WgxbUP6IrHRxbT2cV44tUA1SJOZ15gtTRw+ogD67H/uAOntSP/aHTgrwPnsU+vxUVWP6Db4q5mhLTdDm0O/I99Wi0ey+rP+UQi5izOKiLZo8fiNv93IpbS5M3qCRMWJ/nOrn2GstklOuMkOHZgqhxZqilPRF+WJ2I4RjGQ5ckWLfxIxh/SYVGwGP0UqPHbVbCYqQqo21e4butJXVbGuq3xFKH0byWwbXGfvuQfQb5bXgASUqzLkBw65QAAAABJRU5ErkJggg==">
+                        </button>
+                        <h4>
+                            <strong>
+                                Square
+                            </strong>
+                        </h4>
+                    </div>
+
+                    <div class="col">
+                        <img src="https://banner2.cleanpng.com/20180327/iuw/kisspng-triangle-green-c-life-marketing-turquoise-neon-5aba0036d83e83.0191823715221391908857.jpg" alt="" class="images">
+                        <br>
+                        <button class="btn" id="triangle">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAACXBIWXMAAAsTAAALEwEAmpwYAAABcklEQVR4nM3Wvy41QRzG8a8/BXEDNCQUmtcFEFHQ0JC4AS5BlK/EKyEKjVBIVEIizLM0lIQLUTkFQuheCc0ju5lzcjjI4awTk2x2dndmPvvbnd/Owm8rPqfZYsfiwQkD+QOiyWLXwnGbzxcwDRabZYAdWMgb2HgF5I6ItQpA7yNOmHTC2FeBlXcBfYCIfotLi9nqgMDih4AqEYv24j6D3kbkwLLFU3GA2NjVIt7nj8WNE0ZKEQWuLFrL76IEfAdJi8WgxbUP6IrHRxbT2cV44tUA1SJOZ15gtTRw+ogD67H/uAOntSP/aHTgrwPnsU+vxUVWP6Db4q5mhLTdDm0O/I99Wi0ey+rP+UQi5izOKiLZo8fiNv93IpbS5M3qCRMWJ/nOrn2GstklOuMkOHZgqhxZqilPRF+WJ2I4RjGQ5ckWLfxIxh/SYVGwGP0UqPHbVbCYqQqo21e4butJXVbGuq3xFKH0byWwbXGfvuQfQb5bXgASUqzLkBw65QAAAABJRU5ErkJggg==">
+                        </button>
+                        <h4>
+                            <strong>
+                                Triangle
+                            </strong>
+                        </h4>
+                    </div>
+
+                    <div class="col">
+                        <img src="https://banner2.cleanpng.com/20180313/cyq/kisspng-circle-purple-font-circle-dialog-5aa889c992b273.5648740015209947616009.jpg" alt="" class="images">
+                        <br>
+                        <button class="btn" id="circle">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAACXBIWXMAAAsTAAALEwEAmpwYAAABcklEQVR4nM3Wvy41QRzG8a8/BXEDNCQUmtcFEFHQ0JC4AS5BlK/EKyEKjVBIVEIizLM0lIQLUTkFQuheCc0ju5lzcjjI4awTk2x2dndmPvvbnd/Owm8rPqfZYsfiwQkD+QOiyWLXwnGbzxcwDRabZYAdWMgb2HgF5I6ItQpA7yNOmHTC2FeBlXcBfYCIfotLi9nqgMDih4AqEYv24j6D3kbkwLLFU3GA2NjVIt7nj8WNE0ZKEQWuLFrL76IEfAdJi8WgxbUP6IrHRxbT2cV44tUA1SJOZ15gtTRw+ogD67H/uAOntSP/aHTgrwPnsU+vxUVWP6Db4q5mhLTdDm0O/I99Wi0ey+rP+UQi5izOKiLZo8fiNv93IpbS5M3qCRMWJ/nOrn2GstklOuMkOHZgqhxZqilPRF+WJ2I4RjGQ5ckWLfxIxh/SYVGwGP0UqPHbVbCYqQqo21e4butJXVbGuq3xFKH0byWwbXGfvuQfQb5bXgASUqzLkBw65QAAAABJRU5ErkJggg==">
+                        </button>
+                        <h4>
+                            <strong>
+                                Circle
+                            </strong>
+                        </h4>
+                    </div>
+
+                    <div class="col">
+                        <img src="https://banner2.cleanpng.com/20180404/obq/kisspng-picture-frames-grunge-film-frame-decorative-frame-5ac52ba9721a55.8700646115228712094674.jpg" alt="" class="images">
+                        <br>
+                        <button class="btn" id="rectangle">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAACXBIWXMAAAsTAAALEwEAmpwYAAABcklEQVR4nM3Wvy41QRzG8a8/BXEDNCQUmtcFEFHQ0JC4AS5BlK/EKyEKjVBIVEIizLM0lIQLUTkFQuheCc0ju5lzcjjI4awTk2x2dndmPvvbnd/Owm8rPqfZYsfiwQkD+QOiyWLXwnGbzxcwDRabZYAdWMgb2HgF5I6ItQpA7yNOmHTC2FeBlXcBfYCIfotLi9nqgMDih4AqEYv24j6D3kbkwLLFU3GA2NjVIt7nj8WNE0ZKEQWuLFrL76IEfAdJi8WgxbUP6IrHRxbT2cV44tUA1SJOZ15gtTRw+ogD67H/uAOntSP/aHTgrwPnsU+vxUVWP6Db4q5mhLTdDm0O/I99Wi0ey+rP+UQi5izOKiLZo8fiNv93IpbS5M3qCRMWJ/nOrn2GstklOuMkOHZgqhxZqilPRF+WJ2I4RjGQ5ckWLfxIxh/SYVGwGP0UqPHbVbCYqQqo21e4butJXVbGuq3xFKH0byWwbXGfvuQfQb5bXgASUqzLkBw65QAAAABJRU5ErkJggg==">
+                        </button>
+                        <h4>
+                            <strong>
+                                Rectangle
+                            </strong>
+                        </h4>
+                    </div>
+                </div>
+            </section>
+
+            <section class="col-12 text-center">
+                <div class="row">
+                    <div class="col">
+                        <img src="https://banner2.cleanpng.com/20190611/cto/kisspng-right-triangle-right-angle-area-page-18-1244-png-and-svg-commons-icons-for-free-d-5d00355e85f847.3916537515602947505487.jpg" alt="" class="images">
+                        <br>
+                        <button class="btn" id="rightTriangle">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAACXBIWXMAAAsTAAALEwEAmpwYAAABcklEQVR4nM3Wvy41QRzG8a8/BXEDNCQUmtcFEFHQ0JC4AS5BlK/EKyEKjVBIVEIizLM0lIQLUTkFQuheCc0ju5lzcjjI4awTk2x2dndmPvvbnd/Owm8rPqfZYsfiwQkD+QOiyWLXwnGbzxcwDRabZYAdWMgb2HgF5I6ItQpA7yNOmHTC2FeBlXcBfYCIfotLi9nqgMDih4AqEYv24j6D3kbkwLLFU3GA2NjVIt7nj8WNE0ZKEQWuLFrL76IEfAdJi8WgxbUP6IrHRxbT2cV44tUA1SJOZ15gtTRw+ogD67H/uAOntSP/aHTgrwPnsU+vxUVWP6Db4q5mhLTdDm0O/I99Wi0ey+rP+UQi5izOKiLZo8fiNv93IpbS5M3qCRMWJ/nOrn2GstklOuMkOHZgqhxZqilPRF+WJ2I4RjGQ5ckWLfxIxh/SYVGwGP0UqPHbVbCYqQqo21e4butJXVbGuq3xFKH0byWwbXGfvuQfQb5bXgASUqzLkBw65QAAAABJRU5ErkJggg==">
+                        </button>
+                        <h4>
+                            <strong>
+                                Right triangle
+                            </strong>
+                        </h4>
+                    </div>
+
+                    <div class="col">
+                        <img src="https://banner2.cleanpng.com/20180414/svq/kisspng-parallelogram-rhombus-quadrilateral-shape-shape-5ad24039c7ea54.2723780815237284418189.jpg" alt="" class="images">
+                        <br>
+                        <button class="btn" id="parallelorgam">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAACXBIWXMAAAsTAAALEwEAmpwYAAABcklEQVR4nM3Wvy41QRzG8a8/BXEDNCQUmtcFEFHQ0JC4AS5BlK/EKyEKjVBIVEIizLM0lIQLUTkFQuheCc0ju5lzcjjI4awTk2x2dndmPvvbnd/Owm8rPqfZYsfiwQkD+QOiyWLXwnGbzxcwDRabZYAdWMgb2HgF5I6ItQpA7yNOmHTC2FeBlXcBfYCIfotLi9nqgMDih4AqEYv24j6D3kbkwLLFU3GA2NjVIt7nj8WNE0ZKEQWuLFrL76IEfAdJi8WgxbUP6IrHRxbT2cV44tUA1SJOZ15gtTRw+ogD67H/uAOntSP/aHTgrwPnsU+vxUVWP6Db4q5mhLTdDm0O/I99Wi0ey+rP+UQi5izOKiLZo8fiNv93IpbS5M3qCRMWJ/nOrn2GstklOuMkOHZgqhxZqilPRF+WJ2I4RjGQ5ckWLfxIxh/SYVGwGP0UqPHbVbCYqQqo21e4butJXVbGuq3xFKH0byWwbXGfvuQfQb5bXgASUqzLkBw65QAAAABJRU5ErkJggg==">
+                        </button>
+                        <h4>
+                            <strong>
+                                Parallelogram
+                            </strong>
+                        </h4>
+                    </div>
+
+                    <div class="col">
+                        <img src="https://banner2.cleanpng.com/20180613/bus/kisspng-city-pumps-s-r-l-o-ring-ellipse-5b21d92a7e53d2.5537809215289449385175.jpg" alt="" class="images">
+                        <br>
+                        <button class="btn" id="ellipse">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAACXBIWXMAAAsTAAALEwEAmpwYAAABcklEQVR4nM3Wvy41QRzG8a8/BXEDNCQUmtcFEFHQ0JC4AS5BlK/EKyEKjVBIVEIizLM0lIQLUTkFQuheCc0ju5lzcjjI4awTk2x2dndmPvvbnd/Owm8rPqfZYsfiwQkD+QOiyWLXwnGbzxcwDRabZYAdWMgb2HgF5I6ItQpA7yNOmHTC2FeBlXcBfYCIfotLi9nqgMDih4AqEYv24j6D3kbkwLLFU3GA2NjVIt7nj8WNE0ZKEQWuLFrL76IEfAdJi8WgxbUP6IrHRxbT2cV44tUA1SJOZ15gtTRw+ogD67H/uAOntSP/aHTgrwPnsU+vxUVWP6Db4q5mhLTdDm0O/I99Wi0ey+rP+UQi5izOKiLZo8fiNv93IpbS5M3qCRMWJ/nOrn2GstklOuMkOHZgqhxZqilPRF+WJ2I4RjGQ5ckWLfxIxh/SYVGwGP0UqPHbVbCYqQqo21e4butJXVbGuq3xFKH0byWwbXGfvuQfQb5bXgASUqzLkBw65QAAAABJRU5ErkJggg==">
+                        </button>
+                        <h4>
+                            <strong>
+                                Ellipse
+                            </strong>
+                        </h4>
+                    </div>
+
+                    <div class="col">
+                        <img src="https://banner2.cleanpng.com/20180328/rse/kisspng-isosceles-trapezoid-angle-geometric-shape-shapes-5abb76b480fef8.0031264915222350605284.jpg" alt="" class="images">
+                        <br>
+                        <button class="btn" id="trapezoid">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAACXBIWXMAAAsTAAALEwEAmpwYAAABcklEQVR4nM3Wvy41QRzG8a8/BXEDNCQUmtcFEFHQ0JC4AS5BlK/EKyEKjVBIVEIizLM0lIQLUTkFQuheCc0ju5lzcjjI4awTk2x2dndmPvvbnd/Owm8rPqfZYsfiwQkD+QOiyWLXwnGbzxcwDRabZYAdWMgb2HgF5I6ItQpA7yNOmHTC2FeBlXcBfYCIfotLi9nqgMDih4AqEYv24j6D3kbkwLLFU3GA2NjVIt7nj8WNE0ZKEQWuLFrL76IEfAdJi8WgxbUP6IrHRxbT2cV44tUA1SJOZ15gtTRw+ogD67H/uAOntSP/aHTgrwPnsU+vxUVWP6Db4q5mhLTdDm0O/I99Wi0ey+rP+UQi5izOKiLZo8fiNv93IpbS5M3qCRMWJ/nOrn2GstklOuMkOHZgqhxZqilPRF+WJ2I4RjGQ5ckWLfxIxh/SYVGwGP0UqPHbVbCYqQqo21e4butJXVbGuq3xFKH0byWwbXGfvuQfQb5bXgASUqzLkBw65QAAAABJRU5ErkJggg==">
+                        </button>
+                        <h4>
+                            <strong>
+                                Trapezoid
+                            </strong>
+                        </h4>
+                    </div>
+                </div>
+            </section>
+
+            <section class="col-12 text-center">
+                <div class="row">
+                    <div class="col">
+                        <img src="https://banner2.cleanpng.com/20180219/jie/kisspng-parallelogram-rhombus-quadrilateral-escutcheon-cli-free-parallelogram-cliparts-5a8b2eb491e443.5605068415190709005976.jpg" alt="" class="images">
+                        <br>
+                        <button class="btn" id="rhombus">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAACXBIWXMAAAsTAAALEwEAmpwYAAABcklEQVR4nM3Wvy41QRzG8a8/BXEDNCQUmtcFEFHQ0JC4AS5BlK/EKyEKjVBIVEIizLM0lIQLUTkFQuheCc0ju5lzcjjI4awTk2x2dndmPvvbnd/Owm8rPqfZYsfiwQkD+QOiyWLXwnGbzxcwDRabZYAdWMgb2HgF5I6ItQpA7yNOmHTC2FeBlXcBfYCIfotLi9nqgMDih4AqEYv24j6D3kbkwLLFU3GA2NjVIt7nj8WNE0ZKEQWuLFrL76IEfAdJi8WgxbUP6IrHRxbT2cV44tUA1SJOZ15gtTRw+ogD67H/uAOntSP/aHTgrwPnsU+vxUVWP6Db4q5mhLTdDm0O/I99Wi0ey+rP+UQi5izOKiLZo8fiNv93IpbS5M3qCRMWJ/nOrn2GstklOuMkOHZgqhxZqilPRF+WJ2I4RjGQ5ckWLfxIxh/SYVGwGP0UqPHbVbCYqQqo21e4butJXVbGuq3xFKH0byWwbXGfvuQfQb5bXgASUqzLkBw65QAAAABJRU5ErkJggg==">
+                        </button>
+                        <h4>
+                            <strong>
+                                Rhombus
+                            </strong>
+                        </h4>
+                    </div>
+
+                    <div class="col">
+                        <img src="https://banner2.cleanpng.com/20180331/hrq/kisspng-hexagon-shape-tessellation-clip-art-hexagon-5abf2e830c7e07.5339002115224787230512.jpg" alt="" class="images">
+                        <br>
+                        <button class="btn" id="hexagon">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAACXBIWXMAAAsTAAALEwEAmpwYAAABcklEQVR4nM3Wvy41QRzG8a8/BXEDNCQUmtcFEFHQ0JC4AS5BlK/EKyEKjVBIVEIizLM0lIQLUTkFQuheCc0ju5lzcjjI4awTk2x2dndmPvvbnd/Owm8rPqfZYsfiwQkD+QOiyWLXwnGbzxcwDRabZYAdWMgb2HgF5I6ItQpA7yNOmHTC2FeBlXcBfYCIfotLi9nqgMDih4AqEYv24j6D3kbkwLLFU3GA2NjVIt7nj8WNE0ZKEQWuLFrL76IEfAdJi8WgxbUP6IrHRxbT2cV44tUA1SJOZ15gtTRw+ogD67H/uAOntSP/aHTgrwPnsU+vxUVWP6Db4q5mhLTdDm0O/I99Wi0ey+rP+UQi5izOKiLZo8fiNv93IpbS5M3qCRMWJ/nOrn2GstklOuMkOHZgqhxZqilPRF+WJ2I4RjGQ5ckWLfxIxh/SYVGwGP0UqPHbVbCYqQqo21e4butJXVbGuq3xFKH0byWwbXGfvuQfQb5bXgASUqzLkBw65QAAAABJRU5ErkJggg==">
+                        </button>
+                        <h4>
+                            <strong>
+                                Hexagon
+                            </strong>
+                        </h4>
+                    </div>
+
+                    <div class="col">
+                        <img src="https://banner2.cleanpng.com/20180412/jue/kisspng-pentagon-shape-geometry-hexagon-a-5acf21a766b5b2.7148657115235240074207.jpg" alt="" class="images">
+                        <br>
+                        <button class="btn" id="petangon">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAACXBIWXMAAAsTAAALEwEAmpwYAAABcklEQVR4nM3Wvy41QRzG8a8/BXEDNCQUmtcFEFHQ0JC4AS5BlK/EKyEKjVBIVEIizLM0lIQLUTkFQuheCc0ju5lzcjjI4awTk2x2dndmPvvbnd/Owm8rPqfZYsfiwQkD+QOiyWLXwnGbzxcwDRabZYAdWMgb2HgF5I6ItQpA7yNOmHTC2FeBlXcBfYCIfotLi9nqgMDih4AqEYv24j6D3kbkwLLFU3GA2NjVIt7nj8WNE0ZKEQWuLFrL76IEfAdJi8WgxbUP6IrHRxbT2cV44tUA1SJOZ15gtTRw+ogD67H/uAOntSP/aHTgrwPnsU+vxUVWP6Db4q5mhLTdDm0O/I99Wi0ey+rP+UQi5izOKiLZo8fiNv93IpbS5M3qCRMWJ/nOrn2GstklOuMkOHZgqhxZqilPRF+WJ2I4RjGQ5ckWLfxIxh/SYVGwGP0UqPHbVbCYqQqo21e4butJXVbGuq3xFKH0byWwbXGfvuQfQb5bXgASUqzLkBw65QAAAABJRU5ErkJggg==">
+                        </button>
+                        <h4>
+                            <strong>
+                                Petangon
+                            </strong>
+                        </h4>
+                    </div>
+
+                    <div class="col">
+                        <img src="https://banner2.cleanpng.com/20180413/efw/kisspng-heptagon-regular-polygon-diagonal-heptagram-angle-5ad10c7f619777.7113739515236496633997.jpg" alt="" class="images">
+                        <br>
+                        <button class="btn" id="heptagon">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAACXBIWXMAAAsTAAALEwEAmpwYAAABcklEQVR4nM3Wvy41QRzG8a8/BXEDNCQUmtcFEFHQ0JC4AS5BlK/EKyEKjVBIVEIizLM0lIQLUTkFQuheCc0ju5lzcjjI4awTk2x2dndmPvvbnd/Owm8rPqfZYsfiwQkD+QOiyWLXwnGbzxcwDRabZYAdWMgb2HgF5I6ItQpA7yNOmHTC2FeBlXcBfYCIfotLi9nqgMDih4AqEYv24j6D3kbkwLLFU3GA2NjVIt7nj8WNE0ZKEQWuLFrL76IEfAdJi8WgxbUP6IrHRxbT2cV44tUA1SJOZ15gtTRw+ogD67H/uAOntSP/aHTgrwPnsU+vxUVWP6Db4q5mhLTdDm0O/I99Wi0ey+rP+UQi5izOKiLZo8fiNv93IpbS5M3qCRMWJ/nOrn2GstklOuMkOHZgqhxZqilPRF+WJ2I4RjGQ5ckWLfxIxh/SYVGwGP0UqPHbVbCYqQqo21e4butJXVbGuq3xFKH0byWwbXGfvuQfQb5bXgASUqzLkBw65QAAAABJRU5ErkJggg==">
+                        </button>
+                        <h4>
+                            <strong>
+                                Heptagon
+                            </strong>
+                        </h4>
+                    </div>
+                </div>
+            </section>
+
+            <section class="col-12 text-center">
+                <div class="row">
+                    <div class="col">
+                        <img src="https://banner2.cleanpng.com/20180318/plw/kisspng-love-heart-love-heart-romance-clip-art-picture-of-red-heart-5aaeb7181ca327.7123730415213995761173.jpg" alt="" class="images">
+                        <br>
+                        <button class="btn" id="heart">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAACXBIWXMAAAsTAAALEwEAmpwYAAABcklEQVR4nM3Wvy41QRzG8a8/BXEDNCQUmtcFEFHQ0JC4AS5BlK/EKyEKjVBIVEIizLM0lIQLUTkFQuheCc0ju5lzcjjI4awTk2x2dndmPvvbnd/Owm8rPqfZYsfiwQkD+QOiyWLXwnGbzxcwDRabZYAdWMgb2HgF5I6ItQpA7yNOmHTC2FeBlXcBfYCIfotLi9nqgMDih4AqEYv24j6D3kbkwLLFU3GA2NjVIt7nj8WNE0ZKEQWuLFrL76IEfAdJi8WgxbUP6IrHRxbT2cV44tUA1SJOZ15gtTRw+ogD67H/uAOntSP/aHTgrwPnsU+vxUVWP6Db4q5mhLTdDm0O/I99Wi0ey+rP+UQi5izOKiLZo8fiNv93IpbS5M3qCRMWJ/nOrn2GstklOuMkOHZgqhxZqilPRF+WJ2I4RjGQ5ckWLfxIxh/SYVGwGP0UqPHbVbCYqQqo21e4butJXVbGuq3xFKH0byWwbXGfvuQfQb5bXgASUqzLkBw65QAAAABJRU5ErkJggg==">
+                        </button>
+                        <h4>
+                            <strong>
+                                Heart
+                            </strong>
+                        </h4>
+                    </div>
+
+                    <div class="col">
+                        <img src="https://banner2.cleanpng.com/20180107/ybe/star-cliparts-5a51b114a7f943.9708370915153031886882023.jpg" alt="" class="images">
+                        <br>
+                        <button class="btn" id="star">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAACXBIWXMAAAsTAAALEwEAmpwYAAABcklEQVR4nM3Wvy41QRzG8a8/BXEDNCQUmtcFEFHQ0JC4AS5BlK/EKyEKjVBIVEIizLM0lIQLUTkFQuheCc0ju5lzcjjI4awTk2x2dndmPvvbnd/Owm8rPqfZYsfiwQkD+QOiyWLXwnGbzxcwDRabZYAdWMgb2HgF5I6ItQpA7yNOmHTC2FeBlXcBfYCIfotLi9nqgMDih4AqEYv24j6D3kbkwLLFU3GA2NjVIt7nj8WNE0ZKEQWuLFrL76IEfAdJi8WgxbUP6IrHRxbT2cV44tUA1SJOZ15gtTRw+ogD67H/uAOntSP/aHTgrwPnsU+vxUVWP6Db4q5mhLTdDm0O/I99Wi0ey+rP+UQi5izOKiLZo8fiNv93IpbS5M3qCRMWJ/nOrn2GstklOuMkOHZgqhxZqilPRF+WJ2I4RjGQ5ckWLfxIxh/SYVGwGP0UqPHbVbCYqQqo21e4butJXVbGuq3xFKH0byWwbXGfvuQfQb5bXgASUqzLkBw65QAAAABJRU5ErkJggg==">
+                        </button>
+                        <h4>
+                            <strong>
+                                Star
+                            </strong>
+                        </h4>
+                    </div>
+
+                    <div class="col">
+                        <img src="https://banner2.cleanpng.com/20180315/sdw/kisspng-plus-and-minus-signs-computer-icons-clip-art-plus-sign-5aaad8632b3888.9799936515211459551771.jpg" alt="" class="images">
+                        <br>
+                        <button class="btn" id="cross">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAACXBIWXMAAAsTAAALEwEAmpwYAAABcklEQVR4nM3Wvy41QRzG8a8/BXEDNCQUmtcFEFHQ0JC4AS5BlK/EKyEKjVBIVEIizLM0lIQLUTkFQuheCc0ju5lzcjjI4awTk2x2dndmPvvbnd/Owm8rPqfZYsfiwQkD+QOiyWLXwnGbzxcwDRabZYAdWMgb2HgF5I6ItQpA7yNOmHTC2FeBlXcBfYCIfotLi9nqgMDih4AqEYv24j6D3kbkwLLFU3GA2NjVIt7nj8WNE0ZKEQWuLFrL76IEfAdJi8WgxbUP6IrHRxbT2cV44tUA1SJOZ15gtTRw+ogD67H/uAOntSP/aHTgrwPnsU+vxUVWP6Db4q5mhLTdDm0O/I99Wi0ey+rP+UQi5izOKiLZo8fiNv93IpbS5M3qCRMWJ/nOrn2GstklOuMkOHZgqhxZqilPRF+WJ2I4RjGQ5ckWLfxIxh/SYVGwGP0UqPHbVbCYqQqo21e4butJXVbGuq3xFKH0byWwbXGfvuQfQb5bXgASUqzLkBw65QAAAABJRU5ErkJggg==">
+                        </button>
+                        <h4>
+                            <strong>
+                                Cross
+                            </strong>
+                        </h4>
+                    </div>
+
+                    <div class="col">
+                        <img src="https://banner2.cleanpng.com/20180208/ssw/kisspng-arrow-clip-art-arrows-cliparts-5a7c10e00ae173.8043692215180802240446.jpg" alt="" class="images">
+                        <br>
+                        <button class="btn" id="arrow">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAACXBIWXMAAAsTAAALEwEAmpwYAAABcklEQVR4nM3Wvy41QRzG8a8/BXEDNCQUmtcFEFHQ0JC4AS5BlK/EKyEKjVBIVEIizLM0lIQLUTkFQuheCc0ju5lzcjjI4awTk2x2dndmPvvbnd/Owm8rPqfZYsfiwQkD+QOiyWLXwnGbzxcwDRabZYAdWMgb2HgF5I6ItQpA7yNOmHTC2FeBlXcBfYCIfotLi9nqgMDih4AqEYv24j6D3kbkwLLFU3GA2NjVIt7nj8WNE0ZKEQWuLFrL76IEfAdJi8WgxbUP6IrHRxbT2cV44tUA1SJOZ15gtTRw+ogD67H/uAOntSP/aHTgrwPnsU+vxUVWP6Db4q5mhLTdDm0O/I99Wi0ey+rP+UQi5izOKiLZo8fiNv93IpbS5M3qCRMWJ/nOrn2GstklOuMkOHZgqhxZqilPRF+WJ2I4RjGQ5ckWLfxIxh/SYVGwGP0UqPHbVbCYqQqo21e4butJXVbGuq3xFKH0byWwbXGfvuQfQb5bXgASUqzLkBw65QAAAABJRU5ErkJggg==">
+                        </button>
+                        <h4>
+                            <strong>
+                                Arrow
+                            </strong>
+                        </h4>
+                    </div>
+                </div>
+            </section>
+
+            <section class="col-12 text-center">
+                <div class="row">
+                    <div class="col">
+                        <img src="https://banner2.cleanpng.com/20180508/hbq/kisspng-octagon-regular-polygon-clip-art-hexagon-award-holder-5af24c660b2c93.0950801215258287100458.jpg" alt="" class="images">
+                        <br>
+                        <button class="btn" id="octagon">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAACXBIWXMAAAsTAAALEwEAmpwYAAABcklEQVR4nM3Wvy41QRzG8a8/BXEDNCQUmtcFEFHQ0JC4AS5BlK/EKyEKjVBIVEIizLM0lIQLUTkFQuheCc0ju5lzcjjI4awTk2x2dndmPvvbnd/Owm8rPqfZYsfiwQkD+QOiyWLXwnGbzxcwDRabZYAdWMgb2HgF5I6ItQpA7yNOmHTC2FeBlXcBfYCIfotLi9nqgMDih4AqEYv24j6D3kbkwLLFU3GA2NjVIt7nj8WNE0ZKEQWuLFrL76IEfAdJi8WgxbUP6IrHRxbT2cV44tUA1SJOZ15gtTRw+ogD67H/uAOntSP/aHTgrwPnsU+vxUVWP6Db4q5mhLTdDm0O/I99Wi0ey+rP+UQi5izOKiLZo8fiNv93IpbS5M3qCRMWJ/nOrn2GstklOuMkOHZgqhxZqilPRF+WJ2I4RjGQ5ckWLfxIxh/SYVGwGP0UqPHbVbCYqQqo21e4butJXVbGuq3xFKH0byWwbXGfvuQfQb5bXgASUqzLkBw65QAAAABJRU5ErkJggg==">
+                        </button>
+                        <h4>
+                            <strong>
+                                Octagon
+                            </strong>
+                        </h4>
+                    </div>
+
+                    <div class="col">
+                        <img src="https://banner2.cleanpng.com/20180609/ewi/kisspng-cylinder-geometry-surface-area-cross-section-spher-aire-urbaine-de-montauban-5b1c21920c46a8.5555509815285702580503.jpg" alt="" class="images">
+                        <br>
+                        <button class="btn" id="cylinder">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAACXBIWXMAAAsTAAALEwEAmpwYAAABcklEQVR4nM3Wvy41QRzG8a8/BXEDNCQUmtcFEFHQ0JC4AS5BlK/EKyEKjVBIVEIizLM0lIQLUTkFQuheCc0ju5lzcjjI4awTk2x2dndmPvvbnd/Owm8rPqfZYsfiwQkD+QOiyWLXwnGbzxcwDRabZYAdWMgb2HgF5I6ItQpA7yNOmHTC2FeBlXcBfYCIfotLi9nqgMDih4AqEYv24j6D3kbkwLLFU3GA2NjVIt7nj8WNE0ZKEQWuLFrL76IEfAdJi8WgxbUP6IrHRxbT2cV44tUA1SJOZ15gtTRw+ogD67H/uAOntSP/aHTgrwPnsU+vxUVWP6Db4q5mhLTdDm0O/I99Wi0ey+rP+UQi5izOKiLZo8fiNv93IpbS5M3qCRMWJ/nOrn2GstklOuMkOHZgqhxZqilPRF+WJ2I4RjGQ5ckWLfxIxh/SYVGwGP0UqPHbVbCYqQqo21e4butJXVbGuq3xFKH0byWwbXGfvuQfQb5bXgASUqzLkBw65QAAAABJRU5ErkJggg==">
+                        </button>
+                        <h4>
+                            <strong>
+                                Cylinder
+                            </strong>
+                        </h4>
+                    </div>
+
+                    <div class="col">
+                        <img src="https://banner2.cleanpng.com/20180426/rfw/kisspng-geometry-5-cell-triangular-prism-decagon-5ae15b2f1f3c98.584787631524718383128.jpg" alt="" class="images">
+                        <br>
+                        <button class="btn" id="decagon">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAACXBIWXMAAAsTAAALEwEAmpwYAAABcklEQVR4nM3Wvy41QRzG8a8/BXEDNCQUmtcFEFHQ0JC4AS5BlK/EKyEKjVBIVEIizLM0lIQLUTkFQuheCc0ju5lzcjjI4awTk2x2dndmPvvbnd/Owm8rPqfZYsfiwQkD+QOiyWLXwnGbzxcwDRabZYAdWMgb2HgF5I6ItQpA7yNOmHTC2FeBlXcBfYCIfotLi9nqgMDih4AqEYv24j6D3kbkwLLFU3GA2NjVIt7nj8WNE0ZKEQWuLFrL76IEfAdJi8WgxbUP6IrHRxbT2cV44tUA1SJOZ15gtTRw+ogD67H/uAOntSP/aHTgrwPnsU+vxUVWP6Db4q5mhLTdDm0O/I99Wi0ey+rP+UQi5izOKiLZo8fiNv93IpbS5M3qCRMWJ/nOrn2GstklOuMkOHZgqhxZqilPRF+WJ2I4RjGQ5ckWLfxIxh/SYVGwGP0UqPHbVbCYqQqo21e4butJXVbGuq3xFKH0byWwbXGfvuQfQb5bXgASUqzLkBw65QAAAABJRU5ErkJggg==">
+                        </button>
+                        <h4>
+                            <strong>
+                                Decagon
+                            </strong>
+                        </h4>
+                    </div>
+
+                    <div class="col">
+                        <img src="https://banner2.cleanpng.com/20180421/ubq/kisspng-square-geometric-shape-geometry-cube-3d-cube-5adb4adfa54e30.4007260715243209916771.jpg" alt="" class="images">
+                        <br>
+                        <button class="btn" id="cube">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAACXBIWXMAAAsTAAALEwEAmpwYAAABcklEQVR4nM3Wvy41QRzG8a8/BXEDNCQUmtcFEFHQ0JC4AS5BlK/EKyEKjVBIVEIizLM0lIQLUTkFQuheCc0ju5lzcjjI4awTk2x2dndmPvvbnd/Owm8rPqfZYsfiwQkD+QOiyWLXwnGbzxcwDRabZYAdWMgb2HgF5I6ItQpA7yNOmHTC2FeBlXcBfYCIfotLi9nqgMDih4AqEYv24j6D3kbkwLLFU3GA2NjVIt7nj8WNE0ZKEQWuLFrL76IEfAdJi8WgxbUP6IrHRxbT2cV44tUA1SJOZ15gtTRw+ogD67H/uAOntSP/aHTgrwPnsU+vxUVWP6Db4q5mhLTdDm0O/I99Wi0ey+rP+UQi5izOKiLZo8fiNv93IpbS5M3qCRMWJ/nOrn2GstklOuMkOHZgqhxZqilPRF+WJ2I4RjGQ5ckWLfxIxh/SYVGwGP0UqPHbVbCYqQqo21e4butJXVbGuq3xFKH0byWwbXGfvuQfQb5bXgASUqzLkBw65QAAAABJRU5ErkJggg==">
+                        </button>
+                        <h4>
+                            <strong>
+                                Cube
+                            </strong>
+                        </h4>
+                    </div>
+                </div>
+            </section>
+        </article>
+    </main>
+
+    <!--Footer section-->
+    <footer id="footer">
+        <div class="container-fluid">
+            <div class="row">
+                <h6 class="col-9">&copy; 2023 Tutti i diritti riservati</h6>
+                <h6 class="col-3">
+                    Creato con &hearts; da <a href="https://bluebutterflies.github.io/ButterflyTech/" target="_blank"
+                        rel="noopener noreferrer">Butterfly Tech Crative Solution</a>
+                    <br>
+                    <a href="">Privacy</a>
+                </h6>
+            </div>
+        </div>
+
+        <div class="floating-button-div">
+            <a class="btn top" type="button" href="#">
+                <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAr0lEQVR4nGNgGAWjYFAAvtmPhPhmPM/mmflUhCYW8Mx9Jso3/ekl/hnP/vNPf3ada+YrSapawD3tuRjfjKeXwRbMePoXRIP4IHGa+EBg6mM9qvoII4imvJTAKk6uRbgsgAGKLSJkAcUWEWsB2RaRagHJFpFrAdEWgXIwLB9Qkv65kfITiEYpGfhnPCuiVgbjRsm4z4pQfMI/42kBtcokHqh5vJOfCFPDvFEwChhwAgBQ2+JJPmitlQAAAABJRU5ErkJggg==">
+            </a>
+        </div>
+    </footer>
+
+    <!--Bootstrap script-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+
+    <!--Our script-->
+    <script src="/js/colorsGeometricFigures.js"></script>
+</body>
+
+</html>

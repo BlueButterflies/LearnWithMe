@@ -1,0 +1,113 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+body{
+    background-size: 100% 100%;
+}
+
+.navbar{
+    background-color: deepskyblue;
+}
+
+.navbar span{
+    justify-content: center;
+    text-align: center;
+    font-size: 25px;
+    color: whitesmoke;
+}
+
+
+main{
+    margin: 0 3%;
+}
+
+.back{
+    margin: 5% 0 3% 0;
+    font-size: 1.5em;
+
+}
+
+.back a{
+    color: rgb(70, 14, 201);
+    text-decoration: none;
+}
+
+.images{
+    width: 150px;
+    height: 130px;
+    margin-top: 10%;
+}
+
+.btn img{
+  margin-top: 5%;
+}
+
+.fruits section h2{
+    color: rgb(206, 12, 235);
+    font-size: 2.8em;
+    margin-top: 2%;
+}
+
+.fruits section .row h4{
+    color: rgb(23, 215, 17);
+    font-size: 2em;
+}
+
+/*Footer section*/
+#footer{
+    background-color: deepskyblue;
+    margin-top: 5%;
+    padding: 2% 0;
+    color: whitesmoke;
+}
+#footer a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.floating-button-div {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+  }
+  
+  .top {
+    background-color:transparent;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+  }
+  
+@media screen and (min-width: 200px) and (max-width: 767px) {
+    body{
+        background-size: auto;
+    }
+
+    .back{
+        margin-top: 20%;
+    }
+
+    .vegetables section h2{
+        font-size: 2.5em;
+    }
+
+    .navbar span{
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+    body{
+        background-size: auto;
+    }
+    .back{
+        margin-top: 10%;
+    }
+}

@@ -1,0 +1,109 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+
+.navbar{
+    background-color: deepskyblue;
+}
+
+.navbar span{
+    justify-content: center;
+    text-align: center;
+    font-size: 25px;
+    color: whitesmoke;
+}
+
+main{
+    margin: 0 3%;
+}
+
+.back{
+    margin: 5% 0 3% 0;
+    font-size: 1.5em;
+
+}
+
+.back a{
+    color: rgb(255, 118, 5);
+    text-decoration: none;
+}
+
+.body  h2{
+    font-size: 3em;
+    margin-bottom: 3%;
+    color: cornflowerblue;
+}
+
+.images{
+    width: 140px;
+    height: 130px;
+    margin-top: 5%;
+}
+
+.btn{
+    margin-top: 1%;
+}
+
+span h4{
+    font-size: 2em;
+    color: rgb(253, 7, 11);
+}
+
+/*Footer section*/
+#footer{
+    background-color: deepskyblue;
+    margin-top: 5%;
+    padding: 2% 0;
+    color: whitesmoke;
+}
+#footer a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.floating-button-div {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+  }
+  
+  .top {
+    background-color:transparent;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+  }
+
+@media screen and (min-width: 200px) and (max-width: 767px) {
+    .back{
+        margin-top: 20%;
+    }
+
+    .images{
+        max-width: 100%;
+        height: auto;
+    }
+
+    .navbar span{
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+
+    .back{
+        margin-top: 10%;
+    }
+
+    .images{
+        max-width: 100%;
+        height: auto;
+    }
+}
