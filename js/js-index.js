@@ -32,53 +32,53 @@ const familyTransports = document.getElementById('familyTransports');
 const emotionActions = document.getElementById('emotionActions');
 
 alphabet.addEventListener('click', function(){
-    window.open('/pages/alphabet.html', '_parent');
+    window.open('pages/alphabet.html', '_parent');
 })
 
 numbers.addEventListener('click', function(){
-    window.open('/pages/numbers.html', '_parent');
+    window.open('pages/numbers.html', '_parent');
 })
 
 animals.addEventListener('click', function(){
-    window.open('/pages/animals.html', '_parent');
+    window.open('pages/animals.html', '_parent');
 })
 
 clothes.addEventListener('click', function(){
-    window.open('/pages/clothes.html', '_parent');
+    window.open('pages/clothes.html', '_parent');
 })
 
 vegetables.addEventListener('click',function(){
-    window.open('/pages/vegetables.html', '_parent');
+    window.open('pages/vegetables.html', '_parent');
 })
 
 fruits.addEventListener('click',function(){
-    window.open('/pages/fruits.html', '_parent');
+    window.open('pages/fruits.html', '_parent');
 })
 
 body.addEventListener('click',function(){
-    window.open('/pages/body.html', '_parent')
+    window.open('pages/body.html', '_parent')
 })
 
 foodsBeverages.addEventListener('click', function(){
-    window.open('/pages/foodsBeverages.html', '_parent');
+    window.open('pages/foodsBeverages.html', '_parent');
 })
 
 colorsGeometricFigures.addEventListener('click', function(){
-    window.open('/pages/colorsGeometricFigures.html', '_parent');
+    window.open('pages/colorsGeometricFigures.html', '_parent');
 })
 
 rooms.addEventListener('click', function(){
-    window.open('/pages/rooms.html', '_parent');
+    window.open('pages/rooms.html', '_parent');
 })
 
 seasonsWeekMonths.addEventListener('click', function(){
-    window.open('/pages/seasonsWeekMonths.html', '_parent');
+    window.open('pages/seasonsWeekMonths.html', '_parent');
 })
 
 familyTransports.addEventListener('click', function(){
-    window.open('/pages/familyTransports.html', '_parent');
+    window.open('pages/familyTransports.html', '_parent');
 })
 
 emotionActions.addEventListener('click', function(){
-    window.open('/pages/emotionActions.html', '_parent');
+    window.open('pages/emotionActions.html', '_parent');
 })
