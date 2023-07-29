@@ -59,20 +59,20 @@ main{
     font-size: 2em;
 }
 
-.transports{
-    border: 3mm ridge #e001bf;
+.actions{
+    border: 3mm ridge #f54404;
     border-radius: 30px;
     margin-top: 4%;
     padding: 2% 0;
 }
 
-.transports section h2{
-    color: rgba(250, 110, 3, 0.714);
+.actions section h2{
+    color: rgba(213, 3, 250, 0.714);
     font-size: 2.8em;
     margin-top: 2%;
 }
 
-.transports section .row h4{
+.actions section .row h4{
     color: rgba(4, 225, 111, 0.803);
     font-size: 2em;
 }
