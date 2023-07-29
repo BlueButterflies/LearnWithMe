@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emotion and Actions</title>
+
+    <!--Our style-->
+    <link rel="stylesheet" href="../css/town.css" type="text/css">
+
+    <!--Google Font-->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap" rel="stylesheet">
+
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+</head>
+
+<body>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg  fixed-top">
+
+        <div class="container-fluid">
+            <span>
+                Learn emotion and actions with me
+            </span>
+        </div>
+    </nav>
+
+    <main>
+        <section class="back">
+            <a href="../index.html">Home</a><!--back button-->
+        </section>
+
+        <article class="container-fluid town">
+            <div class="row">
+                <section class="col-12 text-center">
+                    <h2>Places in town</h2>
+                </section>
+
+                <section class="col-12 text-center">
+                    <div class="row">
+                        <div class="col">
+                            <img src="https://banner2.cleanpng.com/20190627/tui/kisspng-clip-art-school-portable-network-graphics-image-ve-school-clipart-png-transparent-azpng-5d1471ebc7c9b8.2358893915616209718183.jpg" alt="" class="images">
+                            <br>
+                            <button class="btn" id="school">
+                                <img
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAACXBIWXMAAAsTAAALEwEAmpwYAAABmElEQVR4nM3WMUscQRTA8b8xRcQvoE2EpEiTfAAlWJhGGwN+geQjhJQRouBhkUZMIVhJBJu99y5girDveW53XyKVKWKImC6CNiNz7OnlPI/zbj1uYNiZWXZ+DDNv3sKwlSzjoTq74vwtV5kpHEgSRtXZUyfEKsbHQoEQGFFjuwHkdbVYwNlqAYpFxNhsA4R2SMVYqhywcCdAjU+3AKEt4kyrcyTO+26BtQ5AaEWSjInGM0I3VqTGujrnjQnqY52B0IxoynMxfpeNV40VifMrqTF2jTQBvSCxVJyXahxLlanYV2dfUt7WX+YD/03QLRICI+JsXE1srInxOW8vqnPQN7KywgM1PqiRxW+SKs/U+RHb4jwR46RvBGA3ZVycf3WkxpgaZ03ti0JWIsayGoetK6lUearOn+L3xCnF4M0Pwms1vNDTJSmz8XQlzuN63/hWdt40I6V+4uSr8yLGiabMxX5MAzFOdjIecR8Rr9+ZFOenOvMdgX7uLomA8Y6huoUHlk8GkhkHluPJS/xbEeOLOqdxk+8F6bVcAkp7ZcfNdtyzAAAAAElFTkSuQmCC">
+                            </button>
+                            <h4>
+                                <strong>
+                                    School
+                                </strong>
+                            </h4>
+                        </div>
+
+                        <div class="col">
+                            <img src="https://banner2.cleanpng.com/20180420/xyw/kisspng-mail-post-office-computer-icons-building-illustration-5ad9edb36b2046.7175192415242316034388.jpg" alt="" class="images">
+                            <br>
+                            <button class="btn" id="postOffice">
+                                <img
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAACXBIWXMAAAsTAAALEwEAmpwYAAABmElEQVR4nM3WMUscQRTA8b8xRcQvoE2EpEiTfAAlWJhGGwN+geQjhJQRouBhkUZMIVhJBJu99y5girDveW53XyKVKWKImC6CNiNz7OnlPI/zbj1uYNiZWXZ+DDNv3sKwlSzjoTq74vwtV5kpHEgSRtXZUyfEKsbHQoEQGFFjuwHkdbVYwNlqAYpFxNhsA4R2SMVYqhywcCdAjU+3AKEt4kyrcyTO+26BtQ5AaEWSjInGM0I3VqTGujrnjQnqY52B0IxoynMxfpeNV40VifMrqTF2jTQBvSCxVJyXahxLlanYV2dfUt7WX+YD/03QLRICI+JsXE1srInxOW8vqnPQN7KywgM1PqiRxW+SKs/U+RHb4jwR46RvBGA3ZVycf3WkxpgaZ03ti0JWIsayGoetK6lUearOn+L3xCnF4M0Pwms1vNDTJSmz8XQlzuN63/hWdt40I6V+4uSr8yLGiabMxX5MAzFOdjIecR8Rr9+ZFOenOvMdgX7uLomA8Y6huoUHlk8GkhkHluPJS/xbEeOLOqdxk+8F6bVcAkp7ZcfNdtyzAAAAAElFTkSuQmCC">
+                            </button>
+                            <h4>
+                                <strong>
+                                    Post Office
+                                </strong>
+                            </h4>
+                        </div>
+
+                        <div class="col">
+                            <img src="https://banner2.cleanpng.com/20180215/bxe/kisspng-hospital-free-content-patient-clip-art-hospital-bed-clipart-5a85e07b1c8e82.646420191518723195117.jpg" alt="" class="images">
+                            <br>
+                            <button class="btn" id="hospital">
+                                <img
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAACXBIWXMAAAsTAAALEwEAmpwYAAABmElEQVR4nM3WMUscQRTA8b8xRcQvoE2EpEiTfAAlWJhGGwN+geQjhJQRouBhkUZMIVhJBJu99y5girDveW53XyKVKWKImC6CNiNz7OnlPI/zbj1uYNiZWXZ+DDNv3sKwlSzjoTq74vwtV5kpHEgSRtXZUyfEKsbHQoEQGFFjuwHkdbVYwNlqAYpFxNhsA4R2SMVYqhywcCdAjU+3AKEt4kyrcyTO+26BtQ5AaEWSjInGM0I3VqTGujrnjQnqY52B0IxoynMxfpeNV40VifMrqTF2jTQBvSCxVJyXahxLlanYV2dfUt7WX+YD/03QLRICI+JsXE1srInxOW8vqnPQN7KywgM1PqiRxW+SKs/U+RHb4jwR46RvBGA3ZVycf3WkxpgaZ03ti0JWIsayGoetK6lUearOn+L3xCnF4M0Pwms1vNDTJSmz8XQlzuN63/hWdt40I6V+4uSr8yLGiabMxX5MAzFOdjIecR8Rr9+ZFOenOvMdgX7uLomA8Y6huoUHlk8GkhkHluPJS/xbEeOLOqdxk+8F6bVcAkp7ZcfNdtyzAAAAAElFTkSuQmCC">
+                            </button>
+                            <h4>
+                                <strong>
+                                    Hospital
+                                </strong>
+                            </h4>
+                        </div>
+
+                        <div class="col">
+                            <img src="https://banner2.cleanpng.com/20180203/zvq/kisspng-bank-saving-clip-art-bank-png-pic-5a75bbc3ea8050.0091769615176652199605.jpg" alt="" class="images">
+                            <br>
+                            <button class="btn" id="bank">
+                                <img
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAACXBIWXMAAAsTAAALEwEAmpwYAAABmElEQVR4nM3WMUscQRTA8b8xRcQvoE2EpEiTfAAlWJhGGwN+geQjhJQRouBhkUZMIVhJBJu99y5girDveW53XyKVKWKImC6CNiNz7OnlPI/zbj1uYNiZWXZ+DDNv3sKwlSzjoTq74vwtV5kpHEgSRtXZUyfEKsbHQoEQGFFjuwHkdbVYwNlqAYpFxNhsA4R2SMVYqhywcCdAjU+3AKEt4kyrcyTO+26BtQ5AaEWSjInGM0I3VqTGujrnjQnqY52B0IxoynMxfpeNV40VifMrqTF2jTQBvSCxVJyXahxLlanYV2dfUt7WX+YD/03QLRICI+JsXE1srInxOW8vqnPQN7KywgM1PqiRxW+SKs/U+RHb4jwR46RvBGA3ZVycf3WkxpgaZ03ti0JWIsayGoetK6lUearOn+L3xCnF4M0Pwms1vNDTJSmz8XQlzuN63/hWdt40I6V+4uSr8yLGiabMxX5MAzFOdjIecR8Rr9+ZFOenOvMdgX7uLomA8Y6huoUHlk8GkhkHluPJS/xbEeOLOqdxk+8F6bVcAkp7ZcfNdtyzAAAAAElFTkSuQmCC">
+                            </button>
+                            <h4>
+                                <strong>
+                                    Bank
+                                </strong>
+                            </h4>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="col-12 text-center">
+                    <div class="row">
+                        <div class="col">
+                            <img src="https://banner2.cleanpng.com/20180203/plq/kisspng-fire-station-fire-department-clip-art-cartoon-firehouse-5a7589ad667dc3.6668869515176523974198.jpg" alt="" class="images">
+                            <br>
+                            <button class="btn" id="fireStation">
+                                <img
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAACXBIWXMAAAsTAAALEwEAmpwYAAABmElEQVR4nM3WMUscQRTA8b8xRcQvoE2EpEiTfAAlWJhGGwN+geQjhJQRouBhkUZMIVhJBJu99y5girDveW53XyKVKWKImC6CNiNz7OnlPI/zbj1uYNiZWXZ+DDNv3sKwlSzjoTq74vwtV5kpHEgSRtXZUyfEKsbHQoEQGFFjuwHkdbVYwNlqAYpFxNhsA4R2SMVYqhywcCdAjU+3AKEt4kyrcyTO+26BtQ5AaEWSjInGM0I3VqTGujrnjQnqY52B0IxoynMxfpeNV40VifMrqTF2jTQBvSCxVJyXahxLlanYV2dfUt7WX+YD/03QLRICI+JsXE1srInxOW8vqnPQN7KywgM1PqiRxW+SKs/U+RHb4jwR46RvBGA3ZVycf3WkxpgaZ03ti0JWIsayGoetK6lUearOn+L3xCnF4M0Pwms1vNDTJSmz8XQlzuN63/hWdt40I6V+4uSr8yLGiabMxX5MAzFOdjIecR8Rr9+ZFOenOvMdgX7uLomA8Y6huoUHlk8GkhkHluPJS/xbEeOLOqdxk+8F6bVcAkp7ZcfNdtyzAAAAAElFTkSuQmCC">
+                            </button>
+                            <h4>
+                                <strong>
+                                    Fire Station
+                                </strong>
+                            </h4>
+                        </div>
+
+                        <div class="col">
+                            <img src="https://banner2.cleanpng.com/20180421/zsq/kisspng-grocery-store-facade-supermarket-building-emerging-supermarket-5adc0252135ee7.7573370615243679540794.jpg" alt="" class="images">
+                            <br>
+                            <button class="btn" id="supermarket">
+                                <img
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAACXBIWXMAAAsTAAALEwEAmpwYAAABmElEQVR4nM3WMUscQRTA8b8xRcQvoE2EpEiTfAAlWJhGGwN+geQjhJQRouBhkUZMIVhJBJu99y5girDveW53XyKVKWKImC6CNiNz7OnlPI/zbj1uYNiZWXZ+DDNv3sKwlSzjoTq74vwtV5kpHEgSRtXZUyfEKsbHQoEQGFFjuwHkdbVYwNlqAYpFxNhsA4R2SMVYqhywcCdAjU+3AKEt4kyrcyTO+26BtQ5AaEWSjInGM0I3VqTGujrnjQnqY52B0IxoynMxfpeNV40VifMrqTF2jTQBvSCxVJyXahxLlanYV2dfUt7WX+YD/03QLRICI+JsXE1srInxOW8vqnPQN7KywgM1PqiRxW+SKs/U+RHb4jwR46RvBGA3ZVycf3WkxpgaZ03ti0JWIsayGoetK6lUearOn+L3xCnF4M0Pwms1vNDTJSmz8XQlzuN63/hWdt40I6V+4uSr8yLGiabMxX5MAzFOdjIecR8Rr9+ZFOenOvMdgX7uLomA8Y6huoUHlk8GkhkHluPJS/xbEeOLOqdxk+8F6bVcAkp7ZcfNdtyzAAAAAElFTkSuQmCC">
+                            </button>
+                            <h4>
+                                <strong>
+                                    Supermarket
+                                </strong>
+                            </h4>
+                        </div>
+
+                        <div class="col">
+                            <img src="https://banner2.cleanpng.com/20180724/qap/kisspng-department-store-nihonbashi-shop-retail-customer-department-store-5b57e2da0d8958.2925146715324863620555.jpg" alt="" class="images">
+                            <br>
+                            <button class="btn" id="departmentStore">
+                                <img
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAACXBIWXMAAAsTAAALEwEAmpwYAAABmElEQVR4nM3WMUscQRTA8b8xRcQvoE2EpEiTfAAlWJhGGwN+geQjhJQRouBhkUZMIVhJBJu99y5girDveW53XyKVKWKImC6CNiNz7OnlPI/zbj1uYNiZWXZ+DDNv3sKwlSzjoTq74vwtV5kpHEgSRtXZUyfEKsbHQoEQGFFjuwHkdbVYwNlqAYpFxNhsA4R2SMVYqhywcCdAjU+3AKEt4kyrcyTO+26BtQ5AaEWSjInGM0I3VqTGujrnjQnqY52B0IxoynMxfpeNV40VifMrqTF2jTQBvSCxVJyXahxLlanYV2dfUt7WX+YD/03QLRICI+JsXE1srInxOW8vqnPQN7KywgM1PqiRxW+SKs/U+RHb4jwR46RvBGA3ZVycf3WkxpgaZ03ti0JWIsayGoetK6lUearOn+L3xCnF4M0Pwms1vNDTJSmz8XQlzuN63/hWdt40I6V+4uSr8yLGiabMxX5MAzFOdjIecR8Rr9+ZFOenOvMdgX7uLomA8Y6huoUHlk8GkhkHluPJS/xbEeOLOqdxk+8F6bVcAkp7ZcfNdtyzAAAAAElFTkSuQmCC">
+                            </button>
+                            <h4>
+                                <strong>
+                                    Department Store
+                                </strong>
+                            </h4>
+                        </div>
+
+                        <div class="col">
+                            <img src="https://banner2.cleanpng.com/20180310/lzw/kisspng-coffee-cafe-restaurant-open-air-coffee-shop-5aa405ff4cd553.7024308515206988793147.jpg" alt="" class="images">
+                            <br>
+                            <button class="btn" id="restaurant">
+                                <img
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAACXBIWXMAAAsTAAALEwEAmpwYAAABmElEQVR4nM3WMUscQRTA8b8xRcQvoE2EpEiTfAAlWJhGGwN+geQjhJQRouBhkUZMIVhJBJu99y5girDveW53XyKVKWKImC6CNiNz7OnlPI/zbj1uYNiZWXZ+DDNv3sKwlSzjoTq74vwtV5kpHEgSRtXZUyfEKsbHQoEQGFFjuwHkdbVYwNlqAYpFxNhsA4R2SMVYqhywcCdAjU+3AKEt4kyrcyTO+26BtQ5AaEWSjInGM0I3VqTGujrnjQnqY52B0IxoynMxfpeNV40VifMrqTF2jTQBvSCxVJyXahxLlanYV2dfUt7WX+YD/03QLRICI+JsXE1srInxOW8vqnPQN7KywgM1PqiRxW+SKs/U+RHb4jwR46RvBGA3ZVycf3WkxpgaZ03ti0JWIsayGoetK6lUearOn+L3xCnF4M0Pwms1vNDTJSmz8XQlzuN63/hWdt40I6V+4uSr8yLGiabMxX5MAzFOdjIecR8Rr9+ZFOenOvMdgX7uLomA8Y6huoUHlk8GkhkHluPJS/xbEeOLOqdxk+8F6bVcAkp7ZcfNdtyzAAAAAElFTkSuQmCC">
+                            </button>
+                            <h4>
+                                <strong>
+                                    Restaurant
+                                </strong>
+                            </h4>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="col-12 text-center">
+                    <div class="row">
+                        <div class="col">
+                            <img src="https://banner2.cleanpng.com/20180303/see/kisspng-architecture-download-museum-exterior-building-museum-5a9a8e323ae443.0136988215200783862412.jpg" alt="" class="images">
+                            <br>
+                            <button class="btn" id="museum">
+                                <img
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAACXBIWXMAAAsTAAALEwEAmpwYAAABmElEQVR4nM3WMUscQRTA8b8xRcQvoE2EpEiTfAAlWJhGGwN+geQjhJQRouBhkUZMIVhJBJu99y5girDveW53XyKVKWKImC6CNiNz7OnlPI/zbj1uYNiZWXZ+DDNv3sKwlSzjoTq74vwtV5kpHEgSRtXZUyfEKsbHQoEQGFFjuwHkdbVYwNlqAYpFxNhsA4R2SMVYqhywcCdAjU+3AKEt4kyrcyTO+26BtQ5AaEWSjInGM0I3VqTGujrnjQnqY52B0IxoynMxfpeNV40VifMrqTF2jTQBvSCxVJyXahxLlanYV2dfUt7WX+YD/03QLRICI+JsXE1srInxOW8vqnPQN7KywgM1PqiRxW+SKs/U+RHb4jwR46RvBGA3ZVycf3WkxpgaZ03ti0JWIsayGoetK6lUearOn+L3xCnF4M0Pwms1vNDTJSmz8XQlzuN63/hWdt40I6V+4uSr8yLGiabMxX5MAzFOdjIecR8Rr9+ZFOenOvMdgX7uLomA8Y6huoUHlk8GkhkHluPJS/xbEeOLOqdxk+8F6bVcAkp7ZcfNdtyzAAAAAElFTkSuQmCC">
+                            </button>
+                            <h4>
+                                <strong>
+                                    Museum
+                                </strong>
+                            </h4>
+                        </div>
+
+                        <div class="col">
+                            <img src="https://banner2.cleanpng.com/20171210/084/creative-star-hotels-5a2d58e76a4968.6997100415129213194354.jpg" alt="" class="images">
+                            <br>
+                            <button class="btn" id="hotel">
+                                <img
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAACXBIWXMAAAsTAAALEwEAmpwYAAABmElEQVR4nM3WMUscQRTA8b8xRcQvoE2EpEiTfAAlWJhGGwN+geQjhJQRouBhkUZMIVhJBJu99y5girDveW53XyKVKWKImC6CNiNz7OnlPI/zbj1uYNiZWXZ+DDNv3sKwlSzjoTq74vwtV5kpHEgSRtXZUyfEKsbHQoEQGFFjuwHkdbVYwNlqAYpFxNhsA4R2SMVYqhywcCdAjU+3AKEt4kyrcyTO+26BtQ5AaEWSjInGM0I3VqTGujrnjQnqY52B0IxoynMxfpeNV40VifMrqTF2jTQBvSCxVJyXahxLlanYV2dfUt7WX+YD/03QLRICI+JsXE1srInxOW8vqnPQN7KywgM1PqiRxW+SKs/U+RHb4jwR46RvBGA3ZVycf3WkxpgaZ03ti0JWIsayGoetK6lUearOn+L3xCnF4M0Pwms1vNDTJSmz8XQlzuN63/hWdt40I6V+4uSr8yLGiabMxX5MAzFOdjIecR8Rr9+ZFOenOvMdgX7uLomA8Y6huoUHlk8GkhkHluPJS/xbEeOLOqdxk+8F6bVcAkp7ZcfNdtyzAAAAAElFTkSuQmCC">
+                            </button>
+                            <h4>
+                                <strong>
+                                    Hotel
+                                </strong>
+                            </h4>
+                        </div>
+
+                        <div class="col">
+                            <img src="https://banner2.cleanpng.com/20190511/ix/kisspng-clip-art-public-library-openclipart-vector-graphic-need-a-break-from-the-heat-frankfort-community-pu-5cd75cb0c09844.6321163115576178407889.jpg" alt="" class="images">
+                            <br>
+                            <button class="btn" id="library">
+                                <img
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAACXBIWXMAAAsTAAALEwEAmpwYAAABmElEQVR4nM3WMUscQRTA8b8xRcQvoE2EpEiTfAAlWJhGGwN+geQjhJQRouBhkUZMIVhJBJu99y5girDveW53XyKVKWKImC6CNiNz7OnlPI/zbj1uYNiZWXZ+DDNv3sKwlSzjoTq74vwtV5kpHEgSRtXZUyfEKsbHQoEQGFFjuwHkdbVYwNlqAYpFxNhsA4R2SMVYqhywcCdAjU+3AKEt4kyrcyTO+26BtQ5AaEWSjInGM0I3VqTGujrnjQnqY52B0IxoynMxfpeNV40VifMrqTF2jTQBvSCxVJyXahxLlanYV2dfUt7WX+YD/03QLRICI+JsXE1srInxOW8vqnPQN7KywgM1PqiRxW+SKs/U+RHb4jwR46RvBGA3ZVycf3WkxpgaZ03ti0JWIsayGoetK6lUearOn+L3xCnF4M0Pwms1vNDTJSmz8XQlzuN63/hWdt40I6V+4uSr8yLGiabMxX5MAzFOdjIecR8Rr9+ZFOenOvMdgX7uLomA8Y6huoUHlk8GkhkHluPJS/xbEeOLOqdxk+8F6bVcAkp7ZcfNdtyzAAAAAElFTkSuQmCC">
+                            </button>
+                            <h4>
+                                <strong>
+                                    Library
+                                </strong>
+                            </h4>
+                        </div>
+
+                        <div class="col">
+                            <img src="https://banner2.cleanpng.com/20180902/cxk/kisspng-cinema-clip-art-film-image-openclipart-fish-lake-3rd-visit-5b8bdcb6bc42f8.7704476715358926627711.jpg" alt="" class="images">
+                            <br>
+                            <button class="btn" id="movieTheater">
+                                <img
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAACXBIWXMAAAsTAAALEwEAmpwYAAABmElEQVR4nM3WMUscQRTA8b8xRcQvoE2EpEiTfAAlWJhGGwN+geQjhJQRouBhkUZMIVhJBJu99y5girDveW53XyKVKWKImC6CNiNz7OnlPI/zbj1uYNiZWXZ+DDNv3sKwlSzjoTq74vwtV5kpHEgSRtXZUyfEKsbHQoEQGFFjuwHkdbVYwNlqAYpFxNhsA4R2SMVYqhywcCdAjU+3AKEt4kyrcyTO+26BtQ5AaEWSjInGM0I3VqTGujrnjQnqY52B0IxoynMxfpeNV40VifMrqTF2jTQBvSCxVJyXahxLlanYV2dfUt7WX+YD/03QLRICI+JsXE1srInxOW8vqnPQN7KywgM1PqiRxW+SKs/U+RHb4jwR46RvBGA3ZVycf3WkxpgaZ03ti0JWIsayGoetK6lUearOn+L3xCnF4M0Pwms1vNDTJSmz8XQlzuN63/hWdt40I6V+4uSr8yLGiabMxX5MAzFOdjIecR8Rr9+ZFOenOvMdgX7uLomA8Y6huoUHlk8GkhkHluPJS/xbEeOLOqdxk+8F6bVcAkp7ZcfNdtyzAAAAAElFTkSuQmCC">
+                            </button>
+                            <h4>
+                                <strong>
+                                    Movie Theater
+                                </strong>
+                            </h4>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="col-12 text-center">
+                    <div class="row">
+                        <div class="col">
+                            <img src="" alt="" class="images">
+                            <br>
+                            <button class="btn" id="factory">
+                                <img
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAACXBIWXMAAAsTAAALEwEAmpwYAAABmElEQVR4nM3WMUscQRTA8b8xRcQvoE2EpEiTfAAlWJhGGwN+geQjhJQRouBhkUZMIVhJBJu99y5girDveW53XyKVKWKImC6CNiNz7OnlPI/zbj1uYNiZWXZ+DDNv3sKwlSzjoTq74vwtV5kpHEgSRtXZUyfEKsbHQoEQGFFjuwHkdbVYwNlqAYpFxNhsA4R2SMVYqhywcCdAjU+3AKEt4kyrcyTO+26BtQ5AaEWSjInGM0I3VqTGujrnjQnqY52B0IxoynMxfpeNV40VifMrqTF2jTQBvSCxVJyXahxLlanYV2dfUt7WX+YD/03QLRICI+JsXE1srInxOW8vqnPQN7KywgM1PqiRxW+SKs/U+RHb4jwR46RvBGA3ZVycf3WkxpgaZ03ti0JWIsayGoetK6lUearOn+L3xCnF4M0Pwms1vNDTJSmz8XQlzuN63/hWdt40I6V+4uSr8yLGiabMxX5MAzFOdjIecR8Rr9+ZFOenOvMdgX7uLomA8Y6huoUHlk8GkhkHluPJS/xbEeOLOqdxk+8F6bVcAkp7ZcfNdtyzAAAAAElFTkSuQmCC">
+                            </button>
+                            <h4>
+                                <strong>
+                                    Factory
+                                </strong>
+                            </h4>
+                        </div>
+
+                        <div class="col">
+                            <img src="" alt="" class="images">
+                            <br>
+                            <button class="btn" id="hotel">
+                                <img
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAACXBIWXMAAAsTAAALEwEAmpwYAAABmElEQVR4nM3WMUscQRTA8b8xRcQvoE2EpEiTfAAlWJhGGwN+geQjhJQRouBhkUZMIVhJBJu99y5girDveW53XyKVKWKImC6CNiNz7OnlPI/zbj1uYNiZWXZ+DDNv3sKwlSzjoTq74vwtV5kpHEgSRtXZUyfEKsbHQoEQGFFjuwHkdbVYwNlqAYpFxNhsA4R2SMVYqhywcCdAjU+3AKEt4kyrcyTO+26BtQ5AaEWSjInGM0I3VqTGujrnjQnqY52B0IxoynMxfpeNV40VifMrqTF2jTQBvSCxVJyXahxLlanYV2dfUt7WX+YD/03QLRICI+JsXE1srInxOW8vqnPQN7KywgM1PqiRxW+SKs/U+RHb4jwR46RvBGA3ZVycf3WkxpgaZ03ti0JWIsayGoetK6lUearOn+L3xCnF4M0Pwms1vNDTJSmz8XQlzuN63/hWdt40I6V+4uSr8yLGiabMxX5MAzFOdjIecR8Rr9+ZFOenOvMdgX7uLomA8Y6huoUHlk8GkhkHluPJS/xbEeOLOqdxk+8F6bVcAkp7ZcfNdtyzAAAAAElFTkSuQmCC">
+                            </button>
+                            <h4>
+                                <strong>
+                                    Hotel
+                                </strong>
+                            </h4>
+                        </div>
+
+                        <div class="col">
+                            <img src="" alt="" class="images">
+                            <br>
+                            <button class="btn" id="policeDepartment">
+                                <img
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAACXBIWXMAAAsTAAALEwEAmpwYAAABmElEQVR4nM3WMUscQRTA8b8xRcQvoE2EpEiTfAAlWJhGGwN+geQjhJQRouBhkUZMIVhJBJu99y5girDveW53XyKVKWKImC6CNiNz7OnlPI/zbj1uYNiZWXZ+DDNv3sKwlSzjoTq74vwtV5kpHEgSRtXZUyfEKsbHQoEQGFFjuwHkdbVYwNlqAYpFxNhsA4R2SMVYqhywcCdAjU+3AKEt4kyrcyTO+26BtQ5AaEWSjInGM0I3VqTGujrnjQnqY52B0IxoynMxfpeNV40VifMrqTF2jTQBvSCxVJyXahxLlanYV2dfUt7WX+YD/03QLRICI+JsXE1srInxOW8vqnPQN7KywgM1PqiRxW+SKs/U+RHb4jwR46RvBGA3ZVycf3WkxpgaZ03ti0JWIsayGoetK6lUearOn+L3xCnF4M0Pwms1vNDTJSmz8XQlzuN63/hWdt40I6V+4uSr8yLGiabMxX5MAzFOdjIecR8Rr9+ZFOenOvMdgX7uLomA8Y6huoUHlk8GkhkHluPJS/xbEeOLOqdxk+8F6bVcAkp7ZcfNdtyzAAAAAElFTkSuQmCC">
+                            </button>
+                            <h4>
+                                <strong>
+                                    Police Department
+                                </strong>
+                            </h4>
+                        </div>
+
+                        <div class="col">
+                            <img src="" alt="" class="images">
+                            <br>
+                            <button class="btn" id="cityHall">
+                                <img
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAACXBIWXMAAAsTAAALEwEAmpwYAAABmElEQVR4nM3WMUscQRTA8b8xRcQvoE2EpEiTfAAlWJhGGwN+geQjhJQRouBhkUZMIVhJBJu99y5girDveW53XyKVKWKImC6CNiNz7OnlPI/zbj1uYNiZWXZ+DDNv3sKwlSzjoTq74vwtV5kpHEgSRtXZUyfEKsbHQoEQGFFjuwHkdbVYwNlqAYpFxNhsA4R2SMVYqhywcCdAjU+3AKEt4kyrcyTO+26BtQ5AaEWSjInGM0I3VqTGujrnjQnqY52B0IxoynMxfpeNV40VifMrqTF2jTQBvSCxVJyXahxLlanYV2dfUt7WX+YD/03QLRICI+JsXE1srInxOW8vqnPQN7KywgM1PqiRxW+SKs/U+RHb4jwR46RvBGA3ZVycf3WkxpgaZ03ti0JWIsayGoetK6lUearOn+L3xCnF4M0Pwms1vNDTJSmz8XQlzuN63/hWdt40I6V+4uSr8yLGiabMxX5MAzFOdjIecR8Rr9+ZFOenOvMdgX7uLomA8Y6huoUHlk8GkhkHluPJS/xbEeOLOqdxk+8F6bVcAkp7ZcfNdtyzAAAAAElFTkSuQmCC">
+                            </button>
+                            <h4>
+                                <strong>
+                                    City Hall
+                                </strong>
+                            </h4>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="col-12 text-center">
+                    <div class="row">
+                        <div class="col">
+                            <img src="" alt="" class="images">
+                            <br>
+                            <button class="btn" id="townHall">
+                                <img
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAACXBIWXMAAAsTAAALEwEAmpwYAAABmElEQVR4nM3WMUscQRTA8b8xRcQvoE2EpEiTfAAlWJhGGwN+geQjhJQRouBhkUZMIVhJBJu99y5girDveW53XyKVKWKImC6CNiNz7OnlPI/zbj1uYNiZWXZ+DDNv3sKwlSzjoTq74vwtV5kpHEgSRtXZUyfEKsbHQoEQGFFjuwHkdbVYwNlqAYpFxNhsA4R2SMVYqhywcCdAjU+3AKEt4kyrcyTO+26BtQ5AaEWSjInGM0I3VqTGujrnjQnqY52B0IxoynMxfpeNV40VifMrqTF2jTQBvSCxVJyXahxLlanYV2dfUt7WX+YD/03QLRICI+JsXE1srInxOW8vqnPQN7KywgM1PqiRxW+SKs/U+RHb4jwR46RvBGA3ZVycf3WkxpgaZ03ti0JWIsayGoetK6lUearOn+L3xCnF4M0Pwms1vNDTJSmz8XQlzuN63/hWdt40I6V+4uSr8yLGiabMxX5MAzFOdjIecR8Rr9+ZFOenOvMdgX7uLomA8Y6huoUHlk8GkhkHluPJS/xbEeOLOqdxk+8F6bVcAkp7ZcfNdtyzAAAAAElFTkSuQmCC">
+                            </button>
+                            <h4>
+                                <strong>
+                                    Town Hall
+                                </strong>
+                            </h4>
+                        </div>
+
+                        <div class="col">
+                            <img src="" alt="" class="images">
+                            <br>
+                            <button class="btn" id="prison">
+                                <img
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAACXBIWXMAAAsTAAALEwEAmpwYAAABmElEQVR4nM3WMUscQRTA8b8xRcQvoE2EpEiTfAAlWJhGGwN+geQjhJQRouBhkUZMIVhJBJu99y5girDveW53XyKVKWKImC6CNiNz7OnlPI/zbj1uYNiZWXZ+DDNv3sKwlSzjoTq74vwtV5kpHEgSRtXZUyfEKsbHQoEQGFFjuwHkdbVYwNlqAYpFxNhsA4R2SMVYqhywcCdAjU+3AKEt4kyrcyTO+26BtQ5AaEWSjInGM0I3VqTGujrnjQnqY52B0IxoynMxfpeNV40VifMrqTF2jTQBvSCxVJyXahxLlanYV2dfUt7WX+YD/03QLRICI+JsXE1srInxOW8vqnPQN7KywgM1PqiRxW+SKs/U+RHb4jwR46RvBGA3ZVycf3WkxpgaZ03ti0JWIsayGoetK6lUearOn+L3xCnF4M0Pwms1vNDTJSmz8XQlzuN63/hWdt40I6V+4uSr8yLGiabMxX5MAzFOdjIecR8Rr9+ZFOenOvMdgX7uLomA8Y6huoUHlk8GkhkHluPJS/xbEeOLOqdxk+8F6bVcAkp7ZcfNdtyzAAAAAElFTkSuQmCC">
+                            </button>
+                            <h4>
+                                <strong>
+                                    Prison
+                                </strong>
+                            </h4>
+                        </div>
+
+                        <div class="col">
+                            <img src="" alt="" class="images">
+                            <br>
+                            <button class="btn" id="mall">
+                                <img
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAACXBIWXMAAAsTAAALEwEAmpwYAAABmElEQVR4nM3WMUscQRTA8b8xRcQvoE2EpEiTfAAlWJhGGwN+geQjhJQRouBhkUZMIVhJBJu99y5girDveW53XyKVKWKImC6CNiNz7OnlPI/zbj1uYNiZWXZ+DDNv3sKwlSzjoTq74vwtV5kpHEgSRtXZUyfEKsbHQoEQGFFjuwHkdbVYwNlqAYpFxNhsA4R2SMVYqhywcCdAjU+3AKEt4kyrcyTO+26BtQ5AaEWSjInGM0I3VqTGujrnjQnqY52B0IxoynMxfpeNV40VifMrqTF2jTQBvSCxVJyXahxLlanYV2dfUt7WX+YD/03QLRICI+JsXE1srInxOW8vqnPQN7KywgM1PqiRxW+SKs/U+RHb4jwR46RvBGA3ZVycf3WkxpgaZ03ti0JWIsayGoetK6lUearOn+L3xCnF4M0Pwms1vNDTJSmz8XQlzuN63/hWdt40I6V+4uSr8yLGiabMxX5MAzFOdjIecR8Rr9+ZFOenOvMdgX7uLomA8Y6huoUHlk8GkhkHluPJS/xbEeOLOqdxk+8F6bVcAkp7ZcfNdtyzAAAAAElFTkSuQmCC">
+                            </button>
+                            <h4>
+                                <strong>
+                                    Mall
+                                </strong>
+                            </h4>
+                        </div>
+
+                        <div class="col">
+                            <img src="" alt="" class="images">
+                            <br>
+                            <button class="btn" id="church">
+                                <img
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAACXBIWXMAAAsTAAALEwEAmpwYAAABmElEQVR4nM3WMUscQRTA8b8xRcQvoE2EpEiTfAAlWJhGGwN+geQjhJQRouBhkUZMIVhJBJu99y5girDveW53XyKVKWKImC6CNiNz7OnlPI/zbj1uYNiZWXZ+DDNv3sKwlSzjoTq74vwtV5kpHEgSRtXZUyfEKsbHQoEQGFFjuwHkdbVYwNlqAYpFxNhsA4R2SMVYqhywcCdAjU+3AKEt4kyrcyTO+26BtQ5AaEWSjInGM0I3VqTGujrnjQnqY52B0IxoynMxfpeNV40VifMrqTF2jTQBvSCxVJyXahxLlanYV2dfUt7WX+YD/03QLRICI+JsXE1srInxOW8vqnPQN7KywgM1PqiRxW+SKs/U+RHb4jwR46RvBGA3ZVycf3WkxpgaZ03ti0JWIsayGoetK6lUearOn+L3xCnF4M0Pwms1vNDTJSmz8XQlzuN63/hWdt40I6V+4uSr8yLGiabMxX5MAzFOdjIecR8Rr9+ZFOenOvMdgX7uLomA8Y6huoUHlk8GkhkHluPJS/xbEeOLOqdxk+8F6bVcAkp7ZcfNdtyzAAAAAElFTkSuQmCC">
+                            </button>
+                            <h4>
+                                <strong>
+                                    Church
+                                </strong>
+                            </h4>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="col-12 text-center">
+                    <div class="row">
+                        <div class="col">
+                            <img src="" alt="" class="images">
+                            <br>
+                            <button class="btn" id="artGallery">
+                                <img
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAACXBIWXMAAAsTAAALEwEAmpwYAAABmElEQVR4nM3WMUscQRTA8b8xRcQvoE2EpEiTfAAlWJhGGwN+geQjhJQRouBhkUZMIVhJBJu99y5girDveW53XyKVKWKImC6CNiNz7OnlPI/zbj1uYNiZWXZ+DDNv3sKwlSzjoTq74vwtV5kpHEgSRtXZUyfEKsbHQoEQGFFjuwHkdbVYwNlqAYpFxNhsA4R2SMVYqhywcCdAjU+3AKEt4kyrcyTO+26BtQ5AaEWSjInGM0I3VqTGujrnjQnqY52B0IxoynMxfpeNV40VifMrqTF2jTQBvSCxVJyXahxLlanYV2dfUt7WX+YD/03QLRICI+JsXE1srInxOW8vqnPQN7KywgM1PqiRxW+SKs/U+RHb4jwR46RvBGA3ZVycf3WkxpgaZ03ti0JWIsayGoetK6lUearOn+L3xCnF4M0Pwms1vNDTJSmz8XQlzuN63/hWdt40I6V+4uSr8yLGiabMxX5MAzFOdjIecR8Rr9+ZFOenOvMdgX7uLomA8Y6huoUHlk8GkhkHluPJS/xbEeOLOqdxk+8F6bVcAkp7ZcfNdtyzAAAAAElFTkSuQmCC">
+                            </button>
+                            <h4>
+                                <strong>
+                                    Art Gallery
+                                </strong>
+                            </h4>
+                        </div>
+
+                        <div class="col">
+                            <img src="" alt="" class="images">
+                            <br>
+                            <button class="btn" id="monument">
+                                <img
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAACXBIWXMAAAsTAAALEwEAmpwYAAABmElEQVR4nM3WMUscQRTA8b8xRcQvoE2EpEiTfAAlWJhGGwN+geQjhJQRouBhkUZMIVhJBJu99y5girDveW53XyKVKWKImC6CNiNz7OnlPI/zbj1uYNiZWXZ+DDNv3sKwlSzjoTq74vwtV5kpHEgSRtXZUyfEKsbHQoEQGFFjuwHkdbVYwNlqAYpFxNhsA4R2SMVYqhywcCdAjU+3AKEt4kyrcyTO+26BtQ5AaEWSjInGM0I3VqTGujrnjQnqY52B0IxoynMxfpeNV40VifMrqTF2jTQBvSCxVJyXahxLlanYV2dfUt7WX+YD/03QLRICI+JsXE1srInxOW8vqnPQN7KywgM1PqiRxW+SKs/U+RHb4jwR46RvBGA3ZVycf3WkxpgaZ03ti0JWIsayGoetK6lUearOn+L3xCnF4M0Pwms1vNDTJSmz8XQlzuN63/hWdt40I6V+4uSr8yLGiabMxX5MAzFOdjIecR8Rr9+ZFOenOvMdgX7uLomA8Y6huoUHlk8GkhkHluPJS/xbEeOLOqdxk+8F6bVcAkp7ZcfNdtyzAAAAAElFTkSuQmCC">
+                            </button>
+                            <h4>
+                                <strong>
+                                    Monument
+                                </strong>
+                            </h4>
+                        </div>
+
+                        <div class="col">
+                            <img src="" alt="" class="images">
+                            <br>
+                            <button class="btn" id="port">
+                                <img
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAACXBIWXMAAAsTAAALEwEAmpwYAAABmElEQVR4nM3WMUscQRTA8b8xRcQvoE2EpEiTfAAlWJhGGwN+geQjhJQRouBhkUZMIVhJBJu99y5girDveW53XyKVKWKImC6CNiNz7OnlPI/zbj1uYNiZWXZ+DDNv3sKwlSzjoTq74vwtV5kpHEgSRtXZUyfEKsbHQoEQGFFjuwHkdbVYwNlqAYpFxNhsA4R2SMVYqhywcCdAjU+3AKEt4kyrcyTO+26BtQ5AaEWSjInGM0I3VqTGujrnjQnqY52B0IxoynMxfpeNV40VifMrqTF2jTQBvSCxVJyXahxLlanYV2dfUt7WX+YD/03QLRICI+JsXE1srInxOW8vqnPQN7KywgM1PqiRxW+SKs/U+RHb4jwR46RvBGA3ZVycf3WkxpgaZ03ti0JWIsayGoetK6lUearOn+L3xCnF4M0Pwms1vNDTJSmz8XQlzuN63/hWdt40I6V+4uSr8yLGiabMxX5MAzFOdjIecR8Rr9+ZFOenOvMdgX7uLomA8Y6huoUHlk8GkhkHluPJS/xbEeOLOqdxk+8F6bVcAkp7ZcfNdtyzAAAAAElFTkSuQmCC">
+                            </button>
+                            <h4>
+                                <strong>
+                                    Port
+                                </strong>
+                            </h4>
+                        </div>
+
+                        <div class="col">
+                            <img src="" alt="" class="images">
+                            <br>
+                            <button class="btn" id="busStop">
+                                <img
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAACXBIWXMAAAsTAAALEwEAmpwYAAABmElEQVR4nM3WMUscQRTA8b8xRcQvoE2EpEiTfAAlWJhGGwN+geQjhJQRouBhkUZMIVhJBJu99y5girDveW53XyKVKWKImC6CNiNz7OnlPI/zbj1uYNiZWXZ+DDNv3sKwlSzjoTq74vwtV5kpHEgSRtXZUyfEKsbHQoEQGFFjuwHkdbVYwNlqAYpFxNhsA4R2SMVYqhywcCdAjU+3AKEt4kyrcyTO+26BtQ5AaEWSjInGM0I3VqTGujrnjQnqY52B0IxoynMxfpeNV40VifMrqTF2jTQBvSCxVJyXahxLlanYV2dfUt7WX+YD/03QLRICI+JsXE1srInxOW8vqnPQN7KywgM1PqiRxW+SKs/U+RHb4jwR46RvBGA3ZVycf3WkxpgaZ03ti0JWIsayGoetK6lUearOn+L3xCnF4M0Pwms1vNDTJSmz8XQlzuN63/hWdt40I6V+4uSr8yLGiabMxX5MAzFOdjIecR8Rr9+ZFOenOvMdgX7uLomA8Y6huoUHlk8GkhkHluPJS/xbEeOLOqdxk+8F6bVcAkp7ZcfNdtyzAAAAAElFTkSuQmCC">
+                            </button>
+                            <h4>
+                                <strong>
+                                    Bus Stop
+                                </strong>
+                            </h4>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="col-12 text-center">
+                    <div class="row">
+                        <div class="col">
+                            <img src="" alt="" class="images">
+                            <br>
+                            <button class="btn" id="busStation">
+                                <img
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAACXBIWXMAAAsTAAALEwEAmpwYAAABmElEQVR4nM3WMUscQRTA8b8xRcQvoE2EpEiTfAAlWJhGGwN+geQjhJQRouBhkUZMIVhJBJu99y5girDveW53XyKVKWKImC6CNiNz7OnlPI/zbj1uYNiZWXZ+DDNv3sKwlSzjoTq74vwtV5kpHEgSRtXZUyfEKsbHQoEQGFFjuwHkdbVYwNlqAYpFxNhsA4R2SMVYqhywcCdAjU+3AKEt4kyrcyTO+26BtQ5AaEWSjInGM0I3VqTGujrnjQnqY52B0IxoynMxfpeNV40VifMrqTF2jTQBvSCxVJyXahxLlanYV2dfUt7WX+YD/03QLRICI+JsXE1srInxOW8vqnPQN7KywgM1PqiRxW+SKs/U+RHb4jwR46RvBGA3ZVycf3WkxpgaZ03ti0JWIsayGoetK6lUearOn+L3xCnF4M0Pwms1vNDTJSmz8XQlzuN63/hWdt40I6V+4uSr8yLGiabMxX5MAzFOdjIecR8Rr9+ZFOenOvMdgX7uLomA8Y6huoUHlk8GkhkHluPJS/xbEeOLOqdxk+8F6bVcAkp7ZcfNdtyzAAAAAElFTkSuQmCC">
+                            </button>
+                            <h4>
+                                <strong>
+                                    Bus Station
+                                </strong>
+                            </h4>
+                        </div>
+
+                        <div class="col">
+                            <img src="" alt="" class="images">
+                            <br>
+                            <button class="btn" id="subwayStation">
+                                <img
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAACXBIWXMAAAsTAAALEwEAmpwYAAABmElEQVR4nM3WMUscQRTA8b8xRcQvoE2EpEiTfAAlWJhGGwN+geQjhJQRouBhkUZMIVhJBJu99y5girDveW53XyKVKWKImC6CNiNz7OnlPI/zbj1uYNiZWXZ+DDNv3sKwlSzjoTq74vwtV5kpHEgSRtXZUyfEKsbHQoEQGFFjuwHkdbVYwNlqAYpFxNhsA4R2SMVYqhywcCdAjU+3AKEt4kyrcyTO+26BtQ5AaEWSjInGM0I3VqTGujrnjQnqY52B0IxoynMxfpeNV40VifMrqTF2jTQBvSCxVJyXahxLlanYV2dfUt7WX+YD/03QLRICI+JsXE1srInxOW8vqnPQN7KywgM1PqiRxW+SKs/U+RHb4jwR46RvBGA3ZVycf3WkxpgaZ03ti0JWIsayGoetK6lUearOn+L3xCnF4M0Pwms1vNDTJSmz8XQlzuN63/hWdt40I6V+4uSr8yLGiabMxX5MAzFOdjIecR8Rr9+ZFOenOvMdgX7uLomA8Y6huoUHlk8GkhkHluPJS/xbEeOLOqdxk+8F6bVcAkp7ZcfNdtyzAAAAAElFTkSuQmCC">
+                            </button>
+                            <h4>
+                                <strong>
+                                    Subway Station
+                                </strong>
+                            </h4>
+                        </div>
+
+                        <div class="col">
+                            <img src="" alt="" class="images">
+                            <br>
+                            <button class="btn" id="trainStation">
+                                <img
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAACXBIWXMAAAsTAAALEwEAmpwYAAABmElEQVR4nM3WMUscQRTA8b8xRcQvoE2EpEiTfAAlWJhGGwN+geQjhJQRouBhkUZMIVhJBJu99y5girDveW53XyKVKWKImC6CNiNz7OnlPI/zbj1uYNiZWXZ+DDNv3sKwlSzjoTq74vwtV5kpHEgSRtXZUyfEKsbHQoEQGFFjuwHkdbVYwNlqAYpFxNhsA4R2SMVYqhywcCdAjU+3AKEt4kyrcyTO+26BtQ5AaEWSjInGM0I3VqTGujrnjQnqY52B0IxoynMxfpeNV40VifMrqTF2jTQBvSCxVJyXahxLlanYV2dfUt7WX+YD/03QLRICI+JsXE1srInxOW8vqnPQN7KywgM1PqiRxW+SKs/U+RHb4jwR46RvBGA3ZVycf3WkxpgaZ03ti0JWIsayGoetK6lUearOn+L3xCnF4M0Pwms1vNDTJSmz8XQlzuN63/hWdt40I6V+4uSr8yLGiabMxX5MAzFOdjIecR8Rr9+ZFOenOvMdgX7uLomA8Y6huoUHlk8GkhkHluPJS/xbEeOLOqdxk+8F6bVcAkp7ZcfNdtyzAAAAAElFTkSuQmCC">
+                            </button>
+                            <h4>
+                                <strong>
+                                    Train Station
+                                </strong>
+                            </h4>
+                        </div>
+
+                        <div class="col">
+                            <img src="" alt="" class="images">
+                            <br>
+                            <button class="btn" id="airport">
+                                <img
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAACXBIWXMAAAsTAAALEwEAmpwYAAABmElEQVR4nM3WMUscQRTA8b8xRcQvoE2EpEiTfAAlWJhGGwN+geQjhJQRouBhkUZMIVhJBJu99y5girDveW53XyKVKWKImC6CNiNz7OnlPI/zbj1uYNiZWXZ+DDNv3sKwlSzjoTq74vwtV5kpHEgSRtXZUyfEKsbHQoEQGFFjuwHkdbVYwNlqAYpFxNhsA4R2SMVYqhywcCdAjU+3AKEt4kyrcyTO+26BtQ5AaEWSjInGM0I3VqTGujrnjQnqY52B0IxoynMxfpeNV40VifMrqTF2jTQBvSCxVJyXahxLlanYV2dfUt7WX+YD/03QLRICI+JsXE1srInxOW8vqnPQN7KywgM1PqiRxW+SKs/U+RHb4jwR46RvBGA3ZVycf3WkxpgaZ03ti0JWIsayGoetK6lUearOn+L3xCnF4M0Pwms1vNDTJSmz8XQlzuN63/hWdt40I6V+4uSr8yLGiabMxX5MAzFOdjIecR8Rr9+ZFOenOvMdgX7uLomA8Y6huoUHlk8GkhkHluPJS/xbEeOLOqdxk+8F6bVcAkp7ZcfNdtyzAAAAAElFTkSuQmCC">
+                            </button>
+                            <h4>
+                                <strong>
+                                    Airport
+                                </strong>
+                            </h4>
+                        </div>
+                    </div>
+                </section>
+
+
+                <section class="col-12 text-center">
+                    <div class="row">
+                        <div class="col">
+                            <img src="" alt="" class="images">
+                            <br>
+                            <button class="btn" id="townHall">
+                                <img
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAACXBIWXMAAAsTAAALEwEAmpwYAAABmElEQVR4nM3WMUscQRTA8b8xRcQvoE2EpEiTfAAlWJhGGwN+geQjhJQRouBhkUZMIVhJBJu99y5girDveW53XyKVKWKImC6CNiNz7OnlPI/zbj1uYNiZWXZ+DDNv3sKwlSzjoTq74vwtV5kpHEgSRtXZUyfEKsbHQoEQGFFjuwHkdbVYwNlqAYpFxNhsA4R2SMVYqhywcCdAjU+3AKEt4kyrcyTO+26BtQ5AaEWSjInGM0I3VqTGujrnjQnqY52B0IxoynMxfpeNV40VifMrqTF2jTQBvSCxVJyXahxLlanYV2dfUt7WX+YD/03QLRICI+JsXE1srInxOW8vqnPQN7KywgM1PqiRxW+SKs/U+RHb4jwR46RvBGA3ZVycf3WkxpgaZ03ti0JWIsayGoetK6lUearOn+L3xCnF4M0Pwms1vNDTJSmz8XQlzuN63/hWdt40I6V+4uSr8yLGiabMxX5MAzFOdjIecR8Rr9+ZFOenOvMdgX7uLomA8Y6huoUHlk8GkhkHluPJS/xbEeOLOqdxk+8F6bVcAkp7ZcfNdtyzAAAAAElFTkSuQmCC">
+                            </button>
+                            <h4>
+                                <strong>
+                                    Town Hall
+                                </strong>
+                            </h4>
+                        </div>
+
+                        <div class="col">
+                            <img src="" alt="" class="images">
+                            <br>
+                            <button class="btn" id="gasStation">
+                                <img
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAACXBIWXMAAAsTAAALEwEAmpwYAAABmElEQVR4nM3WMUscQRTA8b8xRcQvoE2EpEiTfAAlWJhGGwN+geQjhJQRouBhkUZMIVhJBJu99y5girDveW53XyKVKWKImC6CNiNz7OnlPI/zbj1uYNiZWXZ+DDNv3sKwlSzjoTq74vwtV5kpHEgSRtXZUyfEKsbHQoEQGFFjuwHkdbVYwNlqAYpFxNhsA4R2SMVYqhywcCdAjU+3AKEt4kyrcyTO+26BtQ5AaEWSjInGM0I3VqTGujrnjQnqY52B0IxoynMxfpeNV40VifMrqTF2jTQBvSCxVJyXahxLlanYV2dfUt7WX+YD/03QLRICI+JsXE1srInxOW8vqnPQN7KywgM1PqiRxW+SKs/U+RHb4jwR46RvBGA3ZVycf3WkxpgaZ03ti0JWIsayGoetK6lUearOn+L3xCnF4M0Pwms1vNDTJSmz8XQlzuN63/hWdt40I6V+4uSr8yLGiabMxX5MAzFOdjIecR8Rr9+ZFOenOvMdgX7uLomA8Y6huoUHlk8GkhkHluPJS/xbEeOLOqdxk+8F6bVcAkp7ZcfNdtyzAAAAAElFTkSuQmCC">
+                            </button>
+                            <h4>
+                                <strong>
+                                    Gas Station
+                                </strong>
+                            </h4>
+                        </div>
+
+                        <div class="col">
+                            <img src="" alt="" class="images">
+                            <br>
+                            <button class="btn" id="Zoo">
+                                <img
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAACXBIWXMAAAsTAAALEwEAmpwYAAABmElEQVR4nM3WMUscQRTA8b8xRcQvoE2EpEiTfAAlWJhGGwN+geQjhJQRouBhkUZMIVhJBJu99y5girDveW53XyKVKWKImC6CNiNz7OnlPI/zbj1uYNiZWXZ+DDNv3sKwlSzjoTq74vwtV5kpHEgSRtXZUyfEKsbHQoEQGFFjuwHkdbVYwNlqAYpFxNhsA4R2SMVYqhywcCdAjU+3AKEt4kyrcyTO+26BtQ5AaEWSjInGM0I3VqTGujrnjQnqY52B0IxoynMxfpeNV40VifMrqTF2jTQBvSCxVJyXahxLlanYV2dfUt7WX+YD/03QLRICI+JsXE1srInxOW8vqnPQN7KywgM1PqiRxW+SKs/U+RHb4jwR46RvBGA3ZVycf3WkxpgaZ03ti0JWIsayGoetK6lUearOn+L3xCnF4M0Pwms1vNDTJSmz8XQlzuN63/hWdt40I6V+4uSr8yLGiabMxX5MAzFOdjIecR8Rr9+ZFOenOvMdgX7uLomA8Y6huoUHlk8GkhkHluPJS/xbEeOLOqdxk+8F6bVcAkp7ZcfNdtyzAAAAAElFTkSuQmCC">
+                            </button>
+                            <h4>
+                                <strong>
+                                    Zoo
+                                </strong>
+                            </h4>
+                        </div>
+
+                        <div class="col">
+                            <img src="" alt="" class="images">
+                            <br>
+                            <button class="btn" id="park">
+                                <img
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAACXBIWXMAAAsTAAALEwEAmpwYAAABmElEQVR4nM3WMUscQRTA8b8xRcQvoE2EpEiTfAAlWJhGGwN+geQjhJQRouBhkUZMIVhJBJu99y5girDveW53XyKVKWKImC6CNiNz7OnlPI/zbj1uYNiZWXZ+DDNv3sKwlSzjoTq74vwtV5kpHEgSRtXZUyfEKsbHQoEQGFFjuwHkdbVYwNlqAYpFxNhsA4R2SMVYqhywcCdAjU+3AKEt4kyrcyTO+26BtQ5AaEWSjInGM0I3VqTGujrnjQnqY52B0IxoynMxfpeNV40VifMrqTF2jTQBvSCxVJyXahxLlanYV2dfUt7WX+YD/03QLRICI+JsXE1srInxOW8vqnPQN7KywgM1PqiRxW+SKs/U+RHb4jwR46RvBGA3ZVycf3WkxpgaZ03ti0JWIsayGoetK6lUearOn+L3xCnF4M0Pwms1vNDTJSmz8XQlzuN63/hWdt40I6V+4uSr8yLGiabMxX5MAzFOdjIecR8Rr9+ZFOenOvMdgX7uLomA8Y6huoUHlk8GkhkHluPJS/xbEeOLOqdxk+8F6bVcAkp7ZcfNdtyzAAAAAElFTkSuQmCC">
+                            </button>
+                            <h4>
+                                <strong>
+                                    Park
+                                </strong>
+                            </h4>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="col-12 text-center">
+                    <div class="row">
+                        <div class="col">
+                            <img src="" alt="" class="images">
+                            <br>
+                            <button class="btn" id="aquarium">
+                                <img
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAACXBIWXMAAAsTAAALEwEAmpwYAAABmElEQVR4nM3WMUscQRTA8b8xRcQvoE2EpEiTfAAlWJhGGwN+geQjhJQRouBhkUZMIVhJBJu99y5girDveW53XyKVKWKImC6CNiNz7OnlPI/zbj1uYNiZWXZ+DDNv3sKwlSzjoTq74vwtV5kpHEgSRtXZUyfEKsbHQoEQGFFjuwHkdbVYwNlqAYpFxNhsA4R2SMVYqhywcCdAjU+3AKEt4kyrcyTO+26BtQ5AaEWSjInGM0I3VqTGujrnjQnqY52B0IxoynMxfpeNV40VifMrqTF2jTQBvSCxVJyXahxLlanYV2dfUt7WX+YD/03QLRICI+JsXE1srInxOW8vqnPQN7KywgM1PqiRxW+SKs/U+RHb4jwR46RvBGA3ZVycf3WkxpgaZ03ti0JWIsayGoetK6lUearOn+L3xCnF4M0Pwms1vNDTJSmz8XQlzuN63/hWdt40I6V+4uSr8yLGiabMxX5MAzFOdjIecR8Rr9+ZFOenOvMdgX7uLomA8Y6huoUHlk8GkhkHluPJS/xbEeOLOqdxk+8F6bVcAkp7ZcfNdtyzAAAAAElFTkSuQmCC">
+                            </button>
+                            <h4>
+                                <strong>
+                                    Aquarium
+                                </strong>
+                            </h4>
+                        </div>
+
+                        <div class="col">
+                            <img src="" alt="" class="images">
+                            <br>
+                            <button class="btn" id="concertHall">
+                                <img
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAACXBIWXMAAAsTAAALEwEAmpwYAAABmElEQVR4nM3WMUscQRTA8b8xRcQvoE2EpEiTfAAlWJhGGwN+geQjhJQRouBhkUZMIVhJBJu99y5girDveW53XyKVKWKImC6CNiNz7OnlPI/zbj1uYNiZWXZ+DDNv3sKwlSzjoTq74vwtV5kpHEgSRtXZUyfEKsbHQoEQGFFjuwHkdbVYwNlqAYpFxNhsA4R2SMVYqhywcCdAjU+3AKEt4kyrcyTO+26BtQ5AaEWSjInGM0I3VqTGujrnjQnqY52B0IxoynMxfpeNV40VifMrqTF2jTQBvSCxVJyXahxLlanYV2dfUt7WX+YD/03QLRICI+JsXE1srInxOW8vqnPQN7KywgM1PqiRxW+SKs/U+RHb4jwR46RvBGA3ZVycf3WkxpgaZ03ti0JWIsayGoetK6lUearOn+L3xCnF4M0Pwms1vNDTJSmz8XQlzuN63/hWdt40I6V+4uSr8yLGiabMxX5MAzFOdjIecR8Rr9+ZFOenOvMdgX7uLomA8Y6huoUHlk8GkhkHluPJS/xbEeOLOqdxk+8F6bVcAkp7ZcfNdtyzAAAAAElFTkSuQmCC">
+                            </button>
+                            <h4>
+                                <strong>
+                                    Concert Hall
+                                </strong>
+                            </h4>
+                        </div>
+
+                        <div class="col">
+                            <img src="" alt="" class="images">
+                            <br>
+                            <button class="btn" id="Circus">
+                                <img
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAACXBIWXMAAAsTAAALEwEAmpwYAAABmElEQVR4nM3WMUscQRTA8b8xRcQvoE2EpEiTfAAlWJhGGwN+geQjhJQRouBhkUZMIVhJBJu99y5girDveW53XyKVKWKImC6CNiNz7OnlPI/zbj1uYNiZWXZ+DDNv3sKwlSzjoTq74vwtV5kpHEgSRtXZUyfEKsbHQoEQGFFjuwHkdbVYwNlqAYpFxNhsA4R2SMVYqhywcCdAjU+3AKEt4kyrcyTO+26BtQ5AaEWSjInGM0I3VqTGujrnjQnqY52B0IxoynMxfpeNV40VifMrqTF2jTQBvSCxVJyXahxLlanYV2dfUt7WX+YD/03QLRICI+JsXE1srInxOW8vqnPQN7KywgM1PqiRxW+SKs/U+RHb4jwR46RvBGA3ZVycf3WkxpgaZ03ti0JWIsayGoetK6lUearOn+L3xCnF4M0Pwms1vNDTJSmz8XQlzuN63/hWdt40I6V+4uSr8yLGiabMxX5MAzFOdjIecR8Rr9+ZFOenOvMdgX7uLomA8Y6huoUHlk8GkhkHluPJS/xbEeOLOqdxk+8F6bVcAkp7ZcfNdtyzAAAAAElFTkSuQmCC">
+                            </button>
+                            <h4>
+                                <strong>
+                                    Circus
+                                </strong>
+                            </h4>
+                        </div>
+
+                        <div class="col">
+                            <img src="" alt="" class="images">
+                            <br>
+                            <button class="btn" id="travelAgency">
+                                <img
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAACXBIWXMAAAsTAAALEwEAmpwYAAABmElEQVR4nM3WMUscQRTA8b8xRcQvoE2EpEiTfAAlWJhGGwN+geQjhJQRouBhkUZMIVhJBJu99y5girDveW53XyKVKWKImC6CNiNz7OnlPI/zbj1uYNiZWXZ+DDNv3sKwlSzjoTq74vwtV5kpHEgSRtXZUyfEKsbHQoEQGFFjuwHkdbVYwNlqAYpFxNhsA4R2SMVYqhywcCdAjU+3AKEt4kyrcyTO+26BtQ5AaEWSjInGM0I3VqTGujrnjQnqY52B0IxoynMxfpeNV40VifMrqTF2jTQBvSCxVJyXahxLlanYV2dfUt7WX+YD/03QLRICI+JsXE1srInxOW8vqnPQN7KywgM1PqiRxW+SKs/U+RHb4jwR46RvBGA3ZVycf3WkxpgaZ03ti0JWIsayGoetK6lUearOn+L3xCnF4M0Pwms1vNDTJSmz8XQlzuN63/hWdt40I6V+4uSr8yLGiabMxX5MAzFOdjIecR8Rr9+ZFOenOvMdgX7uLomA8Y6huoUHlk8GkhkHluPJS/xbEeOLOqdxk+8F6bVcAkp7ZcfNdtyzAAAAAElFTkSuQmCC">
+                            </button>
+                            <h4>
+                                <strong>
+                                    Travel Agency
+                                </strong>
+                            </h4>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="col-12 text-center">
+                    <div class="row">
+                        <div class="col">
+                            <img src="https://banner2.cleanpng.com/20180313/baw/kisspng-coffee-tea-cafe-bakery-city-street-building-city-%E2%80%8B%E2%80%8Bbuilding-street-sh-5aa78f0165ac07.6417489615209305614165.jpg" alt="" class="images">
+                            <br>
+                            <button class="btn" id="coffeeShop">
+                                <img
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAACXBIWXMAAAsTAAALEwEAmpwYAAABmElEQVR4nM3WMUscQRTA8b8xRcQvoE2EpEiTfAAlWJhGGwN+geQjhJQRouBhkUZMIVhJBJu99y5girDveW53XyKVKWKImC6CNiNz7OnlPI/zbj1uYNiZWXZ+DDNv3sKwlSzjoTq74vwtV5kpHEgSRtXZUyfEKsbHQoEQGFFjuwHkdbVYwNlqAYpFxNhsA4R2SMVYqhywcCdAjU+3AKEt4kyrcyTO+26BtQ5AaEWSjInGM0I3VqTGujrnjQnqY52B0IxoynMxfpeNV40VifMrqTF2jTQBvSCxVJyXahxLlanYV2dfUt7WX+YD/03QLRICI+JsXE1srInxOW8vqnPQN7KywgM1PqiRxW+SKs/U+RHb4jwR46RvBGA3ZVycf3WkxpgaZ03ti0JWIsayGoetK6lUearOn+L3xCnF4M0Pwms1vNDTJSmz8XQlzuN63/hWdt40I6V+4uSr8yLGiabMxX5MAzFOdjIecR8Rr9+ZFOenOvMdgX7uLomA8Y6huoUHlk8GkhkHluPJS/xbEeOLOqdxk+8F6bVcAkp7ZcfNdtyzAAAAAElFTkSuQmCC">
+                            </button>
+                            <h4>
+                                <strong>
+                                    Coffee Shop
+                                </strong>
+                            </h4>
+                        </div>
+
+                        <div class="col">
+                            <img src="" alt="" class="images">
+                            <br>
+                            <button class="btn" id="gym">
+                                <img
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAACXBIWXMAAAsTAAALEwEAmpwYAAABmElEQVR4nM3WMUscQRTA8b8xRcQvoE2EpEiTfAAlWJhGGwN+geQjhJQRouBhkUZMIVhJBJu99y5girDveW53XyKVKWKImC6CNiNz7OnlPI/zbj1uYNiZWXZ+DDNv3sKwlSzjoTq74vwtV5kpHEgSRtXZUyfEKsbHQoEQGFFjuwHkdbVYwNlqAYpFxNhsA4R2SMVYqhywcCdAjU+3AKEt4kyrcyTO+26BtQ5AaEWSjInGM0I3VqTGujrnjQnqY52B0IxoynMxfpeNV40VifMrqTF2jTQBvSCxVJyXahxLlanYV2dfUt7WX+YD/03QLRICI+JsXE1srInxOW8vqnPQN7KywgM1PqiRxW+SKs/U+RHb4jwR46RvBGA3ZVycf3WkxpgaZ03ti0JWIsayGoetK6lUearOn+L3xCnF4M0Pwms1vNDTJSmz8XQlzuN63/hWdt40I6V+4uSr8yLGiabMxX5MAzFOdjIecR8Rr9+ZFOenOvMdgX7uLomA8Y6huoUHlk8GkhkHluPJS/xbEeOLOqdxk+8F6bVcAkp7ZcfNdtyzAAAAAElFTkSuQmCC">
+                            </button>
+                            <h4>
+                                <strong>
+                                    Gym
+                                </strong>
+                            </h4>
+                        </div>
+
+                        <div class="col">
+                            <img src="" alt="" class="images">
+                            <br>
+                            <button class="btn" id="stadium">
+                                <img
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAACXBIWXMAAAsTAAALEwEAmpwYAAABmElEQVR4nM3WMUscQRTA8b8xRcQvoE2EpEiTfAAlWJhGGwN+geQjhJQRouBhkUZMIVhJBJu99y5girDveW53XyKVKWKImC6CNiNz7OnlPI/zbj1uYNiZWXZ+DDNv3sKwlSzjoTq74vwtV5kpHEgSRtXZUyfEKsbHQoEQGFFjuwHkdbVYwNlqAYpFxNhsA4R2SMVYqhywcCdAjU+3AKEt4kyrcyTO+26BtQ5AaEWSjInGM0I3VqTGujrnjQnqY52B0IxoynMxfpeNV40VifMrqTF2jTQBvSCxVJyXahxLlanYV2dfUt7WX+YD/03QLRICI+JsXE1srInxOW8vqnPQN7KywgM1PqiRxW+SKs/U+RHb4jwR46RvBGA3ZVycf3WkxpgaZ03ti0JWIsayGoetK6lUearOn+L3xCnF4M0Pwms1vNDTJSmz8XQlzuN63/hWdt40I6V+4uSr8yLGiabMxX5MAzFOdjIecR8Rr9+ZFOenOvMdgX7uLomA8Y6huoUHlk8GkhkHluPJS/xbEeOLOqdxk+8F6bVcAkp7ZcfNdtyzAAAAAElFTkSuQmCC">
+                            </button>
+                            <h4>
+                                <strong>
+                                    Stadium
+                                </strong>
+                            </h4>
+                        </div>
+
+                        <div class="col">
+                            <img src="" alt="" class="images">
+                            <br>
+                            <button class="btn" id="college">
+                                <img
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAACXBIWXMAAAsTAAALEwEAmpwYAAABmElEQVR4nM3WMUscQRTA8b8xRcQvoE2EpEiTfAAlWJhGGwN+geQjhJQRouBhkUZMIVhJBJu99y5girDveW53XyKVKWKImC6CNiNz7OnlPI/zbj1uYNiZWXZ+DDNv3sKwlSzjoTq74vwtV5kpHEgSRtXZUyfEKsbHQoEQGFFjuwHkdbVYwNlqAYpFxNhsA4R2SMVYqhywcCdAjU+3AKEt4kyrcyTO+26BtQ5AaEWSjInGM0I3VqTGujrnjQnqY52B0IxoynMxfpeNV40VifMrqTF2jTQBvSCxVJyXahxLlanYV2dfUt7WX+YD/03QLRICI+JsXE1srInxOW8vqnPQN7KywgM1PqiRxW+SKs/U+RHb4jwR46RvBGA3ZVycf3WkxpgaZ03ti0JWIsayGoetK6lUearOn+L3xCnF4M0Pwms1vNDTJSmz8XQlzuN63/hWdt40I6V+4uSr8yLGiabMxX5MAzFOdjIecR8Rr9+ZFOenOvMdgX7uLomA8Y6huoUHlk8GkhkHluPJS/xbEeOLOqdxk+8F6bVcAkp7ZcfNdtyzAAAAAElFTkSuQmCC">
+                            </button>
+                            <h4>
+                                <strong>
+                                    College
+                                </strong>
+                            </h4>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="col-12 text-center">
+                    <div class="row">
+                        <div class="col">
+                            <img src="https://banner2.cleanpng.com/20180316/giw/kisspng-building-university-clip-art-prison-building-cliparts-5aab9360046b37.4471356915211938240181.jpg" alt="" class="images">
+                            <br>
+                            <button class="btn" id="university">
+                                <img
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAACXBIWXMAAAsTAAALEwEAmpwYAAABmElEQVR4nM3WMUscQRTA8b8xRcQvoE2EpEiTfAAlWJhGGwN+geQjhJQRouBhkUZMIVhJBJu99y5girDveW53XyKVKWKImC6CNiNz7OnlPI/zbj1uYNiZWXZ+DDNv3sKwlSzjoTq74vwtV5kpHEgSRtXZUyfEKsbHQoEQGFFjuwHkdbVYwNlqAYpFxNhsA4R2SMVYqhywcCdAjU+3AKEt4kyrcyTO+26BtQ5AaEWSjInGM0I3VqTGujrnjQnqY52B0IxoynMxfpeNV40VifMrqTF2jTQBvSCxVJyXahxLlanYV2dfUt7WX+YD/03QLRICI+JsXE1srInxOW8vqnPQN7KywgM1PqiRxW+SKs/U+RHb4jwR46RvBGA3ZVycf3WkxpgaZ03ti0JWIsayGoetK6lUearOn+L3xCnF4M0Pwms1vNDTJSmz8XQlzuN63/hWdt40I6V+4uSr8yLGiabMxX5MAzFOdjIecR8Rr9+ZFOenOvMdgX7uLomA8Y6huoUHlk8GkhkHluPJS/xbEeOLOqdxk+8F6bVcAkp7ZcfNdtyzAAAAAElFTkSuQmCC">
+                            </button>
+                            <h4>
+                                <strong>
+                                    University
+                                </strong>
+                            </h4>
+                        </div>
+
+                        <div class="col">
+                            <img src="" alt="" class="images">
+                            <br>
+                            <button class="btn" id="academy">
+                                <img
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAACXBIWXMAAAsTAAALEwEAmpwYAAABmElEQVR4nM3WMUscQRTA8b8xRcQvoE2EpEiTfAAlWJhGGwN+geQjhJQRouBhkUZMIVhJBJu99y5girDveW53XyKVKWKImC6CNiNz7OnlPI/zbj1uYNiZWXZ+DDNv3sKwlSzjoTq74vwtV5kpHEgSRtXZUyfEKsbHQoEQGFFjuwHkdbVYwNlqAYpFxNhsA4R2SMVYqhywcCdAjU+3AKEt4kyrcyTO+26BtQ5AaEWSjInGM0I3VqTGujrnjQnqY52B0IxoynMxfpeNV40VifMrqTF2jTQBvSCxVJyXahxLlanYV2dfUt7WX+YD/03QLRICI+JsXE1srInxOW8vqnPQN7KywgM1PqiRxW+SKs/U+RHb4jwR46RvBGA3ZVycf3WkxpgaZ03ti0JWIsayGoetK6lUearOn+L3xCnF4M0Pwms1vNDTJSmz8XQlzuN63/hWdt40I6V+4uSr8yLGiabMxX5MAzFOdjIecR8Rr9+ZFOenOvMdgX7uLomA8Y6huoUHlk8GkhkHluPJS/xbEeOLOqdxk+8F6bVcAkp7ZcfNdtyzAAAAAElFTkSuQmCC">
+                            </button>
+                            <h4>
+                                <strong>
+                                    Academy
+                                </strong>
+                            </h4>
+                        </div>
+
+                        <div class="col">
+                            <img src="" alt="" class="images">
+                            <br>
+                            <button class="btn" id="autoRepairShop">
+                                <img
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAACXBIWXMAAAsTAAALEwEAmpwYAAABmElEQVR4nM3WMUscQRTA8b8xRcQvoE2EpEiTfAAlWJhGGwN+geQjhJQRouBhkUZMIVhJBJu99y5girDveW53XyKVKWKImC6CNiNz7OnlPI/zbj1uYNiZWXZ+DDNv3sKwlSzjoTq74vwtV5kpHEgSRtXZUyfEKsbHQoEQGFFjuwHkdbVYwNlqAYpFxNhsA4R2SMVYqhywcCdAjU+3AKEt4kyrcyTO+26BtQ5AaEWSjInGM0I3VqTGujrnjQnqY52B0IxoynMxfpeNV40VifMrqTF2jTQBvSCxVJyXahxLlanYV2dfUt7WX+YD/03QLRICI+JsXE1srInxOW8vqnPQN7KywgM1PqiRxW+SKs/U+RHb4jwR46RvBGA3ZVycf3WkxpgaZ03ti0JWIsayGoetK6lUearOn+L3xCnF4M0Pwms1vNDTJSmz8XQlzuN63/hWdt40I6V+4uSr8yLGiabMxX5MAzFOdjIecR8Rr9+ZFOenOvMdgX7uLomA8Y6huoUHlk8GkhkHluPJS/xbEeOLOqdxk+8F6bVcAkp7ZcfNdtyzAAAAAElFTkSuQmCC">
+                            </button>
+                            <h4>
+                                <strong>
+                                    Auto Repair Shop
+                                </strong>
+                            </h4>
+                        </div>
+
+                        <div class="col">
+                            <img src="" alt="" class="images">
+                            <br>
+                            <button class="btn" id="parkingLot">
+                                <img
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAACXBIWXMAAAsTAAALEwEAmpwYAAABmElEQVR4nM3WMUscQRTA8b8xRcQvoE2EpEiTfAAlWJhGGwN+geQjhJQRouBhkUZMIVhJBJu99y5girDveW53XyKVKWKImC6CNiNz7OnlPI/zbj1uYNiZWXZ+DDNv3sKwlSzjoTq74vwtV5kpHEgSRtXZUyfEKsbHQoEQGFFjuwHkdbVYwNlqAYpFxNhsA4R2SMVYqhywcCdAjU+3AKEt4kyrcyTO+26BtQ5AaEWSjInGM0I3VqTGujrnjQnqY52B0IxoynMxfpeNV40VifMrqTF2jTQBvSCxVJyXahxLlanYV2dfUt7WX+YD/03QLRICI+JsXE1srInxOW8vqnPQN7KywgM1PqiRxW+SKs/U+RHb4jwR46RvBGA3ZVycf3WkxpgaZ03ti0JWIsayGoetK6lUearOn+L3xCnF4M0Pwms1vNDTJSmz8XQlzuN63/hWdt40I6V+4uSr8yLGiabMxX5MAzFOdjIecR8Rr9+ZFOenOvMdgX7uLomA8Y6huoUHlk8GkhkHluPJS/xbEeOLOqdxk+8F6bVcAkp7ZcfNdtyzAAAAAElFTkSuQmCC">
+                            </button>
+                            <h4>
+                                <strong>
+                                    Parking Lot
+                                </strong>
+                            </h4>
+                        </div>
+
+                        <div class="col">
+                            <img src="" alt="" class="images">
+                            <br>
+                            <button class="btn" id="laundromat">
+                                <img
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAACXBIWXMAAAsTAAALEwEAmpwYAAABmElEQVR4nM3WMUscQRTA8b8xRcQvoE2EpEiTfAAlWJhGGwN+geQjhJQRouBhkUZMIVhJBJu99y5girDveW53XyKVKWKImC6CNiNz7OnlPI/zbj1uYNiZWXZ+DDNv3sKwlSzjoTq74vwtV5kpHEgSRtXZUyfEKsbHQoEQGFFjuwHkdbVYwNlqAYpFxNhsA4R2SMVYqhywcCdAjU+3AKEt4kyrcyTO+26BtQ5AaEWSjInGM0I3VqTGujrnjQnqY52B0IxoynMxfpeNV40VifMrqTF2jTQBvSCxVJyXahxLlanYV2dfUt7WX+YD/03QLRICI+JsXE1srInxOW8vqnPQN7KywgM1PqiRxW+SKs/U+RHb4jwR46RvBGA3ZVycf3WkxpgaZ03ti0JWIsayGoetK6lUearOn+L3xCnF4M0Pwms1vNDTJSmz8XQlzuN63/hWdt40I6V+4uSr8yLGiabMxX5MAzFOdjIecR8Rr9+ZFOenOvMdgX7uLomA8Y6huoUHlk8GkhkHluPJS/xbEeOLOqdxk+8F6bVcAkp7ZcfNdtyzAAAAAElFTkSuQmCC">
+                            </button>
+                            <h4>
+                                <strong>
+                                    Laundromat
+                                </strong>
+                            </h4>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </article>
+    </main>
+
+    <!--Footer section-->
+    <footer id="footer">
+        <div class="container-fluid">
+            <div class="row">
+                <h6 class="col-9">&copy; 2023 Tutti i diritti riservati</h6>
+                <h6 class="col-3">
+                    Creato con &hearts; da <a href="https://bluebutterflies.github.io/ButterflyTech/" target="_blank"
+                        rel="noopener noreferrer">Butterfly Tech Crative Solution</a>
+                    <br>
+                    <a href="">Privacy</a>
+                </h6>
+            </div>
+        </div>
+
+        <div class="floating-button-div">
+            <a class="btn top" type="button" href="#">
+                <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAr0lEQVR4nGNgGAWjYFAAvtmPhPhmPM/mmflUhCYW8Mx9Jso3/ekl/hnP/vNPf3ada+YrSapawD3tuRjfjKeXwRbMePoXRIP4IHGa+EBg6mM9qvoII4imvJTAKk6uRbgsgAGKLSJkAcUWEWsB2RaRagHJFpFrAdEWgXIwLB9Qkv65kfITiEYpGfhnPCuiVgbjRsm4z4pQfMI/42kBtcokHqh5vJOfCFPDvFEwChhwAgBQ2+JJPmitlQAAAABJRU5ErkJggg==">
+            </a>
+        </div>
+    </footer>
+    
+
+    <!--Bootstrap script-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+
+    <!--our script-->
+    <script src="../js/town.js"></script>
+</body>
+
+</html>

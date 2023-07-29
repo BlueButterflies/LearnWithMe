@@ -30,6 +30,7 @@ const rooms = document.getElementById('rooms');
 const seasonsWeekMonths = document.getElementById('seasonsWeekMonths');
 const familyTransports = document.getElementById('familyTransports');
 const emotionActions = document.getElementById('emotionActions');
+const town = document.getElementById('town');
 
 alphabet.addEventListener('click', function(){
     window.open('pages/alphabet.html', '_parent');
@@ -81,4 +82,8 @@ familyTransports.addEventListener('click', function(){
 
 emotionActions.addEventListener('click', function(){
     window.open('pages/emotionActions.html', '_parent');
+})
+
+town.addEventListener('click', function(){
+    window.open('pages/town.html', '_parent');
 })
