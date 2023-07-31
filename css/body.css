@@ -87,8 +87,7 @@ span h4{
     }
 
     .images{
-        max-width: 100%;
-        height: auto;
+        height: 150px;
     }
 
     .navbar span{
@@ -103,7 +102,6 @@ span h4{
     }
 
     .images{
-        max-width: 100%;
-        height: auto;
+        height: 150px;
     }
 }
