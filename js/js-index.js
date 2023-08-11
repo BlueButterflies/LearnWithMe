@@ -25,7 +25,7 @@ const vegetables = document.getElementById('vegetables');
 const fruits = document.getElementById('fruits');
 const body = document.getElementById('body');
 const foodsBeverages = document.getElementById('foodsBeverages');
-const colorsGeometricFigures = document.getElementById('colorsGeometricFigures');
+const colorsGeometricShapes = document.getElementById('colorsGeometricShapes');
 const rooms = document.getElementById('rooms');
 const seasonsWeekMonths = document.getElementById('seasonsWeekMonths');
 const familyTransports = document.getElementById('familyTransports');
@@ -65,7 +65,7 @@ foodsBeverages.addEventListener('click', function(){
     window.open('pages/foodsBeverages.html', '_parent');
 })
 
-colorsGeometricFigures.addEventListener('click', function(){
+colorsGeometricShapes.addEventListener('click', function(){
     window.open('pages/colorsGeometricFigures.html', '_parent');
 })
 
