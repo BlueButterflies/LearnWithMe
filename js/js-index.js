@@ -31,6 +31,7 @@ const seasonsWeekMonths = document.getElementById('seasonsWeekMonths');
 const familyTransports = document.getElementById('familyTransports');
 const emotionActions = document.getElementById('emotionActions');
 const town = document.getElementById('town');
+const school = document.getElementById('school');
 
 alphabet.addEventListener('click', function(){
     window.open('pages/alphabet.html', '_parent');
@@ -86,4 +87,8 @@ emotionActions.addEventListener('click', function(){
 
 town.addEventListener('click', function(){
     window.open('pages/town.html', '_parent');
+})
+
+school.addEventListener('click', function(){
+    window.open('pages/school.html', '_parent');
 })
