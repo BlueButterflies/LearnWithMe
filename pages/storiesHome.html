@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
+    <title>Stories Home</title>
+
+    <!--Our style-->
+    <link rel="stylesheet" href="..\css\stories.css">
+
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+    <!--Google Font-->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg  fixed-top">
+
+        <div class="container-fluid">
+            <span>
+                Listen to stories with me
+            </span>
+        </div>
+    </nav>
+
+    <main>
+        <section class="back">
+            <a href="../index.html">Home</a>
+        </section>
+
+        <article class="container-fluid stories">
+            <div class="row">
+                <section class="col-12 text-center first-row">
+                    <div class="row">
+
+                        <div class="col text-center">
+                            
+                            <div id="firstStory">
+                                <h3>Snow White</h3>
+                                
+                                <audio id="audioFirst">
+                                    <source src="/audio/Snow-White.mp4" type="audio/mpeg">
+                                </audio>
+                                <button class="playPause" id="playPauseFirst" onclick="PlayPauseFirst()">&#9658;</button>
+                                <button class="stop" id="stopFirst" onclick="StopFirst()">&#9724;</button>
+
+                                <button class="btn" type="button" id="readFirst">
+                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAADQ0lEQVR4nO2XXYhVVRTHr6ZWZpCVmGRS2oMgGXkVRSa2+//fc+8UA4JwBQnxZQpGK4qCRMVRIQoC0ZcgRITeKj8eS3yICIpIQRREDcpSTDAEKRnPWhd2rOO5w5k7Z+5cj2NPLVjsy2Ht/dtr7/Wxb6WSk7h69aNK7lLgs/FUgPdiT89sGyew2xl7ex+pdJI4NDTVFlNgrwIHm0CjUENYr+QhAW4puW9cO6Ah5FElPxkmF8ZVqx4eC61WpytwQcmTAvyl3teic9NsQrvaicRGY4aQf6dznXtsjF1v73PmSNP7jQJcVfKUkr/Yt9FgYK6Sp+23kJ8bWEJYrsDPtpm8CrAls0vBQu5ot1Hyp2HvFxnYri2zuxadmzUhuOO95MCdpBQ48f5FIb9sV1uszeO3xtgBXww792wpcOzvnyneV9s1OvdUHhydm19oV61OLwfu63swAZYVgJ8cBa7X57XbJORLsdF4oNxRA8sEONGuCTAw6qi9f3+MHXncovv/4Ir3M7g0BAq5onxw9XcJzgWXAh8pcFGBs5F84r7mcQIM5PL3H8sGJT9skpv+s+AS8s90BD6QEAazWj3UFTgJ4XUFfi2ovyN1WMkDAtxO29/oOn41hYSwVYDfhbys3r/aFdhk2Lnni+43d5d7lIxCbh75Drws5BWbL8A2BT61FtrqSMXgWu1x26GSYSKNISywlinkMZt7u1ZbnANfzsDbhbyU9eNDSu5O77/oUSDAO0XB1K4KnDNPbY4C+xX4IRdcf2Te7RDybfPWHgxCvqvkdwr8aCfbJF+r3K2kaQYczu7wK8vXkc2TlzIndlpwtY44HUMYFOBrWbNmpZA3onMP3TV85KlUqUzJcvd7DWGdkL+1PLYgzX7f+RbCYCu10tdIvT6vFDhdwKoU8E3i/RI7QsuGdFPOzWp5ZIXExiSEFySEngx8PgJPlwYnwFK7c1s89vXNsU7V1YaBc7FWe6Y0OIMPmLetUtol+Ky9UCr3Kk3vN6RehLCgS/AZe4neMzhdjFxrDcKKTye7aE2FvF46qgvhIdStpHayEeBIK9UmVaxm2z+SccHkjXzuT5oI8K0Abwr5RqECNycdmoLJFUp+PK4Cr7SM/wWG6Mqxbg3sRAAAAABJRU5ErkJggg==">
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="col text-center">
+                            <div id="secondStory">
+                                <h3>Cinderella</h3>
+                                <audio id="audioSecond">
+                                    <source src="/audio/Cindarella.mp4" type="audio/mpeg">
+                                </audio>
+                                <button class="playPause" id="playPauseSecond" onclick="PlayPauseSecond()">&#9658;</button>
+                                <button class="stop" id="stopSecond" onclick="StopSecond()">&#9724;</button>
+                                <button class="btn" type="button" id="readSecond">
+                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAADQ0lEQVR4nO2XXYhVVRTHr6ZWZpCVmGRS2oMgGXkVRSa2+//fc+8UA4JwBQnxZQpGK4qCRMVRIQoC0ZcgRITeKj8eS3yICIpIQRREDcpSTDAEKRnPWhd2rOO5w5k7Z+5cj2NPLVjsy2Ht/dtr7/Wxb6WSk7h69aNK7lLgs/FUgPdiT89sGyew2xl7ex+pdJI4NDTVFlNgrwIHm0CjUENYr+QhAW4puW9cO6Ah5FElPxkmF8ZVqx4eC61WpytwQcmTAvyl3teic9NsQrvaicRGY4aQf6dznXtsjF1v73PmSNP7jQJcVfKUkr/Yt9FgYK6Sp+23kJ8bWEJYrsDPtpm8CrAls0vBQu5ot1Hyp2HvFxnYri2zuxadmzUhuOO95MCdpBQ48f5FIb9sV1uszeO3xtgBXww792wpcOzvnyneV9s1OvdUHhydm19oV61OLwfu63swAZYVgJ8cBa7X57XbJORLsdF4oNxRA8sEONGuCTAw6qi9f3+MHXncovv/4Ir3M7g0BAq5onxw9XcJzgWXAh8pcFGBs5F84r7mcQIM5PL3H8sGJT9skpv+s+AS8s90BD6QEAazWj3UFTgJ4XUFfi2ovyN1WMkDAtxO29/oOn41hYSwVYDfhbys3r/aFdhk2Lnni+43d5d7lIxCbh75Drws5BWbL8A2BT61FtrqSMXgWu1x26GSYSKNISywlinkMZt7u1ZbnANfzsDbhbyU9eNDSu5O77/oUSDAO0XB1K4KnDNPbY4C+xX4IRdcf2Te7RDybfPWHgxCvqvkdwr8aCfbJF+r3K2kaQYczu7wK8vXkc2TlzIndlpwtY44HUMYFOBrWbNmpZA3onMP3TV85KlUqUzJcvd7DWGdkL+1PLYgzX7f+RbCYCu10tdIvT6vFDhdwKoU8E3i/RI7QsuGdFPOzWp5ZIXExiSEFySEngx8PgJPlwYnwFK7c1s89vXNsU7V1YaBc7FWe6Y0OIMPmLetUtol+Ky9UCr3Kk3vN6RehLCgS/AZe4neMzhdjFxrDcKKTye7aE2FvF46qgvhIdStpHayEeBIK9UmVaxm2z+SccHkjXzuT5oI8K0Abwr5RqECNycdmoLJFUp+PK4Cr7SM/wWG6Mqxbg3sRAAAAABJRU5ErkJggg==">
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="col text-center">
+                            <div id="thirdStory">
+                                <h3>Jack and the Beanstalk</h3>
+                                
+                                <button class="btn" type="button" id="readThird">
+                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAADQ0lEQVR4nO2XXYhVVRTHr6ZWZpCVmGRS2oMgGXkVRSa2+//fc+8UA4JwBQnxZQpGK4qCRMVRIQoC0ZcgRITeKj8eS3yICIpIQRREDcpSTDAEKRnPWhd2rOO5w5k7Z+5cj2NPLVjsy2Ht/dtr7/Wxb6WSk7h69aNK7lLgs/FUgPdiT89sGyew2xl7ex+pdJI4NDTVFlNgrwIHm0CjUENYr+QhAW4puW9cO6Ah5FElPxkmF8ZVqx4eC61WpytwQcmTAvyl3teic9NsQrvaicRGY4aQf6dznXtsjF1v73PmSNP7jQJcVfKUkr/Yt9FgYK6Sp+23kJ8bWEJYrsDPtpm8CrAls0vBQu5ot1Hyp2HvFxnYri2zuxadmzUhuOO95MCdpBQ48f5FIb9sV1uszeO3xtgBXww792wpcOzvnyneV9s1OvdUHhydm19oV61OLwfu63swAZYVgJ8cBa7X57XbJORLsdF4oNxRA8sEONGuCTAw6qi9f3+MHXncovv/4Ir3M7g0BAq5onxw9XcJzgWXAh8pcFGBs5F84r7mcQIM5PL3H8sGJT9skpv+s+AS8s90BD6QEAazWj3UFTgJ4XUFfi2ovyN1WMkDAtxO29/oOn41hYSwVYDfhbys3r/aFdhk2Lnni+43d5d7lIxCbh75Drws5BWbL8A2BT61FtrqSMXgWu1x26GSYSKNISywlinkMZt7u1ZbnANfzsDbhbyU9eNDSu5O77/oUSDAO0XB1K4KnDNPbY4C+xX4IRdcf2Te7RDybfPWHgxCvqvkdwr8aCfbJF+r3K2kaQYczu7wK8vXkc2TlzIndlpwtY44HUMYFOBrWbNmpZA3onMP3TV85KlUqUzJcvd7DWGdkL+1PLYgzX7f+RbCYCu10tdIvT6vFDhdwKoU8E3i/RI7QsuGdFPOzWp5ZIXExiSEFySEngx8PgJPlwYnwFK7c1s89vXNsU7V1YaBc7FWe6Y0OIMPmLetUtol+Ky9UCr3Kk3vN6RehLCgS/AZe4neMzhdjFxrDcKKTye7aE2FvF46qgvhIdStpHayEeBIK9UmVaxm2z+SccHkjXzuT5oI8K0Abwr5RqECNycdmoLJFUp+PK4Cr7SM/wWG6Mqxbg3sRAAAAABJRU5ErkJggg==">
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="col text-center">
+                            <div id="fourthStory">
+                                <h3>Cinderella</h3>
+                               
+                                <button class="btn" type="button" id="readFourth">
+                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAADQ0lEQVR4nO2XXYhVVRTHr6ZWZpCVmGRS2oMgGXkVRSa2+//fc+8UA4JwBQnxZQpGK4qCRMVRIQoC0ZcgRITeKj8eS3yICIpIQRREDcpSTDAEKRnPWhd2rOO5w5k7Z+5cj2NPLVjsy2Ht/dtr7/Wxb6WSk7h69aNK7lLgs/FUgPdiT89sGyew2xl7ex+pdJI4NDTVFlNgrwIHm0CjUENYr+QhAW4puW9cO6Ah5FElPxkmF8ZVqx4eC61WpytwQcmTAvyl3teic9NsQrvaicRGY4aQf6dznXtsjF1v73PmSNP7jQJcVfKUkr/Yt9FgYK6Sp+23kJ8bWEJYrsDPtpm8CrAls0vBQu5ot1Hyp2HvFxnYri2zuxadmzUhuOO95MCdpBQ48f5FIb9sV1uszeO3xtgBXww792wpcOzvnyneV9s1OvdUHhydm19oV61OLwfu63swAZYVgJ8cBa7X57XbJORLsdF4oNxRA8sEONGuCTAw6qi9f3+MHXncovv/4Ir3M7g0BAq5onxw9XcJzgWXAh8pcFGBs5F84r7mcQIM5PL3H8sGJT9skpv+s+AS8s90BD6QEAazWj3UFTgJ4XUFfi2ovyN1WMkDAtxO29/oOn41hYSwVYDfhbys3r/aFdhk2Lnni+43d5d7lIxCbh75Drws5BWbL8A2BT61FtrqSMXgWu1x26GSYSKNISywlinkMZt7u1ZbnANfzsDbhbyU9eNDSu5O77/oUSDAO0XB1K4KnDNPbY4C+xX4IRdcf2Te7RDybfPWHgxCvqvkdwr8aCfbJF+r3K2kaQYczu7wK8vXkc2TlzIndlpwtY44HUMYFOBrWbNmpZA3onMP3TV85KlUqUzJcvd7DWGdkL+1PLYgzX7f+RbCYCu10tdIvT6vFDhdwKoU8E3i/RI7QsuGdFPOzWp5ZIXExiSEFySEngx8PgJPlwYnwFK7c1s89vXNsU7V1YaBc7FWe6Y0OIMPmLetUtol+Ky9UCr3Kk3vN6RehLCgS/AZe4neMzhdjFxrDcKKTye7aE2FvF46qgvhIdStpHayEeBIK9UmVaxm2z+SccHkjXzuT5oI8K0Abwr5RqECNycdmoLJFUp+PK4Cr7SM/wWG6Mqxbg3sRAAAAABJRU5ErkJggg==">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="col-12 text-center second-row">
+                    <div class="row">
+
+                        <div class="col text-center">
+                            <button class="btn" type="button" id="fifthStory">
+                                <h3>The Bremen Town Musicians</h3>
+                            </button>
+                        </div>
+
+                        <div class="col text-center">
+                            <button class="btn" type="button" id="sixthStory">
+                                <h3>The Princess and the Pea</h3>
+                            </button>
+                        </div>
+
+                        <div class="col text-center">
+                            <button class="btn" type="button" id="seventhStory">
+                                <h3>Rapunzel</h3>
+                            </button>
+                        </div>
+
+                        <div class="col text-center">
+                            <button class="btn" type="button" id="eighthStory">
+                                <h3>Hansel and Gretel</h3>
+                            </button>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="col-12 text-center third-row">
+                    <div class="row">
+
+                        <div class="col text-center">
+                            <button class="btn" type="button" id="ninthStory">
+                                <h3>The Snow Queen</h3>
+                            </button>
+                        </div>
+
+                        <div class="col text-center">
+                            <button class="btn" type="button" id="tenthStory">
+                                <h3>The Little Match Girl</h3>
+                            </button>
+                        </div>
+
+                        <div class="col text-center">
+                            <button class="btn" type="button" id="eleventhStory">
+                                <h3>Goldilocks and the Three Bears</h3>
+                            </button>
+                        </div>
+
+                        <div class="col text-center">
+                            <button class="btn" type="button" id="twelfthStory">
+                                <h3>The Wolf & Seven Little Kids</h3>
+                            </button>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="col-12 text-center fourth-row">
+                    <div class="row">
+
+                        <div class="col text-center">
+                            <button class="btn" type="button" id="thirtheenthStory">
+                                <h3>Ali Baba and the Forty Thieves</h3>
+                            </button>
+                        </div>
+
+                        <div class="col text-center">
+                            <button class="btn" type="button" id="fourteenthStory">
+                                <h3>The Adventures of Aladdin</h3>
+                            </button>
+                        </div>
+
+                        <div class="col text-center">
+                            <button class="btn" type="button" id="fifteenthStory">
+                                <h3>Sleeping Beauty (Briar-Rose)</h3>
+                            </button>
+                        </div>
+
+                        <div class="col text-center">
+                            <button class="btn" type="button" id="sixteenthStory">
+                                <h3>The Happy Prince</h3>
+                            </button>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <div class="popup container-fluid">
+                <div class="popupContent">
+                    <button class="close" id="close">X</button>
+                    <h1 class="text-center" id="title">
+                        
+                    </h1>
+
+                    <h3 id="tile">
+                        
+                    </h3>
+                </div>
+            </div>
+        </article>
+    </main>
+ 
+    <!--Footer section-->
+    <footer id="footer">
+        <div class="container-fluid">
+            <div class="row">
+                <h6 class="col-9">&copy; 2023 Tutti i diritti riservati</h6>
+                <h6 class="col-3">
+                    Creato con &hearts; da <a href="https://bluebutterflies.github.io/ButterflyTech/" target="_blank"
+                        rel="noopener noreferrer">Butterfly Tech Crative Solution</a>
+                    <br>
+                    <a href="">Privacy</a>
+                </h6>
+            </div>
+        </div>
+
+        <div class="floating-button-div">
+            <a class="btn top" type="button" href="#">
+                <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAr0lEQVR4nGNgGAWjYFAAvtmPhPhmPM/mmflUhCYW8Mx9Jso3/ekl/hnP/vNPf3ada+YrSapawD3tuRjfjKeXwRbMePoXRIP4IHGa+EBg6mM9qvoII4imvJTAKk6uRbgsgAGKLSJkAcUWEWsB2RaRagHJFpFrAdEWgXIwLB9Qkv65kfITiEYpGfhnPCuiVgbjRsm4z4pQfMI/42kBtcokHqh5vJOfCFPDvFEwChhwAgBQ2+JJPmitlQAAAABJRU5ErkJggg==">
+            </a>
+        </div>
+    </footer>
+
+    <!--Bootstrap script-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+
+    <!--Our script-->
+    <script src="../js/stories.js"></script>
+</body>
+
+</html>

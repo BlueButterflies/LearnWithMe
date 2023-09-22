@@ -32,6 +32,9 @@ const familyTransports = document.getElementById('familyTransports');
 const emotionActions = document.getElementById('emotionActions');
 const town = document.getElementById('town');
 const school = document.getElementById('school');
+const grammar = document.getElementById('grammar');
+const clock = document.getElementById('clock');
+const stories = document.getElementById('stories');
 
 alphabet.addEventListener('click', function(){
     window.open('pages/alphabet.html', '_parent');
@@ -91,4 +94,16 @@ town.addEventListener('click', function(){
 
 school.addEventListener('click', function(){
     window.open('pages/school.html', '_parent');
+})
+
+/* school.addEventListener('click', function () {
+    window.open('pages/school.html', '_parent');
+})
+
+school.addEventListener('click', function () {
+    window.open('pages/school.html', '_parent');
+}) */
+
+stories.addEventListener('click', function(){
+    window.open('pages/storiesHome.html', '_parent');
 })
