@@ -32,8 +32,11 @@ main {
     color: rgb(173, 43, 177);
 }
 
-#a{
-    margin: 1% 1%;
+.imgStory{
+    margin-top: 4%;
+    border-radius: 40px;
+    width: 150px;
+    height: 140px;
 }
 
 .stories {
@@ -42,65 +45,39 @@ main {
 
 .first-row{
     border: 2mm ridge pink;
-    color: darkblue;
     border-radius: 50px;
-    margin-top: 5%;
+    margin-bottom: 5%;
 }
-div h3{
+
+.col h3{
     margin-top: 10%;
+    color: darkblue;
 }
+
 .btn{
     margin: 5% 0;
 }
 
-.second-row .btn{
-    width: 200px;
-    height: 150px;
+.second-row{
     border: 2mm ridge rgb(253, 253, 73);
-    
-    color: darkblue;
     border-radius: 50px;
-    margin-top: 10%;
+    margin-bottom: 5%;
 }
 
-.second-row .btn:hover{
-    border-color: rgb(3, 253, 48);
-    transform: scale(1.1);
-}
-
-.third-row .btn{
-    width: 200px;
-    height: 150px;
+.third-row {
     border: 2mm ridge rgb(253, 73, 73);
-    
-    color: darkblue;
     border-radius: 50px;
-    margin-top: 10%;
+    margin-bottom: 5%;
 }
 
-.third-row .btn:hover{
-    border-color: rgb(246, 153, 13);
-    transform: scale(1.1);
-}
-
-.fourth-row .btn{
-    width: 200px;
-    height: 150px;
+.fourth-row{
     border: 2mm ridge rgb(249, 122, 242);
-    
-    color: darkblue;
     border-radius: 50px;
     margin-top: 10%;
-}
-
-.fourth-row .btn:hover{
-    border-color: rgb(64, 1, 98);
-    transform: scale(1.1);
 }
 
 /*Stories Tales*/
 .backTales {
-    margin-top: 5%;
     margin-left: 1%;
     font-size: 1.5em;
 }
@@ -113,9 +90,6 @@ div h3{
 .tales{
     border: 3mm ridge red;
     border-radius: 40px;
-    margin-top: 3%;
-
-    color: darkblue;
 }
 
 /*Popup style*/
