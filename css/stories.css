@@ -36,7 +36,7 @@ main {
     margin-top: 4%;
     border-radius: 40px;
     width: 150px;
-    height: 140px;
+    height: auto;
 }
 
 .stories {

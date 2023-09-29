@@ -24,7 +24,7 @@
 
         <div class="container-fluid">
             <span>
-                Listen to stories with me
+                Listen  and read to stories with me
             </span>
         </div>
     </nav>
@@ -40,63 +40,76 @@
                     <div class="row">
 
                         <div class="col text-center">
-                            <img class="imgStory" src="https://img.freepik.com/premium-vector/snow-white-witch-with-apple_106024-593.jpg?w=740" alt="">
+                            <img class="imgStory"
+                                src="https://upload.wikimedia.org/wikipedia/commons/f/f9/Schneewittchen2.jpg"
+                                alt="">
                             <div id="firstStory">
                                 <h3>Snow White</h3>
-                                
+
                                 <audio id="audioFirst">
                                     <source src="../audio/Snow-White.mp3" type="audio/mpeg">
                                 </audio>
-                                <button class="playPause" id="playPauseFirst" onclick="PlayPauseFirst()">&#9658;</button>
+                                <button class="playPause" id="playPauseFirst"
+                                    onclick="PlayPauseFirst()">&#9658;</button>
                                 <button class="stop" id="stopFirst" onclick="StopFirst()">&#9724;</button>
 
                                 <button class="btn" type="button" id="readFirst">
-                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAADQ0lEQVR4nO2XXYhVVRTHr6ZWZpCVmGRS2oMgGXkVRSa2+//fc+8UA4JwBQnxZQpGK4qCRMVRIQoC0ZcgRITeKj8eS3yICIpIQRREDcpSTDAEKRnPWhd2rOO5w5k7Z+5cj2NPLVjsy2Ht/dtr7/Wxb6WSk7h69aNK7lLgs/FUgPdiT89sGyew2xl7ex+pdJI4NDTVFlNgrwIHm0CjUENYr+QhAW4puW9cO6Ah5FElPxkmF8ZVqx4eC61WpytwQcmTAvyl3teic9NsQrvaicRGY4aQf6dznXtsjF1v73PmSNP7jQJcVfKUkr/Yt9FgYK6Sp+23kJ8bWEJYrsDPtpm8CrAls0vBQu5ot1Hyp2HvFxnYri2zuxadmzUhuOO95MCdpBQ48f5FIb9sV1uszeO3xtgBXww792wpcOzvnyneV9s1OvdUHhydm19oV61OLwfu63swAZYVgJ8cBa7X57XbJORLsdF4oNxRA8sEONGuCTAw6qi9f3+MHXncovv/4Ir3M7g0BAq5onxw9XcJzgWXAh8pcFGBs5F84r7mcQIM5PL3H8sGJT9skpv+s+AS8s90BD6QEAazWj3UFTgJ4XUFfi2ovyN1WMkDAtxO29/oOn41hYSwVYDfhbys3r/aFdhk2Lnni+43d5d7lIxCbh75Drws5BWbL8A2BT61FtrqSMXgWu1x26GSYSKNISywlinkMZt7u1ZbnANfzsDbhbyU9eNDSu5O77/oUSDAO0XB1K4KnDNPbY4C+xX4IRdcf2Te7RDybfPWHgxCvqvkdwr8aCfbJF+r3K2kaQYczu7wK8vXkc2TlzIndlpwtY44HUMYFOBrWbNmpZA3onMP3TV85KlUqUzJcvd7DWGdkL+1PLYgzX7f+RbCYCu10tdIvT6vFDhdwKoU8E3i/RI7QsuGdFPOzWp5ZIXExiSEFySEngx8PgJPlwYnwFK7c1s89vXNsU7V1YaBc7FWe6Y0OIMPmLetUtol+Ky9UCr3Kk3vN6RehLCgS/AZe4neMzhdjFxrDcKKTye7aE2FvF46qgvhIdStpHayEeBIK9UmVaxm2z+SccHkjXzuT5oI8K0Abwr5RqECNycdmoLJFUp+PK4Cr7SM/wWG6Mqxbg3sRAAAAABJRU5ErkJggg==">
+                                    <img
+                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAADQ0lEQVR4nO2XXYhVVRTHr6ZWZpCVmGRS2oMgGXkVRSa2+//fc+8UA4JwBQnxZQpGK4qCRMVRIQoC0ZcgRITeKj8eS3yICIpIQRREDcpSTDAEKRnPWhd2rOO5w5k7Z+5cj2NPLVjsy2Ht/dtr7/Wxb6WSk7h69aNK7lLgs/FUgPdiT89sGyew2xl7ex+pdJI4NDTVFlNgrwIHm0CjUENYr+QhAW4puW9cO6Ah5FElPxkmF8ZVqx4eC61WpytwQcmTAvyl3teic9NsQrvaicRGY4aQf6dznXtsjF1v73PmSNP7jQJcVfKUkr/Yt9FgYK6Sp+23kJ8bWEJYrsDPtpm8CrAls0vBQu5ot1Hyp2HvFxnYri2zuxadmzUhuOO95MCdpBQ48f5FIb9sV1uszeO3xtgBXww792wpcOzvnyneV9s1OvdUHhydm19oV61OLwfu63swAZYVgJ8cBa7X57XbJORLsdF4oNxRA8sEONGuCTAw6qi9f3+MHXncovv/4Ir3M7g0BAq5onxw9XcJzgWXAh8pcFGBs5F84r7mcQIM5PL3H8sGJT9skpv+s+AS8s90BD6QEAazWj3UFTgJ4XUFfi2ovyN1WMkDAtxO29/oOn41hYSwVYDfhbys3r/aFdhk2Lnni+43d5d7lIxCbh75Drws5BWbL8A2BT61FtrqSMXgWu1x26GSYSKNISywlinkMZt7u1ZbnANfzsDbhbyU9eNDSu5O77/oUSDAO0XB1K4KnDNPbY4C+xX4IRdcf2Te7RDybfPWHgxCvqvkdwr8aCfbJF+r3K2kaQYczu7wK8vXkc2TlzIndlpwtY44HUMYFOBrWbNmpZA3onMP3TV85KlUqUzJcvd7DWGdkL+1PLYgzX7f+RbCYCu10tdIvT6vFDhdwKoU8E3i/RI7QsuGdFPOzWp5ZIXExiSEFySEngx8PgJPlwYnwFK7c1s89vXNsU7V1YaBc7FWe6Y0OIMPmLetUtol+Ky9UCr3Kk3vN6RehLCgS/AZe4neMzhdjFxrDcKKTye7aE2FvF46qgvhIdStpHayEeBIK9UmVaxm2z+SccHkjXzuT5oI8K0Abwr5RqECNycdmoLJFUp+PK4Cr7SM/wWG6Mqxbg3sRAAAAABJRU5ErkJggg==">
                                 </button>
                             </div>
                         </div>
 
                         <div class="col text-center">
                             <div id="secondStory">
-                                <img src="https://img.freepik.com/free-vector/blue-fairy-tale-carriage_23-2148449959.jpg?w=740&t=st=1695646147~exp=1695646747~hmac=c44dfa19c7703064e6b3d7e7c41ceb19e4eb2913a0b3c3f6c4158264612a02e8" alt="Cinderella" class="imgStory">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/6/60/Cinderella_and_the_Fairy_Godmother.jpg"
+                                    alt="Cinderella" class="imgStory">
                                 <h3>Cinderella</h3>
                                 <audio id="audioSecond">
                                     <source src="../audio/Cindarella.mp3" type="audio/mpeg">
                                 </audio>
-                                <button class="playPause" id="playPauseSecond" onclick="PlayPauseSecond()">&#9658;</button>
+                                <button class="playPause" id="playPauseSecond"
+                                    onclick="PlayPauseSecond()">&#9658;</button>
                                 <button class="stop" id="stopSecond" onclick="StopSecond()">&#9724;</button>
                                 <button class="btn" type="button" id="readSecond">
-                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAADQ0lEQVR4nO2XXYhVVRTHr6ZWZpCVmGRS2oMgGXkVRSa2+//fc+8UA4JwBQnxZQpGK4qCRMVRIQoC0ZcgRITeKj8eS3yICIpIQRREDcpSTDAEKRnPWhd2rOO5w5k7Z+5cj2NPLVjsy2Ht/dtr7/Wxb6WSk7h69aNK7lLgs/FUgPdiT89sGyew2xl7ex+pdJI4NDTVFlNgrwIHm0CjUENYr+QhAW4puW9cO6Ah5FElPxkmF8ZVqx4eC61WpytwQcmTAvyl3teic9NsQrvaicRGY4aQf6dznXtsjF1v73PmSNP7jQJcVfKUkr/Yt9FgYK6Sp+23kJ8bWEJYrsDPtpm8CrAls0vBQu5ot1Hyp2HvFxnYri2zuxadmzUhuOO95MCdpBQ48f5FIb9sV1uszeO3xtgBXww792wpcOzvnyneV9s1OvdUHhydm19oV61OLwfu63swAZYVgJ8cBa7X57XbJORLsdF4oNxRA8sEONGuCTAw6qi9f3+MHXncovv/4Ir3M7g0BAq5onxw9XcJzgWXAh8pcFGBs5F84r7mcQIM5PL3H8sGJT9skpv+s+AS8s90BD6QEAazWj3UFTgJ4XUFfi2ovyN1WMkDAtxO29/oOn41hYSwVYDfhbys3r/aFdhk2Lnni+43d5d7lIxCbh75Drws5BWbL8A2BT61FtrqSMXgWu1x26GSYSKNISywlinkMZt7u1ZbnANfzsDbhbyU9eNDSu5O77/oUSDAO0XB1K4KnDNPbY4C+xX4IRdcf2Te7RDybfPWHgxCvqvkdwr8aCfbJF+r3K2kaQYczu7wK8vXkc2TlzIndlpwtY44HUMYFOBrWbNmpZA3onMP3TV85KlUqUzJcvd7DWGdkL+1PLYgzX7f+RbCYCu10tdIvT6vFDhdwKoU8E3i/RI7QsuGdFPOzWp5ZIXExiSEFySEngx8PgJPlwYnwFK7c1s89vXNsU7V1YaBc7FWe6Y0OIMPmLetUtol+Ky9UCr3Kk3vN6RehLCgS/AZe4neMzhdjFxrDcKKTye7aE2FvF46qgvhIdStpHayEeBIK9UmVaxm2z+SccHkjXzuT5oI8K0Abwr5RqECNycdmoLJFUp+PK4Cr7SM/wWG6Mqxbg3sRAAAAABJRU5ErkJggg==">
+                                    <img
+                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAADQ0lEQVR4nO2XXYhVVRTHr6ZWZpCVmGRS2oMgGXkVRSa2+//fc+8UA4JwBQnxZQpGK4qCRMVRIQoC0ZcgRITeKj8eS3yICIpIQRREDcpSTDAEKRnPWhd2rOO5w5k7Z+5cj2NPLVjsy2Ht/dtr7/Wxb6WSk7h69aNK7lLgs/FUgPdiT89sGyew2xl7ex+pdJI4NDTVFlNgrwIHm0CjUENYr+QhAW4puW9cO6Ah5FElPxkmF8ZVqx4eC61WpytwQcmTAvyl3teic9NsQrvaicRGY4aQf6dznXtsjF1v73PmSNP7jQJcVfKUkr/Yt9FgYK6Sp+23kJ8bWEJYrsDPtpm8CrAls0vBQu5ot1Hyp2HvFxnYri2zuxadmzUhuOO95MCdpBQ48f5FIb9sV1uszeO3xtgBXww792wpcOzvnyneV9s1OvdUHhydm19oV61OLwfu63swAZYVgJ8cBa7X57XbJORLsdF4oNxRA8sEONGuCTAw6qi9f3+MHXncovv/4Ir3M7g0BAq5onxw9XcJzgWXAh8pcFGBs5F84r7mcQIM5PL3H8sGJT9skpv+s+AS8s90BD6QEAazWj3UFTgJ4XUFfi2ovyN1WMkDAtxO29/oOn41hYSwVYDfhbys3r/aFdhk2Lnni+43d5d7lIxCbh75Drws5BWbL8A2BT61FtrqSMXgWu1x26GSYSKNISywlinkMZt7u1ZbnANfzsDbhbyU9eNDSu5O77/oUSDAO0XB1K4KnDNPbY4C+xX4IRdcf2Te7RDybfPWHgxCvqvkdwr8aCfbJF+r3K2kaQYczu7wK8vXkc2TlzIndlpwtY44HUMYFOBrWbNmpZA3onMP3TV85KlUqUzJcvd7DWGdkL+1PLYgzX7f+RbCYCu10tdIvT6vFDhdwKoU8E3i/RI7QsuGdFPOzWp5ZIXExiSEFySEngx8PgJPlwYnwFK7c1s89vXNsU7V1YaBc7FWe6Y0OIMPmLetUtol+Ky9UCr3Kk3vN6RehLCgS/AZe4neMzhdjFxrDcKKTye7aE2FvF46qgvhIdStpHayEeBIK9UmVaxm2z+SccHkjXzuT5oI8K0Abwr5RqECNycdmoLJFUp+PK4Cr7SM/wWG6Mqxbg3sRAAAAABJRU5ErkJggg==">
                                 </button>
                             </div>
                         </div>
 
                         <div class="col text-center">
                             <div id="thirdStory">
-                                <img src="https://img.freepik.com/free-vector/rapunzel-tower-with-witch_1196-863.jpg?w=360&t=st=1695710616~exp=1695711216~hmac=bd02213bc4238381c95ddb1d6d0d5ebc4f4168294cb6544ffd4a49b86be9f936" alt="" class="imgStory">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Rapunzel-Paul-Hey.jpg/220px-Rapunzel-Paul-Hey.jpg"
+                                    alt="" class="imgStory">
                                 <h3>Rapunzel</h3>
                                 <audio id="audioThird">
                                     <source src="../audio/Rapunzel.mp3" type="audio/mpeg">
                                 </audio>
-                                <button class="playPause" id="playPauseThird" onclick="PlayPauseThird()">&#9658;</button>
+                                <button class="playPause" id="playPauseThird"
+                                    onclick="PlayPauseThird()">&#9658;</button>
                                 <button class="stop" id="stopThird" onclick="StopThird()">&#9724;</button>
                                 <button class="btn" type="button" id="readThird">
-                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAADQ0lEQVR4nO2XXYhVVRTHr6ZWZpCVmGRS2oMgGXkVRSa2+//fc+8UA4JwBQnxZQpGK4qCRMVRIQoC0ZcgRITeKj8eS3yICIpIQRREDcpSTDAEKRnPWhd2rOO5w5k7Z+5cj2NPLVjsy2Ht/dtr7/Wxb6WSk7h69aNK7lLgs/FUgPdiT89sGyew2xl7ex+pdJI4NDTVFlNgrwIHm0CjUENYr+QhAW4puW9cO6Ah5FElPxkmF8ZVqx4eC61WpytwQcmTAvyl3teic9NsQrvaicRGY4aQf6dznXtsjF1v73PmSNP7jQJcVfKUkr/Yt9FgYK6Sp+23kJ8bWEJYrsDPtpm8CrAls0vBQu5ot1Hyp2HvFxnYri2zuxadmzUhuOO95MCdpBQ48f5FIb9sV1uszeO3xtgBXww792wpcOzvnyneV9s1OvdUHhydm19oV61OLwfu63swAZYVgJ8cBa7X57XbJORLsdF4oNxRA8sEONGuCTAw6qi9f3+MHXncovv/4Ir3M7g0BAq5onxw9XcJzgWXAh8pcFGBs5F84r7mcQIM5PL3H8sGJT9skpv+s+AS8s90BD6QEAazWj3UFTgJ4XUFfi2ovyN1WMkDAtxO29/oOn41hYSwVYDfhbys3r/aFdhk2Lnni+43d5d7lIxCbh75Drws5BWbL8A2BT61FtrqSMXgWu1x26GSYSKNISywlinkMZt7u1ZbnANfzsDbhbyU9eNDSu5O77/oUSDAO0XB1K4KnDNPbY4C+xX4IRdcf2Te7RDybfPWHgxCvqvkdwr8aCfbJF+r3K2kaQYczu7wK8vXkc2TlzIndlpwtY44HUMYFOBrWbNmpZA3onMP3TV85KlUqUzJcvd7DWGdkL+1PLYgzX7f+RbCYCu10tdIvT6vFDhdwKoU8E3i/RI7QsuGdFPOzWp5ZIXExiSEFySEngx8PgJPlwYnwFK7c1s89vXNsU7V1YaBc7FWe6Y0OIMPmLetUtol+Ky9UCr3Kk3vN6RehLCgS/AZe4neMzhdjFxrDcKKTye7aE2FvF46qgvhIdStpHayEeBIK9UmVaxm2z+SccHkjXzuT5oI8K0Abwr5RqECNycdmoLJFUp+PK4Cr7SM/wWG6Mqxbg3sRAAAAABJRU5ErkJggg==">
+                                    <img
+                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAADQ0lEQVR4nO2XXYhVVRTHr6ZWZpCVmGRS2oMgGXkVRSa2+//fc+8UA4JwBQnxZQpGK4qCRMVRIQoC0ZcgRITeKj8eS3yICIpIQRREDcpSTDAEKRnPWhd2rOO5w5k7Z+5cj2NPLVjsy2Ht/dtr7/Wxb6WSk7h69aNK7lLgs/FUgPdiT89sGyew2xl7ex+pdJI4NDTVFlNgrwIHm0CjUENYr+QhAW4puW9cO6Ah5FElPxkmF8ZVqx4eC61WpytwQcmTAvyl3teic9NsQrvaicRGY4aQf6dznXtsjF1v73PmSNP7jQJcVfKUkr/Yt9FgYK6Sp+23kJ8bWEJYrsDPtpm8CrAls0vBQu5ot1Hyp2HvFxnYri2zuxadmzUhuOO95MCdpBQ48f5FIb9sV1uszeO3xtgBXww792wpcOzvnyneV9s1OvdUHhydm19oV61OLwfu63swAZYVgJ8cBa7X57XbJORLsdF4oNxRA8sEONGuCTAw6qi9f3+MHXncovv/4Ir3M7g0BAq5onxw9XcJzgWXAh8pcFGBs5F84r7mcQIM5PL3H8sGJT9skpv+s+AS8s90BD6QEAazWj3UFTgJ4XUFfi2ovyN1WMkDAtxO29/oOn41hYSwVYDfhbys3r/aFdhk2Lnni+43d5d7lIxCbh75Drws5BWbL8A2BT61FtrqSMXgWu1x26GSYSKNISywlinkMZt7u1ZbnANfzsDbhbyU9eNDSu5O77/oUSDAO0XB1K4KnDNPbY4C+xX4IRdcf2Te7RDybfPWHgxCvqvkdwr8aCfbJF+r3K2kaQYczu7wK8vXkc2TlzIndlpwtY44HUMYFOBrWbNmpZA3onMP3TV85KlUqUzJcvd7DWGdkL+1PLYgzX7f+RbCYCu10tdIvT6vFDhdwKoU8E3i/RI7QsuGdFPOzWp5ZIXExiSEFySEngx8PgJPlwYnwFK7c1s89vXNsU7V1YaBc7FWe6Y0OIMPmLetUtol+Ky9UCr3Kk3vN6RehLCgS/AZe4neMzhdjFxrDcKKTye7aE2FvF46qgvhIdStpHayEeBIK9UmVaxm2z+SccHkjXzuT5oI8K0Abwr5RqECNycdmoLJFUp+PK4Cr7SM/wWG6Mqxbg3sRAAAAABJRU5ErkJggg==">
                                 </button>
                             </div>
                         </div>
 
                         <div class="col text-center">
                             <div id="fourthStory">
-                                <img src="https://img.freepik.com/free-vector/hand-drawn-cartoon-duck-illustration_52683-113812.jpg?w=740&t=st=1695711695~exp=1695712295~hmac=db3abd60b87e1e63785f88a2752b5c1886dd8d47197a0b1f77c346884f6e451b" alt="" class="imgStory">
+                                <img src="https://upload.wikimedia.org/wikipedia/en/f/fc/Ugly_Duckling_Pinkney.jpg"
+                                    alt="" class="imgStory">
                                 <h3>The Ugly Duckling</h3>
                                 <audio id="audioFourth">
                                     <source src="../audio/TheUglyDuckling.mp3" type="audio/mpeg">
                                 </audio>
-                                <button class="playPause" id="playPauseFourth" onclick="PlayPauseFourth()">&#9658;</button>
+                                <button class="playPause" id="playPauseFourth"
+                                    onclick="PlayPauseFourth()">&#9658;</button>
                                 <button class="stop" id="stopFourth" onclick="StopFourth()">&#9724;</button>
                                 <button class="btn" type="button" id="readFourth">
-                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAADQ0lEQVR4nO2XXYhVVRTHr6ZWZpCVmGRS2oMgGXkVRSa2+//fc+8UA4JwBQnxZQpGK4qCRMVRIQoC0ZcgRITeKj8eS3yICIpIQRREDcpSTDAEKRnPWhd2rOO5w5k7Z+5cj2NPLVjsy2Ht/dtr7/Wxb6WSk7h69aNK7lLgs/FUgPdiT89sGyew2xl7ex+pdJI4NDTVFlNgrwIHm0CjUENYr+QhAW4puW9cO6Ah5FElPxkmF8ZVqx4eC61WpytwQcmTAvyl3teic9NsQrvaicRGY4aQf6dznXtsjF1v73PmSNP7jQJcVfKUkr/Yt9FgYK6Sp+23kJ8bWEJYrsDPtpm8CrAls0vBQu5ot1Hyp2HvFxnYri2zuxadmzUhuOO95MCdpBQ48f5FIb9sV1uszeO3xtgBXww792wpcOzvnyneV9s1OvdUHhydm19oV61OLwfu63swAZYVgJ8cBa7X57XbJORLsdF4oNxRA8sEONGuCTAw6qi9f3+MHXncovv/4Ir3M7g0BAq5onxw9XcJzgWXAh8pcFGBs5F84r7mcQIM5PL3H8sGJT9skpv+s+AS8s90BD6QEAazWj3UFTgJ4XUFfi2ovyN1WMkDAtxO29/oOn41hYSwVYDfhbys3r/aFdhk2Lnni+43d5d7lIxCbh75Drws5BWbL8A2BT61FtrqSMXgWu1x26GSYSKNISywlinkMZt7u1ZbnANfzsDbhbyU9eNDSu5O77/oUSDAO0XB1K4KnDNPbY4C+xX4IRdcf2Te7RDybfPWHgxCvqvkdwr8aCfbJF+r3K2kaQYczu7wK8vXkc2TlzIndlpwtY44HUMYFOBrWbNmpZA3onMP3TV85KlUqUzJcvd7DWGdkL+1PLYgzX7f+RbCYCu10tdIvT6vFDhdwKoU8E3i/RI7QsuGdFPOzWp5ZIXExiSEFySEngx8PgJPlwYnwFK7c1s89vXNsU7V1YaBc7FWe6Y0OIMPmLetUtol+Ky9UCr3Kk3vN6RehLCgS/AZe4neMzhdjFxrDcKKTye7aE2FvF46qgvhIdStpHayEeBIK9UmVaxm2z+SccHkjXzuT5oI8K0Abwr5RqECNycdmoLJFUp+PK4Cr7SM/wWG6Mqxbg3sRAAAAABJRU5ErkJggg==">
+                                    <img
+                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAADQ0lEQVR4nO2XXYhVVRTHr6ZWZpCVmGRS2oMgGXkVRSa2+//fc+8UA4JwBQnxZQpGK4qCRMVRIQoC0ZcgRITeKj8eS3yICIpIQRREDcpSTDAEKRnPWhd2rOO5w5k7Z+5cj2NPLVjsy2Ht/dtr7/Wxb6WSk7h69aNK7lLgs/FUgPdiT89sGyew2xl7ex+pdJI4NDTVFlNgrwIHm0CjUENYr+QhAW4puW9cO6Ah5FElPxkmF8ZVqx4eC61WpytwQcmTAvyl3teic9NsQrvaicRGY4aQf6dznXtsjF1v73PmSNP7jQJcVfKUkr/Yt9FgYK6Sp+23kJ8bWEJYrsDPtpm8CrAls0vBQu5ot1Hyp2HvFxnYri2zuxadmzUhuOO95MCdpBQ48f5FIb9sV1uszeO3xtgBXww792wpcOzvnyneV9s1OvdUHhydm19oV61OLwfu63swAZYVgJ8cBa7X57XbJORLsdF4oNxRA8sEONGuCTAw6qi9f3+MHXncovv/4Ir3M7g0BAq5onxw9XcJzgWXAh8pcFGBs5F84r7mcQIM5PL3H8sGJT9skpv+s+AS8s90BD6QEAazWj3UFTgJ4XUFfi2ovyN1WMkDAtxO29/oOn41hYSwVYDfhbys3r/aFdhk2Lnni+43d5d7lIxCbh75Drws5BWbL8A2BT61FtrqSMXgWu1x26GSYSKNISywlinkMZt7u1ZbnANfzsDbhbyU9eNDSu5O77/oUSDAO0XB1K4KnDNPbY4C+xX4IRdcf2Te7RDybfPWHgxCvqvkdwr8aCfbJF+r3K2kaQYczu7wK8vXkc2TlzIndlpwtY44HUMYFOBrWbNmpZA3onMP3TV85KlUqUzJcvd7DWGdkL+1PLYgzX7f+RbCYCu10tdIvT6vFDhdwKoU8E3i/RI7QsuGdFPOzWp5ZIXExiSEFySEngx8PgJPlwYnwFK7c1s89vXNsU7V1YaBc7FWe6Y0OIMPmLetUtol+Ky9UCr3Kk3vN6RehLCgS/AZe4neMzhdjFxrDcKKTye7aE2FvF46qgvhIdStpHayEeBIK9UmVaxm2z+SccHkjXzuT5oI8K0Abwr5RqECNycdmoLJFUp+PK4Cr7SM/wWG6Mqxbg3sRAAAAABJRU5ErkJggg==">
                                 </button>
                             </div>
                         </div>
@@ -108,60 +121,69 @@
 
                         <div class="col text-center">
                             <div id="fifthStory">
-                                <img src="http://pedroastudillo.com/assets/dis/23PINNOCHIO%20PERSONALITY2x.jpg" alt="" class="imgStory">
+                                <img src="https://i0.wp.com/storiestogrowby.org/wp-content/uploads/2018/04/Pinocchio.jpg?fit=300%2C301&ssl=1" alt=""
+                                    class="imgStory">
                                 <h3>Pinocchio</h3>
                                 <audio id="audioFifth">
                                     <source src="../audio/Pinocchio.mp3" type="audio/mpeg">
                                 </audio>
-                                <button class="playPause" id="playPauseFifth" onclick="PlayPauseFifth()">&#9658;</button>
+                                <button class="playPause" id="playPauseFifth"
+                                    onclick="PlayPauseFifth()">&#9658;</button>
                                 <button class="stop" id="stopFifth" onclick="StopFifth()">&#9724;</button>
                                 <button class="btn" type="button" id="readFifth">
-                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAADQ0lEQVR4nO2XXYhVVRTHr6ZWZpCVmGRS2oMgGXkVRSa2+//fc+8UA4JwBQnxZQpGK4qCRMVRIQoC0ZcgRITeKj8eS3yICIpIQRREDcpSTDAEKRnPWhd2rOO5w5k7Z+5cj2NPLVjsy2Ht/dtr7/Wxb6WSk7h69aNK7lLgs/FUgPdiT89sGyew2xl7ex+pdJI4NDTVFlNgrwIHm0CjUENYr+QhAW4puW9cO6Ah5FElPxkmF8ZVqx4eC61WpytwQcmTAvyl3teic9NsQrvaicRGY4aQf6dznXtsjF1v73PmSNP7jQJcVfKUkr/Yt9FgYK6Sp+23kJ8bWEJYrsDPtpm8CrAls0vBQu5ot1Hyp2HvFxnYri2zuxadmzUhuOO95MCdpBQ48f5FIb9sV1uszeO3xtgBXww792wpcOzvnyneV9s1OvdUHhydm19oV61OLwfu63swAZYVgJ8cBa7X57XbJORLsdF4oNxRA8sEONGuCTAw6qi9f3+MHXncovv/4Ir3M7g0BAq5onxw9XcJzgWXAh8pcFGBs5F84r7mcQIM5PL3H8sGJT9skpv+s+AS8s90BD6QEAazWj3UFTgJ4XUFfi2ovyN1WMkDAtxO29/oOn41hYSwVYDfhbys3r/aFdhk2Lnni+43d5d7lIxCbh75Drws5BWbL8A2BT61FtrqSMXgWu1x26GSYSKNISywlinkMZt7u1ZbnANfzsDbhbyU9eNDSu5O77/oUSDAO0XB1K4KnDNPbY4C+xX4IRdcf2Te7RDybfPWHgxCvqvkdwr8aCfbJF+r3K2kaQYczu7wK8vXkc2TlzIndlpwtY44HUMYFOBrWbNmpZA3onMP3TV85KlUqUzJcvd7DWGdkL+1PLYgzX7f+RbCYCu10tdIvT6vFDhdwKoU8E3i/RI7QsuGdFPOzWp5ZIXExiSEFySEngx8PgJPlwYnwFK7c1s89vXNsU7V1YaBc7FWe6Y0OIMPmLetUtol+Ky9UCr3Kk3vN6RehLCgS/AZe4neMzhdjFxrDcKKTye7aE2FvF46qgvhIdStpHayEeBIK9UmVaxm2z+SccHkjXzuT5oI8K0Abwr5RqECNycdmoLJFUp+PK4Cr7SM/wWG6Mqxbg3sRAAAAABJRU5ErkJggg==">
+                                    <img
+                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAADQ0lEQVR4nO2XXYhVVRTHr6ZWZpCVmGRS2oMgGXkVRSa2+//fc+8UA4JwBQnxZQpGK4qCRMVRIQoC0ZcgRITeKj8eS3yICIpIQRREDcpSTDAEKRnPWhd2rOO5w5k7Z+5cj2NPLVjsy2Ht/dtr7/Wxb6WSk7h69aNK7lLgs/FUgPdiT89sGyew2xl7ex+pdJI4NDTVFlNgrwIHm0CjUENYr+QhAW4puW9cO6Ah5FElPxkmF8ZVqx4eC61WpytwQcmTAvyl3teic9NsQrvaicRGY4aQf6dznXtsjF1v73PmSNP7jQJcVfKUkr/Yt9FgYK6Sp+23kJ8bWEJYrsDPtpm8CrAls0vBQu5ot1Hyp2HvFxnYri2zuxadmzUhuOO95MCdpBQ48f5FIb9sV1uszeO3xtgBXww792wpcOzvnyneV9s1OvdUHhydm19oV61OLwfu63swAZYVgJ8cBa7X57XbJORLsdF4oNxRA8sEONGuCTAw6qi9f3+MHXncovv/4Ir3M7g0BAq5onxw9XcJzgWXAh8pcFGBs5F84r7mcQIM5PL3H8sGJT9skpv+s+AS8s90BD6QEAazWj3UFTgJ4XUFfi2ovyN1WMkDAtxO29/oOn41hYSwVYDfhbys3r/aFdhk2Lnni+43d5d7lIxCbh75Drws5BWbL8A2BT61FtrqSMXgWu1x26GSYSKNISywlinkMZt7u1ZbnANfzsDbhbyU9eNDSu5O77/oUSDAO0XB1K4KnDNPbY4C+xX4IRdcf2Te7RDybfPWHgxCvqvkdwr8aCfbJF+r3K2kaQYczu7wK8vXkc2TlzIndlpwtY44HUMYFOBrWbNmpZA3onMP3TV85KlUqUzJcvd7DWGdkL+1PLYgzX7f+RbCYCu10tdIvT6vFDhdwKoU8E3i/RI7QsuGdFPOzWp5ZIXExiSEFySEngx8PgJPlwYnwFK7c1s89vXNsU7V1YaBc7FWe6Y0OIMPmLetUtol+Ky9UCr3Kk3vN6RehLCgS/AZe4neMzhdjFxrDcKKTye7aE2FvF46qgvhIdStpHayEeBIK9UmVaxm2z+SccHkjXzuT5oI8K0Abwr5RqECNycdmoLJFUp+PK4Cr7SM/wWG6Mqxbg3sRAAAAABJRU5ErkJggg==">
                                 </button>
                             </div>
                         </div>
 
                         <div class="col text-center">
                             <div id="sixthStory">
-                                <img src="https://img.freepik.com/free-vector/hand-drawn-cartoon-duck-illustration_52683-113812.jpg?w=740&t=st=1695711695~exp=1695712295~hmac=db3abd60b87e1e63785f88a2752b5c1886dd8d47197a0b1f77c346884f6e451b" alt="" class="imgStory">
-                                <h3>Pinocchio</h3>
-                                <audio id="audioFourth">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/b/b4/Little_Red_Riding_Hood_-_J._W._Smith.jpg"
+                                    alt="" class="imgStory">
+                                <h3>Little red cap</h3>
+                                <!-- <audio id="audioSixth">
                                     <source src="../audio/TheUglyDuckling.mp3" type="audio/mpeg">
                                 </audio>
-                                <button class="playPause" id="playPauseFourth" onclick="PlayPauseFourth()">&#9658;</button>
-                                <button class="stop" id="stopFourth" onclick="StopFourth()">&#9724;</button>
-                                <button class="btn" type="button" id="readFourth">
-                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAADQ0lEQVR4nO2XXYhVVRTHr6ZWZpCVmGRS2oMgGXkVRSa2+//fc+8UA4JwBQnxZQpGK4qCRMVRIQoC0ZcgRITeKj8eS3yICIpIQRREDcpSTDAEKRnPWhd2rOO5w5k7Z+5cj2NPLVjsy2Ht/dtr7/Wxb6WSk7h69aNK7lLgs/FUgPdiT89sGyew2xl7ex+pdJI4NDTVFlNgrwIHm0CjUENYr+QhAW4puW9cO6Ah5FElPxkmF8ZVqx4eC61WpytwQcmTAvyl3teic9NsQrvaicRGY4aQf6dznXtsjF1v73PmSNP7jQJcVfKUkr/Yt9FgYK6Sp+23kJ8bWEJYrsDPtpm8CrAls0vBQu5ot1Hyp2HvFxnYri2zuxadmzUhuOO95MCdpBQ48f5FIb9sV1uszeO3xtgBXww792wpcOzvnyneV9s1OvdUHhydm19oV61OLwfu63swAZYVgJ8cBa7X57XbJORLsdF4oNxRA8sEONGuCTAw6qi9f3+MHXncovv/4Ir3M7g0BAq5onxw9XcJzgWXAh8pcFGBs5F84r7mcQIM5PL3H8sGJT9skpv+s+AS8s90BD6QEAazWj3UFTgJ4XUFfi2ovyN1WMkDAtxO29/oOn41hYSwVYDfhbys3r/aFdhk2Lnni+43d5d7lIxCbh75Drws5BWbL8A2BT61FtrqSMXgWu1x26GSYSKNISywlinkMZt7u1ZbnANfzsDbhbyU9eNDSu5O77/oUSDAO0XB1K4KnDNPbY4C+xX4IRdcf2Te7RDybfPWHgxCvqvkdwr8aCfbJF+r3K2kaQYczu7wK8vXkc2TlzIndlpwtY44HUMYFOBrWbNmpZA3onMP3TV85KlUqUzJcvd7DWGdkL+1PLYgzX7f+RbCYCu10tdIvT6vFDhdwKoU8E3i/RI7QsuGdFPOzWp5ZIXExiSEFySEngx8PgJPlwYnwFK7c1s89vXNsU7V1YaBc7FWe6Y0OIMPmLetUtol+Ky9UCr3Kk3vN6RehLCgS/AZe4neMzhdjFxrDcKKTye7aE2FvF46qgvhIdStpHayEeBIK9UmVaxm2z+SccHkjXzuT5oI8K0Abwr5RqECNycdmoLJFUp+PK4Cr7SM/wWG6Mqxbg3sRAAAAABJRU5ErkJggg==">
+                                <button class="playPause" id="playPauseSixth" onclick="PlayPauseSixth()">&#9658;</button>
+                                <button class="stop" id="stopSixth" onclick="StopSixth()">&#9724;</button> -->
+                                <button class="btn" type="button" id="readSixth">
+                                    <img
+                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAADQ0lEQVR4nO2XXYhVVRTHr6ZWZpCVmGRS2oMgGXkVRSa2+//fc+8UA4JwBQnxZQpGK4qCRMVRIQoC0ZcgRITeKj8eS3yICIpIQRREDcpSTDAEKRnPWhd2rOO5w5k7Z+5cj2NPLVjsy2Ht/dtr7/Wxb6WSk7h69aNK7lLgs/FUgPdiT89sGyew2xl7ex+pdJI4NDTVFlNgrwIHm0CjUENYr+QhAW4puW9cO6Ah5FElPxkmF8ZVqx4eC61WpytwQcmTAvyl3teic9NsQrvaicRGY4aQf6dznXtsjF1v73PmSNP7jQJcVfKUkr/Yt9FgYK6Sp+23kJ8bWEJYrsDPtpm8CrAls0vBQu5ot1Hyp2HvFxnYri2zuxadmzUhuOO95MCdpBQ48f5FIb9sV1uszeO3xtgBXww792wpcOzvnyneV9s1OvdUHhydm19oV61OLwfu63swAZYVgJ8cBa7X57XbJORLsdF4oNxRA8sEONGuCTAw6qi9f3+MHXncovv/4Ir3M7g0BAq5onxw9XcJzgWXAh8pcFGBs5F84r7mcQIM5PL3H8sGJT9skpv+s+AS8s90BD6QEAazWj3UFTgJ4XUFfi2ovyN1WMkDAtxO29/oOn41hYSwVYDfhbys3r/aFdhk2Lnni+43d5d7lIxCbh75Drws5BWbL8A2BT61FtrqSMXgWu1x26GSYSKNISywlinkMZt7u1ZbnANfzsDbhbyU9eNDSu5O77/oUSDAO0XB1K4KnDNPbY4C+xX4IRdcf2Te7RDybfPWHgxCvqvkdwr8aCfbJF+r3K2kaQYczu7wK8vXkc2TlzIndlpwtY44HUMYFOBrWbNmpZA3onMP3TV85KlUqUzJcvd7DWGdkL+1PLYgzX7f+RbCYCu10tdIvT6vFDhdwKoU8E3i/RI7QsuGdFPOzWp5ZIXExiSEFySEngx8PgJPlwYnwFK7c1s89vXNsU7V1YaBc7FWe6Y0OIMPmLetUtol+Ky9UCr3Kk3vN6RehLCgS/AZe4neMzhdjFxrDcKKTye7aE2FvF46qgvhIdStpHayEeBIK9UmVaxm2z+SccHkjXzuT5oI8K0Abwr5RqECNycdmoLJFUp+PK4Cr7SM/wWG6Mqxbg3sRAAAAABJRU5ErkJggg==">
                                 </button>
                             </div>
                         </div>
 
                         <div class="col text-center">
-                            <div id="seventhStory">
-                                <img src="https://img.freepik.com/free-vector/hand-drawn-cartoon-duck-illustration_52683-113812.jpg?w=740&t=st=1695711695~exp=1695712295~hmac=db3abd60b87e1e63785f88a2752b5c1886dd8d47197a0b1f77c346884f6e451b" alt="" class="imgStory">
-                                <h3>The Ugly Duckling</h3>
-                                <audio id="audioFourth">
-                                    <source src="../audio/TheUglyDuckling.mp3" type="audio/mpeg">
+                            <div id="seventStory">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Prince_Florimund_finds_the_Sleeping_Beauty_-_Project_Gutenberg_etext_19993.jpg"
+                                    alt="" class="imgStory">
+                                <h3>Sleeping Beauty</h3>
+                                <audio id="audioSeventh">
+                                    <source src="../audio/Sleeping-Beauty.mp3" type="audio/mpeg">
                                 </audio>
-                                <button class="playPause" id="playPauseFourth" onclick="PlayPauseFourth()">&#9658;</button>
-                                <button class="stop" id="stopFourth" onclick="StopFourth()">&#9724;</button>
-                                <button class="btn" type="button" id="readFourth">
-                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAADQ0lEQVR4nO2XXYhVVRTHr6ZWZpCVmGRS2oMgGXkVRSa2+//fc+8UA4JwBQnxZQpGK4qCRMVRIQoC0ZcgRITeKj8eS3yICIpIQRREDcpSTDAEKRnPWhd2rOO5w5k7Z+5cj2NPLVjsy2Ht/dtr7/Wxb6WSk7h69aNK7lLgs/FUgPdiT89sGyew2xl7ex+pdJI4NDTVFlNgrwIHm0CjUENYr+QhAW4puW9cO6Ah5FElPxkmF8ZVqx4eC61WpytwQcmTAvyl3teic9NsQrvaicRGY4aQf6dznXtsjF1v73PmSNP7jQJcVfKUkr/Yt9FgYK6Sp+23kJ8bWEJYrsDPtpm8CrAls0vBQu5ot1Hyp2HvFxnYri2zuxadmzUhuOO95MCdpBQ48f5FIb9sV1uszeO3xtgBXww792wpcOzvnyneV9s1OvdUHhydm19oV61OLwfu63swAZYVgJ8cBa7X57XbJORLsdF4oNxRA8sEONGuCTAw6qi9f3+MHXncovv/4Ir3M7g0BAq5onxw9XcJzgWXAh8pcFGBs5F84r7mcQIM5PL3H8sGJT9skpv+s+AS8s90BD6QEAazWj3UFTgJ4XUFfi2ovyN1WMkDAtxO29/oOn41hYSwVYDfhbys3r/aFdhk2Lnni+43d5d7lIxCbh75Drws5BWbL8A2BT61FtrqSMXgWu1x26GSYSKNISywlinkMZt7u1ZbnANfzsDbhbyU9eNDSu5O77/oUSDAO0XB1K4KnDNPbY4C+xX4IRdcf2Te7RDybfPWHgxCvqvkdwr8aCfbJF+r3K2kaQYczu7wK8vXkc2TlzIndlpwtY44HUMYFOBrWbNmpZA3onMP3TV85KlUqUzJcvd7DWGdkL+1PLYgzX7f+RbCYCu10tdIvT6vFDhdwKoU8E3i/RI7QsuGdFPOzWp5ZIXExiSEFySEngx8PgJPlwYnwFK7c1s89vXNsU7V1YaBc7FWe6Y0OIMPmLetUtol+Ky9UCr3Kk3vN6RehLCgS/AZe4neMzhdjFxrDcKKTye7aE2FvF46qgvhIdStpHayEeBIK9UmVaxm2z+SccHkjXzuT5oI8K0Abwr5RqECNycdmoLJFUp+PK4Cr7SM/wWG6Mqxbg3sRAAAAABJRU5ErkJggg==">
+                                <button class="playPause" id="playPauseSeventh" onclick="PlayPauseSeventh()">&#9658;</button>
+                                <button class="stop" id="stopSeventh" onclick="StopSeventh()">&#9724;</button>
+                                <button class="btn" type="button" id="readSeventh">
+                                    <img
+                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAADQ0lEQVR4nO2XXYhVVRTHr6ZWZpCVmGRS2oMgGXkVRSa2+//fc+8UA4JwBQnxZQpGK4qCRMVRIQoC0ZcgRITeKj8eS3yICIpIQRREDcpSTDAEKRnPWhd2rOO5w5k7Z+5cj2NPLVjsy2Ht/dtr7/Wxb6WSk7h69aNK7lLgs/FUgPdiT89sGyew2xl7ex+pdJI4NDTVFlNgrwIHm0CjUENYr+QhAW4puW9cO6Ah5FElPxkmF8ZVqx4eC61WpytwQcmTAvyl3teic9NsQrvaicRGY4aQf6dznXtsjF1v73PmSNP7jQJcVfKUkr/Yt9FgYK6Sp+23kJ8bWEJYrsDPtpm8CrAls0vBQu5ot1Hyp2HvFxnYri2zuxadmzUhuOO95MCdpBQ48f5FIb9sV1uszeO3xtgBXww792wpcOzvnyneV9s1OvdUHhydm19oV61OLwfu63swAZYVgJ8cBa7X57XbJORLsdF4oNxRA8sEONGuCTAw6qi9f3+MHXncovv/4Ir3M7g0BAq5onxw9XcJzgWXAh8pcFGBs5F84r7mcQIM5PL3H8sGJT9skpv+s+AS8s90BD6QEAazWj3UFTgJ4XUFfi2ovyN1WMkDAtxO29/oOn41hYSwVYDfhbys3r/aFdhk2Lnni+43d5d7lIxCbh75Drws5BWbL8A2BT61FtrqSMXgWu1x26GSYSKNISywlinkMZt7u1ZbnANfzsDbhbyU9eNDSu5O77/oUSDAO0XB1K4KnDNPbY4C+xX4IRdcf2Te7RDybfPWHgxCvqvkdwr8aCfbJF+r3K2kaQYczu7wK8vXkc2TlzIndlpwtY44HUMYFOBrWbNmpZA3onMP3TV85KlUqUzJcvd7DWGdkL+1PLYgzX7f+RbCYCu10tdIvT6vFDhdwKoU8E3i/RI7QsuGdFPOzWp5ZIXExiSEFySEngx8PgJPlwYnwFK7c1s89vXNsU7V1YaBc7FWe6Y0OIMPmLetUtol+Ky9UCr3Kk3vN6RehLCgS/AZe4neMzhdjFxrDcKKTye7aE2FvF46qgvhIdStpHayEeBIK9UmVaxm2z+SccHkjXzuT5oI8K0Abwr5RqECNycdmoLJFUp+PK4Cr7SM/wWG6Mqxbg3sRAAAAABJRU5ErkJggg==">
                                 </button>
                             </div>
                         </div>
 
                         <div class="col text-center">
                             <div id="eighthStory">
-                                <img src="https://img.freepik.com/free-vector/hand-drawn-cartoon-duck-illustration_52683-113812.jpg?w=740&t=st=1695711695~exp=1695712295~hmac=db3abd60b87e1e63785f88a2752b5c1886dd8d47197a0b1f77c346884f6e451b" alt="" class="imgStory">
-                                <h3>The Ugly Duckling</h3>
-                                <audio id="audioFourth">
-                                    <source src="../audio/TheUglyDuckling.mp3" type="audio/mpeg">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Hansel-and-gretel-rackham.jpg/640px-Hansel-and-gretel-rackham.jpg" alt="" class="imgStory">
+                                <h3>Hansel and Grethel</h3>
+                                <audio id="audioEighth">
+                                    <source src="../audio/Hansel-and-Grethel.mp3" type="audio/mpeg">
                                 </audio>
-                                <button class="playPause" id="playPauseFourth" onclick="PlayPauseFourth()">&#9658;</button>
-                                <button class="stop" id="stopFourth" onclick="StopFourth()">&#9724;</button>
-                                <button class="btn" type="button" id="readFourth">
-                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAADQ0lEQVR4nO2XXYhVVRTHr6ZWZpCVmGRS2oMgGXkVRSa2+//fc+8UA4JwBQnxZQpGK4qCRMVRIQoC0ZcgRITeKj8eS3yICIpIQRREDcpSTDAEKRnPWhd2rOO5w5k7Z+5cj2NPLVjsy2Ht/dtr7/Wxb6WSk7h69aNK7lLgs/FUgPdiT89sGyew2xl7ex+pdJI4NDTVFlNgrwIHm0CjUENYr+QhAW4puW9cO6Ah5FElPxkmF8ZVqx4eC61WpytwQcmTAvyl3teic9NsQrvaicRGY4aQf6dznXtsjF1v73PmSNP7jQJcVfKUkr/Yt9FgYK6Sp+23kJ8bWEJYrsDPtpm8CrAls0vBQu5ot1Hyp2HvFxnYri2zuxadmzUhuOO95MCdpBQ48f5FIb9sV1uszeO3xtgBXww792wpcOzvnyneV9s1OvdUHhydm19oV61OLwfu63swAZYVgJ8cBa7X57XbJORLsdF4oNxRA8sEONGuCTAw6qi9f3+MHXncovv/4Ir3M7g0BAq5onxw9XcJzgWXAh8pcFGBs5F84r7mcQIM5PL3H8sGJT9skpv+s+AS8s90BD6QEAazWj3UFTgJ4XUFfi2ovyN1WMkDAtxO29/oOn41hYSwVYDfhbys3r/aFdhk2Lnni+43d5d7lIxCbh75Drws5BWbL8A2BT61FtrqSMXgWu1x26GSYSKNISywlinkMZt7u1ZbnANfzsDbhbyU9eNDSu5O77/oUSDAO0XB1K4KnDNPbY4C+xX4IRdcf2Te7RDybfPWHgxCvqvkdwr8aCfbJF+r3K2kaQYczu7wK8vXkc2TlzIndlpwtY44HUMYFOBrWbNmpZA3onMP3TV85KlUqUzJcvd7DWGdkL+1PLYgzX7f+RbCYCu10tdIvT6vFDhdwKoU8E3i/RI7QsuGdFPOzWp5ZIXExiSEFySEngx8PgJPlwYnwFK7c1s89vXNsU7V1YaBc7FWe6Y0OIMPmLetUtol+Ky9UCr3Kk3vN6RehLCgS/AZe4neMzhdjFxrDcKKTye7aE2FvF46qgvhIdStpHayEeBIK9UmVaxm2z+SccHkjXzuT5oI8K0Abwr5RqECNycdmoLJFUp+PK4Cr7SM/wWG6Mqxbg3sRAAAAABJRU5ErkJggg==">
+                                <button class="playPause" id="playPauseEighth"
+                                    onclick="PlayPauseEighth()">&#9658;</button>
+                                <button class="stop" id="stopEighth" onclick="StopEighth()">&#9724;</button>
+                                <button class="btn" type="button" id="readEighth">
+                                    <img
+                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAADQ0lEQVR4nO2XXYhVVRTHr6ZWZpCVmGRS2oMgGXkVRSa2+//fc+8UA4JwBQnxZQpGK4qCRMVRIQoC0ZcgRITeKj8eS3yICIpIQRREDcpSTDAEKRnPWhd2rOO5w5k7Z+5cj2NPLVjsy2Ht/dtr7/Wxb6WSk7h69aNK7lLgs/FUgPdiT89sGyew2xl7ex+pdJI4NDTVFlNgrwIHm0CjUENYr+QhAW4puW9cO6Ah5FElPxkmF8ZVqx4eC61WpytwQcmTAvyl3teic9NsQrvaicRGY4aQf6dznXtsjF1v73PmSNP7jQJcVfKUkr/Yt9FgYK6Sp+23kJ8bWEJYrsDPtpm8CrAls0vBQu5ot1Hyp2HvFxnYri2zuxadmzUhuOO95MCdpBQ48f5FIb9sV1uszeO3xtgBXww792wpcOzvnyneV9s1OvdUHhydm19oV61OLwfu63swAZYVgJ8cBa7X57XbJORLsdF4oNxRA8sEONGuCTAw6qi9f3+MHXncovv/4Ir3M7g0BAq5onxw9XcJzgWXAh8pcFGBs5F84r7mcQIM5PL3H8sGJT9skpv+s+AS8s90BD6QEAazWj3UFTgJ4XUFfi2ovyN1WMkDAtxO29/oOn41hYSwVYDfhbys3r/aFdhk2Lnni+43d5d7lIxCbh75Drws5BWbL8A2BT61FtrqSMXgWu1x26GSYSKNISywlinkMZt7u1ZbnANfzsDbhbyU9eNDSu5O77/oUSDAO0XB1K4KnDNPbY4C+xX4IRdcf2Te7RDybfPWHgxCvqvkdwr8aCfbJF+r3K2kaQYczu7wK8vXkc2TlzIndlpwtY44HUMYFOBrWbNmpZA3onMP3TV85KlUqUzJcvd7DWGdkL+1PLYgzX7f+RbCYCu10tdIvT6vFDhdwKoU8E3i/RI7QsuGdFPOzWp5ZIXExiSEFySEngx8PgJPlwYnwFK7c1s89vXNsU7V1YaBc7FWe6Y0OIMPmLetUtol+Ky9UCr3Kk3vN6RehLCgS/AZe4neMzhdjFxrDcKKTye7aE2FvF46qgvhIdStpHayEeBIK9UmVaxm2z+SccHkjXzuT5oI8K0Abwr5RqECNycdmoLJFUp+PK4Cr7SM/wWG6Mqxbg3sRAAAAABJRU5ErkJggg==">
                                 </button>
                             </div>
                         </div>
@@ -172,27 +194,63 @@
                     <div class="row">
 
                         <div class="col text-center">
-                            <button class="btn" type="button" id="ninthStory">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Rudolf_Koivu_-_Lumikuningatar.jpg?The_Snow_Queen1173948968" alt="" class="imgStory">
                                 <h3>The Snow Queen</h3>
-                            </button>
+                                <audio id="audioNinth">
+                                    <source src="../audio/The-Snow-Queen.mp3" type="audio/mpeg">
+                                </audio>
+                                <button class="playPause" id="playPauseNinth"
+                                    onclick="PlayPauseNinth()">&#9658;</button>
+                                <button class="stop" id="stopNinth" onclick="StopNinth()">&#9724;</button>
+                                <button class="btn" type="button" id="readNinth">
+                                    <img
+                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAADQ0lEQVR4nO2XXYhVVRTHr6ZWZpCVmGRS2oMgGXkVRSa2+//fc+8UA4JwBQnxZQpGK4qCRMVRIQoC0ZcgRITeKj8eS3yICIpIQRREDcpSTDAEKRnPWhd2rOO5w5k7Z+5cj2NPLVjsy2Ht/dtr7/Wxb6WSk7h69aNK7lLgs/FUgPdiT89sGyew2xl7ex+pdJI4NDTVFlNgrwIHm0CjUENYr+QhAW4puW9cO6Ah5FElPxkmF8ZVqx4eC61WpytwQcmTAvyl3teic9NsQrvaicRGY4aQf6dznXtsjF1v73PmSNP7jQJcVfKUkr/Yt9FgYK6Sp+23kJ8bWEJYrsDPtpm8CrAls0vBQu5ot1Hyp2HvFxnYri2zuxadmzUhuOO95MCdpBQ48f5FIb9sV1uszeO3xtgBXww792wpcOzvnyneV9s1OvdUHhydm19oV61OLwfu63swAZYVgJ8cBa7X57XbJORLsdF4oNxRA8sEONGuCTAw6qi9f3+MHXncovv/4Ir3M7g0BAq5onxw9XcJzgWXAh8pcFGBs5F84r7mcQIM5PL3H8sGJT9skpv+s+AS8s90BD6QEAazWj3UFTgJ4XUFfi2ovyN1WMkDAtxO29/oOn41hYSwVYDfhbys3r/aFdhk2Lnni+43d5d7lIxCbh75Drws5BWbL8A2BT61FtrqSMXgWu1x26GSYSKNISywlinkMZt7u1ZbnANfzsDbhbyU9eNDSu5O77/oUSDAO0XB1K4KnDNPbY4C+xX4IRdcf2Te7RDybfPWHgxCvqvkdwr8aCfbJF+r3K2kaQYczu7wK8vXkc2TlzIndlpwtY44HUMYFOBrWbNmpZA3onMP3TV85KlUqUzJcvd7DWGdkL+1PLYgzX7f+RbCYCu10tdIvT6vFDhdwKoU8E3i/RI7QsuGdFPOzWp5ZIXExiSEFySEngx8PgJPlwYnwFK7c1s89vXNsU7V1YaBc7FWe6Y0OIMPmLetUtol+Ky9UCr3Kk3vN6RehLCgS/AZe4neMzhdjFxrDcKKTye7aE2FvF46qgvhIdStpHayEeBIK9UmVaxm2z+SccHkjXzuT5oI8K0Abwr5RqECNycdmoLJFUp+PK4Cr7SM/wWG6Mqxbg3sRAAAAABJRU5ErkJggg==">
+                                </button>
                         </div>
 
                         <div class="col text-center">
-                            <button class="btn" type="button" id="tenthStory">
-                                <h3>The Little Match Girl</h3>
-                            </button>
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/3/3b/Simpleton_finds_The_Golden_Goose_-_Project_Gutenberg_eText_15661.jpg" alt="" class="imgStory">
+                                <h3>Golde Goose</h3>
+                                <audio id="audioTenth">
+                                    <source src="../audio/Golde-Goose.mp3" type="audio/mpeg">
+                                </audio>
+                                <button class="playPause" id="playPauseTenth"
+                                    onclick="PlayPauseTenth()">&#9658;</button>
+                                <button class="stop" id="stopTenth" onclick="StopTenth()">&#9724;</button>
+                                <button class="btn" type="button" id="readTenth">
+                                    <img
+                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAADQ0lEQVR4nO2XXYhVVRTHr6ZWZpCVmGRS2oMgGXkVRSa2+//fc+8UA4JwBQnxZQpGK4qCRMVRIQoC0ZcgRITeKj8eS3yICIpIQRREDcpSTDAEKRnPWhd2rOO5w5k7Z+5cj2NPLVjsy2Ht/dtr7/Wxb6WSk7h69aNK7lLgs/FUgPdiT89sGyew2xl7ex+pdJI4NDTVFlNgrwIHm0CjUENYr+QhAW4puW9cO6Ah5FElPxkmF8ZVqx4eC61WpytwQcmTAvyl3teic9NsQrvaicRGY4aQf6dznXtsjF1v73PmSNP7jQJcVfKUkr/Yt9FgYK6Sp+23kJ8bWEJYrsDPtpm8CrAls0vBQu5ot1Hyp2HvFxnYri2zuxadmzUhuOO95MCdpBQ48f5FIb9sV1uszeO3xtgBXww792wpcOzvnyneV9s1OvdUHhydm19oV61OLwfu63swAZYVgJ8cBa7X57XbJORLsdF4oNxRA8sEONGuCTAw6qi9f3+MHXncovv/4Ir3M7g0BAq5onxw9XcJzgWXAh8pcFGBs5F84r7mcQIM5PL3H8sGJT9skpv+s+AS8s90BD6QEAazWj3UFTgJ4XUFfi2ovyN1WMkDAtxO29/oOn41hYSwVYDfhbys3r/aFdhk2Lnni+43d5d7lIxCbh75Drws5BWbL8A2BT61FtrqSMXgWu1x26GSYSKNISywlinkMZt7u1ZbnANfzsDbhbyU9eNDSu5O77/oUSDAO0XB1K4KnDNPbY4C+xX4IRdcf2Te7RDybfPWHgxCvqvkdwr8aCfbJF+r3K2kaQYczu7wK8vXkc2TlzIndlpwtY44HUMYFOBrWbNmpZA3onMP3TV85KlUqUzJcvd7DWGdkL+1PLYgzX7f+RbCYCu10tdIvT6vFDhdwKoU8E3i/RI7QsuGdFPOzWp5ZIXExiSEFySEngx8PgJPlwYnwFK7c1s89vXNsU7V1YaBc7FWe6Y0OIMPmLetUtol+Ky9UCr3Kk3vN6RehLCgS/AZe4neMzhdjFxrDcKKTye7aE2FvF46qgvhIdStpHayEeBIK9UmVaxm2z+SccHkjXzuT5oI8K0Abwr5RqECNycdmoLJFUp+PK4Cr7SM/wWG6Mqxbg3sRAAAAABJRU5ErkJggg==">
+                                </button>
                         </div>
 
                         <div class="col text-center">
-                            <button class="btn" type="button" id="eleventhStory">
+                            <img src="https://cdn.pixabay.com/photo/2020/10/25/17/40/hansel-5685067_1280.jpg" alt="" class="imgStory">
                                 <h3>Goldilocks and the Three Bears</h3>
-                            </button>
+                                <!-- <audio id="audioEighth">
+                                    <source src="../audio/TheUglyDuckling.mp3" type="audio/mpeg">
+                                </audio>
+                                <button class="playPause" id="playPauseEighth"
+                                    onclick="PlayPauseEighth()">&#9658;</button>
+                                <button class="stop" id="stopEighth" onclick="StopEighth()">&#9724;</button> -->
+                                <button class="btn" type="button" id="readEighth">
+                                    <img
+                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAADQ0lEQVR4nO2XXYhVVRTHr6ZWZpCVmGRS2oMgGXkVRSa2+//fc+8UA4JwBQnxZQpGK4qCRMVRIQoC0ZcgRITeKj8eS3yICIpIQRREDcpSTDAEKRnPWhd2rOO5w5k7Z+5cj2NPLVjsy2Ht/dtr7/Wxb6WSk7h69aNK7lLgs/FUgPdiT89sGyew2xl7ex+pdJI4NDTVFlNgrwIHm0CjUENYr+QhAW4puW9cO6Ah5FElPxkmF8ZVqx4eC61WpytwQcmTAvyl3teic9NsQrvaicRGY4aQf6dznXtsjF1v73PmSNP7jQJcVfKUkr/Yt9FgYK6Sp+23kJ8bWEJYrsDPtpm8CrAls0vBQu5ot1Hyp2HvFxnYri2zuxadmzUhuOO95MCdpBQ48f5FIb9sV1uszeO3xtgBXww792wpcOzvnyneV9s1OvdUHhydm19oV61OLwfu63swAZYVgJ8cBa7X57XbJORLsdF4oNxRA8sEONGuCTAw6qi9f3+MHXncovv/4Ir3M7g0BAq5onxw9XcJzgWXAh8pcFGBs5F84r7mcQIM5PL3H8sGJT9skpv+s+AS8s90BD6QEAazWj3UFTgJ4XUFfi2ovyN1WMkDAtxO29/oOn41hYSwVYDfhbys3r/aFdhk2Lnni+43d5d7lIxCbh75Drws5BWbL8A2BT61FtrqSMXgWu1x26GSYSKNISywlinkMZt7u1ZbnANfzsDbhbyU9eNDSu5O77/oUSDAO0XB1K4KnDNPbY4C+xX4IRdcf2Te7RDybfPWHgxCvqvkdwr8aCfbJF+r3K2kaQYczu7wK8vXkc2TlzIndlpwtY44HUMYFOBrWbNmpZA3onMP3TV85KlUqUzJcvd7DWGdkL+1PLYgzX7f+RbCYCu10tdIvT6vFDhdwKoU8E3i/RI7QsuGdFPOzWp5ZIXExiSEFySEngx8PgJPlwYnwFK7c1s89vXNsU7V1YaBc7FWe6Y0OIMPmLetUtol+Ky9UCr3Kk3vN6RehLCgS/AZe4neMzhdjFxrDcKKTye7aE2FvF46qgvhIdStpHayEeBIK9UmVaxm2z+SccHkjXzuT5oI8K0Abwr5RqECNycdmoLJFUp+PK4Cr7SM/wWG6Mqxbg3sRAAAAABJRU5ErkJggg==">
+                                </button>
                         </div>
 
                         <div class="col text-center">
-                            <button class="btn" type="button" id="twelfthStory">
+                            <img src="https://cdn.pixabay.com/photo/2020/10/25/17/40/hansel-5685067_1280.jpg" alt="" class="imgStory">
                                 <h3>The Wolf & Seven Little Kids</h3>
-                            </button>
+                                <!-- <audio id="audioEighth">
+                                    <source src="../audio/TheUglyDuckling.mp3" type="audio/mpeg">
+                                </audio>
+                                <button class="playPause" id="playPauseEighth"
+                                    onclick="PlayPauseEighth()">&#9658;</button>
+                                <button class="stop" id="stopEighth" onclick="StopEighth()">&#9724;</button> -->
+                                <button class="btn" type="button" id="readEighth">
+                                    <img
+                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAADQ0lEQVR4nO2XXYhVVRTHr6ZWZpCVmGRS2oMgGXkVRSa2+//fc+8UA4JwBQnxZQpGK4qCRMVRIQoC0ZcgRITeKj8eS3yICIpIQRREDcpSTDAEKRnPWhd2rOO5w5k7Z+5cj2NPLVjsy2Ht/dtr7/Wxb6WSk7h69aNK7lLgs/FUgPdiT89sGyew2xl7ex+pdJI4NDTVFlNgrwIHm0CjUENYr+QhAW4puW9cO6Ah5FElPxkmF8ZVqx4eC61WpytwQcmTAvyl3teic9NsQrvaicRGY4aQf6dznXtsjF1v73PmSNP7jQJcVfKUkr/Yt9FgYK6Sp+23kJ8bWEJYrsDPtpm8CrAls0vBQu5ot1Hyp2HvFxnYri2zuxadmzUhuOO95MCdpBQ48f5FIb9sV1uszeO3xtgBXww792wpcOzvnyneV9s1OvdUHhydm19oV61OLwfu63swAZYVgJ8cBa7X57XbJORLsdF4oNxRA8sEONGuCTAw6qi9f3+MHXncovv/4Ir3M7g0BAq5onxw9XcJzgWXAh8pcFGBs5F84r7mcQIM5PL3H8sGJT9skpv+s+AS8s90BD6QEAazWj3UFTgJ4XUFfi2ovyN1WMkDAtxO29/oOn41hYSwVYDfhbys3r/aFdhk2Lnni+43d5d7lIxCbh75Drws5BWbL8A2BT61FtrqSMXgWu1x26GSYSKNISywlinkMZt7u1ZbnANfzsDbhbyU9eNDSu5O77/oUSDAO0XB1K4KnDNPbY4C+xX4IRdcf2Te7RDybfPWHgxCvqvkdwr8aCfbJF+r3K2kaQYczu7wK8vXkc2TlzIndlpwtY44HUMYFOBrWbNmpZA3onMP3TV85KlUqUzJcvd7DWGdkL+1PLYgzX7f+RbCYCu10tdIvT6vFDhdwKoU8E3i/RI7QsuGdFPOzWp5ZIXExiSEFySEngx8PgJPlwYnwFK7c1s89vXNsU7V1YaBc7FWe6Y0OIMPmLetUtol+Ky9UCr3Kk3vN6RehLCgS/AZe4neMzhdjFxrDcKKTye7aE2FvF46qgvhIdStpHayEeBIK9UmVaxm2z+SccHkjXzuT5oI8K0Abwr5RqECNycdmoLJFUp+PK4Cr7SM/wWG6Mqxbg3sRAAAAABJRU5ErkJggg==">
+                                </button>
                         </div>
                     </div>
                 </section>
@@ -201,27 +259,66 @@
                     <div class="row">
 
                         <div class="col text-center">
-                            <button class="btn" type="button" id="thirtheenthStory">
+                            <img src="https://cdn.pixabay.com/photo/2020/10/25/17/40/hansel-5685067_1280.jpg" alt="" class="imgStory">
                                 <h3>Ali Baba and the Forty Thieves</h3>
-                            </button>
+                                <!-- <audio id="audioEighth">
+                                    <source src="../audio/TheUglyDuckling.mp3" type="audio/mpeg">
+                                </audio>
+                                <button class="playPause" id="playPauseEighth"
+                                    onclick="PlayPauseEighth()">&#9658;</button>
+                                <button class="stop" id="stopEighth" onclick="StopEighth()">&#9724;</button> -->
+                                <button class="btn" type="button" id="readEighth">
+                                    <img
+                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAADQ0lEQVR4nO2XXYhVVRTHr6ZWZpCVmGRS2oMgGXkVRSa2+//fc+8UA4JwBQnxZQpGK4qCRMVRIQoC0ZcgRITeKj8eS3yICIpIQRREDcpSTDAEKRnPWhd2rOO5w5k7Z+5cj2NPLVjsy2Ht/dtr7/Wxb6WSk7h69aNK7lLgs/FUgPdiT89sGyew2xl7ex+pdJI4NDTVFlNgrwIHm0CjUENYr+QhAW4puW9cO6Ah5FElPxkmF8ZVqx4eC61WpytwQcmTAvyl3teic9NsQrvaicRGY4aQf6dznXtsjF1v73PmSNP7jQJcVfKUkr/Yt9FgYK6Sp+23kJ8bWEJYrsDPtpm8CrAls0vBQu5ot1Hyp2HvFxnYri2zuxadmzUhuOO95MCdpBQ48f5FIb9sV1uszeO3xtgBXww792wpcOzvnyneV9s1OvdUHhydm19oV61OLwfu63swAZYVgJ8cBa7X57XbJORLsdF4oNxRA8sEONGuCTAw6qi9f3+MHXncovv/4Ir3M7g0BAq5onxw9XcJzgWXAh8pcFGBs5F84r7mcQIM5PL3H8sGJT9skpv+s+AS8s90BD6QEAazWj3UFTgJ4XUFfi2ovyN1WMkDAtxO29/oOn41hYSwVYDfhbys3r/aFdhk2Lnni+43d5d7lIxCbh75Drws5BWbL8A2BT61FtrqSMXgWu1x26GSYSKNISywlinkMZt7u1ZbnANfzsDbhbyU9eNDSu5O77/oUSDAO0XB1K4KnDNPbY4C+xX4IRdcf2Te7RDybfPWHgxCvqvkdwr8aCfbJF+r3K2kaQYczu7wK8vXkc2TlzIndlpwtY44HUMYFOBrWbNmpZA3onMP3TV85KlUqUzJcvd7DWGdkL+1PLYgzX7f+RbCYCu10tdIvT6vFDhdwKoU8E3i/RI7QsuGdFPOzWp5ZIXExiSEFySEngx8PgJPlwYnwFK7c1s89vXNsU7V1YaBc7FWe6Y0OIMPmLetUtol+Ky9UCr3Kk3vN6RehLCgS/AZe4neMzhdjFxrDcKKTye7aE2FvF46qgvhIdStpHayEeBIK9UmVaxm2z+SccHkjXzuT5oI8K0Abwr5RqECNycdmoLJFUp+PK4Cr7SM/wWG6Mqxbg3sRAAAAABJRU5ErkJggg==">
+                                </button>
                         </div>
 
                         <div class="col text-center">
-                            <button class="btn" type="button" id="fourteenthStory">
+                            <img src="https://cdn.pixabay.com/photo/2020/10/25/17/40/hansel-5685067_1280.jpg" alt="" class="imgStory">
                                 <h3>The Adventures of Aladdin</h3>
-                            </button>
+                                <!-- <audio id="audioEighth">
+                                    <source src="../audio/TheUglyDuckling.mp3" type="audio/mpeg">
+                                </audio>
+                                <button class="playPause" id="playPauseEighth"
+                                    onclick="PlayPauseEighth()">&#9658;</button>
+                                <button class="stop" id="stopEighth" onclick="StopEighth()">&#9724;</button> -->
+                                <button class="btn" type="button" id="readEighth">
+                                    <img
+                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAADQ0lEQVR4nO2XXYhVVRTHr6ZWZpCVmGRS2oMgGXkVRSa2+//fc+8UA4JwBQnxZQpGK4qCRMVRIQoC0ZcgRITeKj8eS3yICIpIQRREDcpSTDAEKRnPWhd2rOO5w5k7Z+5cj2NPLVjsy2Ht/dtr7/Wxb6WSk7h69aNK7lLgs/FUgPdiT89sGyew2xl7ex+pdJI4NDTVFlNgrwIHm0CjUENYr+QhAW4puW9cO6Ah5FElPxkmF8ZVqx4eC61WpytwQcmTAvyl3teic9NsQrvaicRGY4aQf6dznXtsjF1v73PmSNP7jQJcVfKUkr/Yt9FgYK6Sp+23kJ8bWEJYrsDPtpm8CrAls0vBQu5ot1Hyp2HvFxnYri2zuxadmzUhuOO95MCdpBQ48f5FIb9sV1uszeO3xtgBXww792wpcOzvnyneV9s1OvdUHhydm19oV61OLwfu63swAZYVgJ8cBa7X57XbJORLsdF4oNxRA8sEONGuCTAw6qi9f3+MHXncovv/4Ir3M7g0BAq5onxw9XcJzgWXAh8pcFGBs5F84r7mcQIM5PL3H8sGJT9skpv+s+AS8s90BD6QEAazWj3UFTgJ4XUFfi2ovyN1WMkDAtxO29/oOn41hYSwVYDfhbys3r/aFdhk2Lnni+43d5d7lIxCbh75Drws5BWbL8A2BT61FtrqSMXgWu1x26GSYSKNISywlinkMZt7u1ZbnANfzsDbhbyU9eNDSu5O77/oUSDAO0XB1K4KnDNPbY4C+xX4IRdcf2Te7RDybfPWHgxCvqvkdwr8aCfbJF+r3K2kaQYczu7wK8vXkc2TlzIndlpwtY44HUMYFOBrWbNmpZA3onMP3TV85KlUqUzJcvd7DWGdkL+1PLYgzX7f+RbCYCu10tdIvT6vFDhdwKoU8E3i/RI7QsuGdFPOzWp5ZIXExiSEFySEngx8PgJPlwYnwFK7c1s89vXNsU7V1YaBc7FWe6Y0OIMPmLetUtol+Ky9UCr3Kk3vN6RehLCgS/AZe4neMzhdjFxrDcKKTye7aE2FvF46qgvhIdStpHayEeBIK9UmVaxm2z+SccHkjXzuT5oI8K0Abwr5RqECNycdmoLJFUp+PK4Cr7SM/wWG6Mqxbg3sRAAAAABJRU5ErkJggg==">
+                                </button>
                         </div>
 
                         <div class="col text-center">
-                            <button class="btn" type="button" id="fifteenthStory">
-                                <h3>Sleeping Beauty (Briar-Rose)</h3>
-                            </button>
+                            <img src="https://cdn.pixabay.com/photo/2020/10/25/17/40/hansel-5685067_1280.jpg" alt="" class="imgStory">
+                                <h3>Hansel and Grethel</h3>
+                                <!-- <audio id="audioEighth">
+                                    <source src="../audio/TheUglyDuckling.mp3" type="audio/mpeg">
+                                </audio>
+                                <button class="playPause" id="playPauseEighth"
+                                    onclick="PlayPauseEighth()">&#9658;</button>
+                                <button class="stop" id="stopEighth" onclick="StopEighth()">&#9724;</button> -->
+                                <button class="btn" type="button" id="readEighth">
+                                    <img
+                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAADQ0lEQVR4nO2XXYhVVRTHr6ZWZpCVmGRS2oMgGXkVRSa2+//fc+8UA4JwBQnxZQpGK4qCRMVRIQoC0ZcgRITeKj8eS3yICIpIQRREDcpSTDAEKRnPWhd2rOO5w5k7Z+5cj2NPLVjsy2Ht/dtr7/Wxb6WSk7h69aNK7lLgs/FUgPdiT89sGyew2xl7ex+pdJI4NDTVFlNgrwIHm0CjUENYr+QhAW4puW9cO6Ah5FElPxkmF8ZVqx4eC61WpytwQcmTAvyl3teic9NsQrvaicRGY4aQf6dznXtsjF1v73PmSNP7jQJcVfKUkr/Yt9FgYK6Sp+23kJ8bWEJYrsDPtpm8CrAls0vBQu5ot1Hyp2HvFxnYri2zuxadmzUhuOO95MCdpBQ48f5FIb9sV1uszeO3xtgBXww792wpcOzvnyneV9s1OvdUHhydm19oV61OLwfu63swAZYVgJ8cBa7X57XbJORLsdF4oNxRA8sEONGuCTAw6qi9f3+MHXncovv/4Ir3M7g0BAq5onxw9XcJzgWXAh8pcFGBs5F84r7mcQIM5PL3H8sGJT9skpv+s+AS8s90BD6QEAazWj3UFTgJ4XUFfi2ovyN1WMkDAtxO29/oOn41hYSwVYDfhbys3r/aFdhk2Lnni+43d5d7lIxCbh75Drws5BWbL8A2BT61FtrqSMXgWu1x26GSYSKNISywlinkMZt7u1ZbnANfzsDbhbyU9eNDSu5O77/oUSDAO0XB1K4KnDNPbY4C+xX4IRdcf2Te7RDybfPWHgxCvqvkdwr8aCfbJF+r3K2kaQYczu7wK8vXkc2TlzIndlpwtY44HUMYFOBrWbNmpZA3onMP3TV85KlUqUzJcvd7DWGdkL+1PLYgzX7f+RbCYCu10tdIvT6vFDhdwKoU8E3i/RI7QsuGdFPOzWp5ZIXExiSEFySEngx8PgJPlwYnwFK7c1s89vXNsU7V1YaBc7FWe6Y0OIMPmLetUtol+Ky9UCr3Kk3vN6RehLCgS/AZe4neMzhdjFxrDcKKTye7aE2FvF46qgvhIdStpHayEeBIK9UmVaxm2z+SccHkjXzuT5oI8K0Abwr5RqECNycdmoLJFUp+PK4Cr7SM/wWG6Mqxbg3sRAAAAABJRU5ErkJggg==">
+                                </button>
                         </div>
 
                         <div class="col text-center">
                             <button class="btn" type="button" id="sixteenthStory">
-                                <h3>The Happy Prince</h3>
+                                <h3></h3>
                             </button>
+                            <img src="https://cdn.pixabay.com/photo/2020/10/25/17/40/hansel-5685067_1280.jpg" alt="" class="imgStory">
+                                <h3>The Happy Prince</h3>
+                                <!-- <audio id="audioEighth">
+                                    <source src="../audio/TheUglyDuckling.mp3" type="audio/mpeg">
+                                </audio>
+                                <button class="playPause" id="playPauseEighth"
+                                    onclick="PlayPauseEighth()">&#9658;</button>
+                                <button class="stop" id="stopEighth" onclick="StopEighth()">&#9724;</button> -->
+                                <button class="btn" type="button" id="readEighth">
+                                    <img
+                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAADQ0lEQVR4nO2XXYhVVRTHr6ZWZpCVmGRS2oMgGXkVRSa2+//fc+8UA4JwBQnxZQpGK4qCRMVRIQoC0ZcgRITeKj8eS3yICIpIQRREDcpSTDAEKRnPWhd2rOO5w5k7Z+5cj2NPLVjsy2Ht/dtr7/Wxb6WSk7h69aNK7lLgs/FUgPdiT89sGyew2xl7ex+pdJI4NDTVFlNgrwIHm0CjUENYr+QhAW4puW9cO6Ah5FElPxkmF8ZVqx4eC61WpytwQcmTAvyl3teic9NsQrvaicRGY4aQf6dznXtsjF1v73PmSNP7jQJcVfKUkr/Yt9FgYK6Sp+23kJ8bWEJYrsDPtpm8CrAls0vBQu5ot1Hyp2HvFxnYri2zuxadmzUhuOO95MCdpBQ48f5FIb9sV1uszeO3xtgBXww792wpcOzvnyneV9s1OvdUHhydm19oV61OLwfu63swAZYVgJ8cBa7X57XbJORLsdF4oNxRA8sEONGuCTAw6qi9f3+MHXncovv/4Ir3M7g0BAq5onxw9XcJzgWXAh8pcFGBs5F84r7mcQIM5PL3H8sGJT9skpv+s+AS8s90BD6QEAazWj3UFTgJ4XUFfi2ovyN1WMkDAtxO29/oOn41hYSwVYDfhbys3r/aFdhk2Lnni+43d5d7lIxCbh75Drws5BWbL8A2BT61FtrqSMXgWu1x26GSYSKNISywlinkMZt7u1ZbnANfzsDbhbyU9eNDSu5O77/oUSDAO0XB1K4KnDNPbY4C+xX4IRdcf2Te7RDybfPWHgxCvqvkdwr8aCfbJF+r3K2kaQYczu7wK8vXkc2TlzIndlpwtY44HUMYFOBrWbNmpZA3onMP3TV85KlUqUzJcvd7DWGdkL+1PLYgzX7f+RbCYCu10tdIvT6vFDhdwKoU8E3i/RI7QsuGdFPOzWp5ZIXExiSEFySEngx8PgJPlwYnwFK7c1s89vXNsU7V1YaBc7FWe6Y0OIMPmLetUtol+Ky9UCr3Kk3vN6RehLCgS/AZe4neMzhdjFxrDcKKTye7aE2FvF46qgvhIdStpHayEeBIK9UmVaxm2z+SccHkjXzuT5oI8K0Abwr5RqECNycdmoLJFUp+PK4Cr7SM/wWG6Mqxbg3sRAAAAABJRU5ErkJggg==">
+                                </button>
                         </div>
                     </div>
                 </section>
@@ -231,17 +328,17 @@
                 <div class="popupContent">
                     <button class="close" id="close">X</button>
                     <h1 class="text-center" id="title">
-                        
+
                     </h1>
 
                     <h3 id="tile">
-                        
+
                     </h3>
                 </div>
             </div>
         </article>
     </main>
- 
+
     <!--Footer section-->
     <footer id="footer">
         <div class="container-fluid">
