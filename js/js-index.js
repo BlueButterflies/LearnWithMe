@@ -96,13 +96,13 @@ school.addEventListener('click', function(){
     window.open('pages/school.html', '_parent');
 })
 
-/* school.addEventListener('click', function () {
-    window.open('pages/school.html', '_parent');
+grammar.addEventListener('click', function () {
+    window.open('pages/grammar.html', '_parent');
 })
 
-school.addEventListener('click', function () {
-    window.open('pages/school.html', '_parent');
-}) */
+clock.addEventListener('click', function () {
+    window.open('pages/clock.html', '_parent');
+})
 
 stories.addEventListener('click', function(){
     window.open('pages/storiesHome.html', '_parent');
