@@ -1,0 +1,112 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    background-size: 100% 100%;
+}
+
+main {
+    margin: 0 2%;
+}
+
+/*Navbar section*/
+.navbar {
+    background-color: deepskyblue;
+}
+
+.navbar span {
+    justify-content: center;
+    text-align: center;
+    font-size: 25px;
+    color: whitesmoke;
+}
+
+.back {
+    margin-top: 5%;
+    margin-left: 1%;
+    font-size: 1.5em;
+}
+
+.back a{
+    text-decoration: none;
+    color: rgb(27, 108, 0);
+}
+
+.row .col-12{
+    margin-top: 4%;
+}
+
+section h1, section div h3{
+    color: firebrick;
+}
+section h2{
+    color:tomato;
+}
+
+.imgClock{
+    margin-top: 5%;
+    width: 150px;
+    height: 150px;
+    border: 2px solid salmon;
+    border-radius: 60%;
+}
+
+/*Footer section*/
+#footer {
+    background-color: deepskyblue;
+    margin-top: 5%;
+    padding: 2% 0;
+    color: whitesmoke;
+}
+
+#footer a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.floating-button-div {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+}
+
+.top {
+    background-color: transparent;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (min-width: 200px) and (max-width: 767px) {
+    body {
+        background-size: auto;
+    }
+
+    .back {
+        margin-top: 17%;
+        margin-left: 1.5%;
+    }
+
+    .navbar span {
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+    body {
+        background-size: auto;
+    }
+
+
+    .back {
+        margin-top: 8%;
+        margin-left: 1.5%;
+    }
+}

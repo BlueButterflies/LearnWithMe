@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
+    <title>Alphabet</title>
+
+    <!--Our style-->
+    <link rel="stylesheet" href="../css/clock.css">
+
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+    <!--Google Font-->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg  fixed-top">
+
+        <div class="container-fluid">
+            <span>
+                Learn the clock with me
+            </span>
+
+        </div>
+    </nav>
+
+    <main>
+        <section class="back">
+            <a href="../index.html">Home</a><!--back button-->
+        </section>
+
+        <article class="container-fluid">
+            <div class="row">
+                <!--Explanation for clock-->
+                <section class="col-12 text-center">
+                    <h1>
+                        What time is it?
+                    </h1>
+
+                    <p>
+                        <h2>
+                            We use 'of the clock' (o'clock) to express the full hour. In simple, it is used when there is no minute available.
+                        </h2>
+                        <br>
+                        <h2>
+                            a.m. and p.m.
+                            To make the time distinction clear, English generally use the 12-hour clock system. We use ante meridiem (a.m.) to refer
+                            time between midnight 00:00 and midday 12:00 (before midday), while post meridiem (p.m.) refers to the time between
+                            midday 12:00 and midnight 12:00 (after midday). Therefore:
+                            <br>
+                            8.00 a.m. = 8 o’clock in the morning (08:00).
+                            <br>
+                            8.00 p.m. = 8 o’clock in the evening (20:00).
+                            <br>
+                            12.00 a.m. = 12 o’clock in the night (midnight).
+                            <br>
+                            12.00 p.m. = 12 o’clock in the afternoon (midday).
+                        </h2>
+                    </p>
+                </section>
+
+                <!--Example of hours with images, text and pronounce-->
+                <section class="col-12 text-center">
+                    <div class="row">
+                        <div class="col">
+                            <div>
+                                <img src="https://banner2.cleanpng.com/20180314/daq/kisspng-clock-free-content-clip-art-big-clock-cliparts-5aa9c4915dea06.7258421915210753453847.jpg"
+                                    alt="" class="imgClock">
+                                <br>
+                                <button class="btn" id="clockOne">
+                                    <img class="imgButtons"
+                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAACXBIWXMAAAsTAAALEwEAmpwYAAABkklEQVR4nM2WP0scURDAf/4B38xibxoFU6QxHyAiFqYxjYJfQD+CpEwgBgwp0khSCMI5c2ewsdQyQT9IqlhoSEg6hdisvHPvn3eRzd26OPDYebtv5/dmZ+bNwkOTDRg1Yc+EPxaYLRxwACMu7LuSZuNNoYAUhkzZaQOkLrwtFODKdgegaIgpH7sA2htiwkpVefF/AOFDT4D2htQCz0z5boGXuQAubP4ToN0QVyYa1wjq8siF96b8bRjIFqd5IZWEGRd+eMLzpkfC2QFI67O0AfqBRNkNzJlwXglMxbkrh66s1R9mNzoM5IWkN6m91TQsbJryKepVYcmErwNDNmDYlFcmnMR3KuM8ceVb3bMxpl34NTAEYA8SVy6iHmNgymVDd+WqEE9ceW3C8W1PqmM8duFn4TEx4V0s3kxfduFLodlVDczH7KoFJrMkODJltQW52UHfdWIJT2OdWMJCfR6YjXXiELiPiv+sPHLl1JXFOwGDnF0eAcJ6LkBpp3Bp/aSUzlhajyeT7G+l5sLvGOR7gfQr15FrkPFdwAWNAAAAAElFTkSuQmCC">
+                                </button>
+                                <br>
+                                <h3>
+                                    It is five o'clock
+                                </h3>
+                            </div>
+
+                            <div>
+                                <img src="https://banner2.cleanpng.com/20180205/kie/kisspng-alarm-clock-clip-art-wall-watch-transparent-background-5a7801c26b3801.0571113115178142104392.jpg"
+                                    alt="" class="imgClock">
+                                <br>
+                                <button class="btn" id="clockTwo">
+                                    <img class="imgButtons"
+                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAACXBIWXMAAAsTAAALEwEAmpwYAAABkklEQVR4nM2WP0scURDAf/4B38xibxoFU6QxHyAiFqYxjYJfQD+CpEwgBgwp0khSCMI5c2ewsdQyQT9IqlhoSEg6hdisvHPvn3eRzd26OPDYebtv5/dmZ+bNwkOTDRg1Yc+EPxaYLRxwACMu7LuSZuNNoYAUhkzZaQOkLrwtFODKdgegaIgpH7sA2htiwkpVefF/AOFDT4D2htQCz0z5boGXuQAubP4ToN0QVyYa1wjq8siF96b8bRjIFqd5IZWEGRd+eMLzpkfC2QFI67O0AfqBRNkNzJlwXglMxbkrh66s1R9mNzoM5IWkN6m91TQsbJryKepVYcmErwNDNmDYlFcmnMR3KuM8ceVb3bMxpl34NTAEYA8SVy6iHmNgymVDd+WqEE9ceW3C8W1PqmM8duFn4TEx4V0s3kxfduFLodlVDczH7KoFJrMkODJltQW52UHfdWIJT2OdWMJCfR6YjXXiELiPiv+sPHLl1JXFOwGDnF0eAcJ6LkBpp3Bp/aSUzlhajyeT7G+l5sLvGOR7gfQr15FrkPFdwAWNAAAAAElFTkSuQmCC">
+                                </button>
+                                <br>
+                                <h3>
+                                    It is twelve to four
+                                </h3>
+                            </div>
+
+                            <div>
+                                <img src="https://banner2.cleanpng.com/20180218/kte/kisspng-digital-clock-clip-art-change-clock-cliparts-5a8a4a8c5c3585.4900852815190124923777.jpg"
+                                    alt="" class="imgClock">
+                                <br>
+                                <button class="btn" id="clockThree">
+                                    <img class="imgButtons"
+                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAACXBIWXMAAAsTAAALEwEAmpwYAAABkklEQVR4nM2WP0scURDAf/4B38xibxoFU6QxHyAiFqYxjYJfQD+CpEwgBgwp0khSCMI5c2ewsdQyQT9IqlhoSEg6hdisvHPvn3eRzd26OPDYebtv5/dmZ+bNwkOTDRg1Yc+EPxaYLRxwACMu7LuSZuNNoYAUhkzZaQOkLrwtFODKdgegaIgpH7sA2htiwkpVefF/AOFDT4D2htQCz0z5boGXuQAubP4ToN0QVyYa1wjq8siF96b8bRjIFqd5IZWEGRd+eMLzpkfC2QFI67O0AfqBRNkNzJlwXglMxbkrh66s1R9mNzoM5IWkN6m91TQsbJryKepVYcmErwNDNmDYlFcmnMR3KuM8ceVb3bMxpl34NTAEYA8SVy6iHmNgymVDd+WqEE9ceW3C8W1PqmM8duFn4TEx4V0s3kxfduFLodlVDczH7KoFJrMkODJltQW52UHfdWIJT2OdWMJCfR6YjXXiELiPiv+sPHLl1JXFOwGDnF0eAcJ6LkBpp3Bp/aSUzlhajyeT7G+l5sLvGOR7gfQr15FrkPFdwAWNAAAAAElFTkSuQmCC">
+                                </button>
+                                <br>
+                                <h3>
+                                    It is ten past ten
+                                </h3>
+                            </div>
+
+                            <div>
+                                <img src="https://banner2.cleanpng.com/20171217/da8/clock-png-image-5a363e1dabc6b8.2525585015135042857036.jpg"
+                                    alt="" class="imgClock">
+                                <br>
+                                <button class="btn" id="clockFour">
+                                    <img class="imgButtons"
+                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAACXBIWXMAAAsTAAALEwEAmpwYAAABkklEQVR4nM2WP0scURDAf/4B38xibxoFU6QxHyAiFqYxjYJfQD+CpEwgBgwp0khSCMI5c2ewsdQyQT9IqlhoSEg6hdisvHPvn3eRzd26OPDYebtv5/dmZ+bNwkOTDRg1Yc+EPxaYLRxwACMu7LuSZuNNoYAUhkzZaQOkLrwtFODKdgegaIgpH7sA2htiwkpVefF/AOFDT4D2htQCz0z5boGXuQAubP4ToN0QVyYa1wjq8siF96b8bRjIFqd5IZWEGRd+eMLzpkfC2QFI67O0AfqBRNkNzJlwXglMxbkrh66s1R9mNzoM5IWkN6m91TQsbJryKepVYcmErwNDNmDYlFcmnMR3KuM8ceVb3bMxpl34NTAEYA8SVy6iHmNgymVDd+WqEE9ceW3C8W1PqmM8duFn4TEx4V0s3kxfduFLodlVDczH7KoFJrMkODJltQW52UHfdWIJT2OdWMJCfR6YjXXiELiPiv+sPHLl1JXFOwGDnF0eAcJ6LkBpp3Bp/aSUzlhajyeT7G+l5sLvGOR7gfQr15FrkPFdwAWNAAAAAElFTkSuQmCC">
+                                </button>
+                                <br>
+                                <h3>
+                                    It is two to ten
+                                </h3>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div>
+                                <img src="https://banner2.cleanpng.com/20180216/lfw/kisspng-alarm-clock-black-and-white-clip-art-all-time-cliparts-5a870ca7a35d24.8862945515188000396692.jpg"
+                                    alt="" class="imgClock">
+                                <br>
+                                <button class="btn" id="clockFive">
+                                    <img class="imgButtons"
+                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAACXBIWXMAAAsTAAALEwEAmpwYAAABkklEQVR4nM2WP0scURDAf/4B38xibxoFU6QxHyAiFqYxjYJfQD+CpEwgBgwp0khSCMI5c2ewsdQyQT9IqlhoSEg6hdisvHPvn3eRzd26OPDYebtv5/dmZ+bNwkOTDRg1Yc+EPxaYLRxwACMu7LuSZuNNoYAUhkzZaQOkLrwtFODKdgegaIgpH7sA2htiwkpVefF/AOFDT4D2htQCz0z5boGXuQAubP4ToN0QVyYa1wjq8siF96b8bRjIFqd5IZWEGRd+eMLzpkfC2QFI67O0AfqBRNkNzJlwXglMxbkrh66s1R9mNzoM5IWkN6m91TQsbJryKepVYcmErwNDNmDYlFcmnMR3KuM8ceVb3bMxpl34NTAEYA8SVy6iHmNgymVDd+WqEE9ceW3C8W1PqmM8duFn4TEx4V0s3kxfduFLodlVDczH7KoFJrMkODJltQW52UHfdWIJT2OdWMJCfR6YjXXiELiPiv+sPHLl1JXFOwGDnF0eAcJ6LkBpp3Bp/aSUzlhajyeT7G+l5sLvGOR7gfQr15FrkPFdwAWNAAAAAElFTkSuQmCC">
+                                </button>
+                                <br>
+                                <h3>
+                                    It is three o'clock
+                                </h3>
+                            </div>
+
+                            <div>
+                                <img src="https://banner2.cleanpng.com/20180314/wye/kisspng-alarm-clock-clip-art-simple-symbol-cliparts-5aa9493b53a3f5.8950332115210437713426.jpg"
+                                    alt="" class="imgClock">
+                                <br>
+                                <button class="btn" id="clockSix">
+                                    <img class="imgButtons"
+                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAACXBIWXMAAAsTAAALEwEAmpwYAAABkklEQVR4nM2WP0scURDAf/4B38xibxoFU6QxHyAiFqYxjYJfQD+CpEwgBgwp0khSCMI5c2ewsdQyQT9IqlhoSEg6hdisvHPvn3eRzd26OPDYebtv5/dmZ+bNwkOTDRg1Yc+EPxaYLRxwACMu7LuSZuNNoYAUhkzZaQOkLrwtFODKdgegaIgpH7sA2htiwkpVefF/AOFDT4D2htQCz0z5boGXuQAubP4ToN0QVyYa1wjq8siF96b8bRjIFqd5IZWEGRd+eMLzpkfC2QFI67O0AfqBRNkNzJlwXglMxbkrh66s1R9mNzoM5IWkN6m91TQsbJryKepVYcmErwNDNmDYlFcmnMR3KuM8ceVb3bMxpl34NTAEYA8SVy6iHmNgymVDd+WqEE9ceW3C8W1PqmM8duFn4TEx4V0s3kxfduFLodlVDczH7KoFJrMkODJltQW52UHfdWIJT2OdWMJCfR6YjXXiELiPiv+sPHLl1JXFOwGDnF0eAcJ6LkBpp3Bp/aSUzlhajyeT7G+l5sLvGOR7gfQr15FrkPFdwAWNAAAAAElFTkSuQmCC">
+                                </button>
+                                <br>
+                                <h3>
+                                    It is four past four
+                                </h3>
+                            </div>
+
+                            <div>
+                                <img src="https://banner2.cleanpng.com/20190612/ppq/kisspng-fichierclock-4-5-svg-wikipdia-5d012b09d55445.0207098515603576418738.jpg"
+                                    alt="" class="imgClock">
+                                <br>
+                                <button class="btn" id="clockSeven">
+                                    <img class="imgButtons"
+                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAACXBIWXMAAAsTAAALEwEAmpwYAAABkklEQVR4nM2WP0scURDAf/4B38xibxoFU6QxHyAiFqYxjYJfQD+CpEwgBgwp0khSCMI5c2ewsdQyQT9IqlhoSEg6hdisvHPvn3eRzd26OPDYebtv5/dmZ+bNwkOTDRg1Yc+EPxaYLRxwACMu7LuSZuNNoYAUhkzZaQOkLrwtFODKdgegaIgpH7sA2htiwkpVefF/AOFDT4D2htQCz0z5boGXuQAubP4ToN0QVyYa1wjq8siF96b8bRjIFqd5IZWEGRd+eMLzpkfC2QFI67O0AfqBRNkNzJlwXglMxbkrh66s1R9mNzoM5IWkN6m91TQsbJryKepVYcmErwNDNmDYlFcmnMR3KuM8ceVb3bMxpl34NTAEYA8SVy6iHmNgymVDd+WqEE9ceW3C8W1PqmM8duFn4TEx4V0s3kxfduFLodlVDczH7KoFJrMkODJltQW52UHfdWIJT2OdWMJCfR6YjXXiELiPiv+sPHLl1JXFOwGDnF0eAcJ6LkBpp3Bp/aSUzlhajyeT7G+l5sLvGOR7gfQr15FrkPFdwAWNAAAAAElFTkSuQmCC">
+                                </button>
+                                <br>
+                                <h3>
+                                    It is five to ten
+                                </h3>
+                            </div>
+
+                            <div>
+                                <img src="https://banner2.cleanpng.com/20180204/jwq/kisspng-digital-clock-black-and-white-clip-art-wall-clock-clipart-5a76e4c5e3b392.5073237715177412539327.jpg"
+                                    alt="" class="imgClock">
+                                <br>
+                                <button class="btn" id="clockEight">
+                                    <img class="imgButtons"
+                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAACXBIWXMAAAsTAAALEwEAmpwYAAABkklEQVR4nM2WP0scURDAf/4B38xibxoFU6QxHyAiFqYxjYJfQD+CpEwgBgwp0khSCMI5c2ewsdQyQT9IqlhoSEg6hdisvHPvn3eRzd26OPDYebtv5/dmZ+bNwkOTDRg1Yc+EPxaYLRxwACMu7LuSZuNNoYAUhkzZaQOkLrwtFODKdgegaIgpH7sA2htiwkpVefF/AOFDT4D2htQCz0z5boGXuQAubP4ToN0QVyYa1wjq8siF96b8bRjIFqd5IZWEGRd+eMLzpkfC2QFI67O0AfqBRNkNzJlwXglMxbkrh66s1R9mNzoM5IWkN6m91TQsbJryKepVYcmErwNDNmDYlFcmnMR3KuM8ceVb3bMxpl34NTAEYA8SVy6iHmNgymVDd+WqEE9ceW3C8W1PqmM8duFn4TEx4V0s3kxfduFLodlVDczH7KoFJrMkODJltQW52UHfdWIJT2OdWMJCfR6YjXXiELiPiv+sPHLl1JXFOwGDnF0eAcJ6LkBpp3Bp/aSUzlhajyeT7G+l5sLvGOR7gfQr15FrkPFdwAWNAAAAAElFTkSuQmCC">
+                                </button>
+                                <br>
+                                <h3>
+                                    It is twelve o'clock
+                                </h3>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div>
+                                <img src="https://banner2.cleanpng.com/20180219/xbw/kisspng-alarm-clock-clock-face-clip-art-minutes-cliparts-5a8aeb1686b463.9366223915190535905518.jpg"
+                                    alt="" class="imgClock">
+                                <br>
+                                <button class="btn" id="clockNine">
+                                    <img class="imgButtons"
+                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAACXBIWXMAAAsTAAALEwEAmpwYAAABkklEQVR4nM2WP0scURDAf/4B38xibxoFU6QxHyAiFqYxjYJfQD+CpEwgBgwp0khSCMI5c2ewsdQyQT9IqlhoSEg6hdisvHPvn3eRzd26OPDYebtv5/dmZ+bNwkOTDRg1Yc+EPxaYLRxwACMu7LuSZuNNoYAUhkzZaQOkLrwtFODKdgegaIgpH7sA2htiwkpVefF/AOFDT4D2htQCz0z5boGXuQAubP4ToN0QVyYa1wjq8siF96b8bRjIFqd5IZWEGRd+eMLzpkfC2QFI67O0AfqBRNkNzJlwXglMxbkrh66s1R9mNzoM5IWkN6m91TQsbJryKepVYcmErwNDNmDYlFcmnMR3KuM8ceVb3bMxpl34NTAEYA8SVy6iHmNgymVDd+WqEE9ceW3C8W1PqmM8duFn4TEx4V0s3kxfduFLodlVDczH7KoFJrMkODJltQW52UHfdWIJT2OdWMJCfR6YjXXiELiPiv+sPHLl1JXFOwGDnF0eAcJ6LkBpp3Bp/aSUzlhajyeT7G+l5sLvGOR7gfQr15FrkPFdwAWNAAAAAElFTkSuQmCC">
+                                </button>
+                                <br>
+                                <h3>
+                                    It is eleven past twenty
+                                </h3>
+                            </div>
+
+                            <div>
+                                <img src="https://banner2.cleanpng.com/20180219/uqe/kisspng-clock-face-clip-art-twenty-cliparts-5a8aeb127cc348.1279005715190535865111.jpg"
+                                    alt="" class="imgClock">
+                                <br>
+                                <button class="btn" id="clockTen">
+                                    <img class="imgButtons"
+                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAACXBIWXMAAAsTAAALEwEAmpwYAAABkklEQVR4nM2WP0scURDAf/4B38xibxoFU6QxHyAiFqYxjYJfQD+CpEwgBgwp0khSCMI5c2ewsdQyQT9IqlhoSEg6hdisvHPvn3eRzd26OPDYebtv5/dmZ+bNwkOTDRg1Yc+EPxaYLRxwACMu7LuSZuNNoYAUhkzZaQOkLrwtFODKdgegaIgpH7sA2htiwkpVefF/AOFDT4D2htQCz0z5boGXuQAubP4ToN0QVyYa1wjq8siF96b8bRjIFqd5IZWEGRd+eMLzpkfC2QFI67O0AfqBRNkNzJlwXglMxbkrh66s1R9mNzoM5IWkN6m91TQsbJryKepVYcmErwNDNmDYlFcmnMR3KuM8ceVb3bMxpl34NTAEYA8SVy6iHmNgymVDd+WqEE9ceW3C8W1PqmM8duFn4TEx4V0s3kxfduFLodlVDczH7KoFJrMkODJltQW52UHfdWIJT2OdWMJCfR6YjXXiELiPiv+sPHLl1JXFOwGDnF0eAcJ6LkBpp3Bp/aSUzlhajyeT7G+l5sLvGOR7gfQr15FrkPFdwAWNAAAAAElFTkSuQmCC">
+                                </button>
+                                <br>
+                                <h3>
+                                    It is ten to twenty
+                                </h3>
+                            </div>
+
+                            <div>
+                                <img src="https://banner2.cleanpng.com/20180315/yqe/kisspng-big-ben-alarm-clocks-flip-clock-clip-art-clock-pictures-5aaa99ae6ada63.3844268515211299024377.jpg"
+                                    alt="" class="imgClock">
+                                <br>
+                                <button class="btn" id="clockEleven">
+                                    <img class="imgButtons"
+                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAACXBIWXMAAAsTAAALEwEAmpwYAAABkklEQVR4nM2WP0scURDAf/4B38xibxoFU6QxHyAiFqYxjYJfQD+CpEwgBgwp0khSCMI5c2ewsdQyQT9IqlhoSEg6hdisvHPvn3eRzd26OPDYebtv5/dmZ+bNwkOTDRg1Yc+EPxaYLRxwACMu7LuSZuNNoYAUhkzZaQOkLrwtFODKdgegaIgpH7sA2htiwkpVefF/AOFDT4D2htQCz0z5boGXuQAubP4ToN0QVyYa1wjq8siF96b8bRjIFqd5IZWEGRd+eMLzpkfC2QFI67O0AfqBRNkNzJlwXglMxbkrh66s1R9mNzoM5IWkN6m91TQsbJryKepVYcmErwNDNmDYlFcmnMR3KuM8ceVb3bMxpl34NTAEYA8SVy6iHmNgymVDd+WqEE9ceW3C8W1PqmM8duFn4TEx4V0s3kxfduFLodlVDczH7KoFJrMkODJltQW52UHfdWIJT2OdWMJCfR6YjXXiELiPiv+sPHLl1JXFOwGDnF0eAcJ6LkBpp3Bp/aSUzlhajyeT7G+l5sLvGOR7gfQr15FrkPFdwAWNAAAAAElFTkSuQmCC">
+                                </button>
+                                <br>
+                                <h3>
+                                    It is eight past five
+                                </h3>
+                            </div>
+
+                            <div>
+                                <img src="https://banner2.cleanpng.com/20180505/wpw/kisspng-clock-face-alarm-clocks-digital-clock-clip-art-5aee3cb5c291c8.337915081525562549797.jpg"
+                                    alt="" class="imgClock">
+                                <br>
+                                <button class="btn" id="clockTwelve">
+                                    <img class="imgButtons"
+                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAACXBIWXMAAAsTAAALEwEAmpwYAAABkklEQVR4nM2WP0scURDAf/4B38xibxoFU6QxHyAiFqYxjYJfQD+CpEwgBgwp0khSCMI5c2ewsdQyQT9IqlhoSEg6hdisvHPvn3eRzd26OPDYebtv5/dmZ+bNwkOTDRg1Yc+EPxaYLRxwACMu7LuSZuNNoYAUhkzZaQOkLrwtFODKdgegaIgpH7sA2htiwkpVefF/AOFDT4D2htQCz0z5boGXuQAubP4ToN0QVyYa1wjq8siF96b8bRjIFqd5IZWEGRd+eMLzpkfC2QFI67O0AfqBRNkNzJlwXglMxbkrh66s1R9mNzoM5IWkN6m91TQsbJryKepVYcmErwNDNmDYlFcmnMR3KuM8ceVb3bMxpl34NTAEYA8SVy6iHmNgymVDd+WqEE9ceW3C8W1PqmM8duFn4TEx4V0s3kxfduFLodlVDczH7KoFJrMkODJltQW52UHfdWIJT2OdWMJCfR6YjXXiELiPiv+sPHLl1JXFOwGDnF0eAcJ6LkBpp3Bp/aSUzlhajyeT7G+l5sLvGOR7gfQr15FrkPFdwAWNAAAAAElFTkSuQmCC">
+                                </button>
+                                <br>
+                                <h3>
+                                    It is a quarter to nine
+                                </h3>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div>
+                                <img src="https://banner2.cleanpng.com/20180621/qfo/kisspng-clock-face-alarm-clocks-digital-clock-face-clock-5b2bc46d4c2f98.5965944815295949893121.jpg"
+                                    alt="" class="imgClock">
+                                <br>
+                                <button class="btn" id="clockThirteen">
+                                    <img class="imgButtons"
+                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAACXBIWXMAAAsTAAALEwEAmpwYAAABkklEQVR4nM2WP0scURDAf/4B38xibxoFU6QxHyAiFqYxjYJfQD+CpEwgBgwp0khSCMI5c2ewsdQyQT9IqlhoSEg6hdisvHPvn3eRzd26OPDYebtv5/dmZ+bNwkOTDRg1Yc+EPxaYLRxwACMu7LuSZuNNoYAUhkzZaQOkLrwtFODKdgegaIgpH7sA2htiwkpVefF/AOFDT4D2htQCz0z5boGXuQAubP4ToN0QVyYa1wjq8siF96b8bRjIFqd5IZWEGRd+eMLzpkfC2QFI67O0AfqBRNkNzJlwXglMxbkrh66s1R9mNzoM5IWkN6m91TQsbJryKepVYcmErwNDNmDYlFcmnMR3KuM8ceVb3bMxpl34NTAEYA8SVy6iHmNgymVDd+WqEE9ceW3C8W1PqmM8duFn4TEx4V0s3kxfduFLodlVDczH7KoFJrMkODJltQW52UHfdWIJT2OdWMJCfR6YjXXiELiPiv+sPHLl1JXFOwGDnF0eAcJ6LkBpp3Bp/aSUzlhajyeT7G+l5sLvGOR7gfQr15FrkPFdwAWNAAAAAElFTkSuQmCC">
+                                </button>
+                                <br>
+                                <h3>
+                                    It is a quarter past two
+                                </h3>
+                            </div>
+
+                            <div>
+                                <img src="https://banner2.cleanpng.com/20180427/gcq/kisspng-alarm-clocks-clip-art-diy-5ae36217f15874.0678136715248512239886.jpg"
+                                    alt="" class="imgClock">
+                                <br>
+                                <button class="btn" id="clockFourteen">
+                                    <img class="imgButtons"
+                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAACXBIWXMAAAsTAAALEwEAmpwYAAABkklEQVR4nM2WP0scURDAf/4B38xibxoFU6QxHyAiFqYxjYJfQD+CpEwgBgwp0khSCMI5c2ewsdQyQT9IqlhoSEg6hdisvHPvn3eRzd26OPDYebtv5/dmZ+bNwkOTDRg1Yc+EPxaYLRxwACMu7LuSZuNNoYAUhkzZaQOkLrwtFODKdgegaIgpH7sA2htiwkpVefF/AOFDT4D2htQCz0z5boGXuQAubP4ToN0QVyYa1wjq8siF96b8bRjIFqd5IZWEGRd+eMLzpkfC2QFI67O0AfqBRNkNzJlwXglMxbkrh66s1R9mNzoM5IWkN6m91TQsbJryKepVYcmErwNDNmDYlFcmnMR3KuM8ceVb3bMxpl34NTAEYA8SVy6iHmNgymVDd+WqEE9ceW3C8W1PqmM8duFn4TEx4V0s3kxfduFLodlVDczH7KoFJrMkODJltQW52UHfdWIJT2OdWMJCfR6YjXXiELiPiv+sPHLl1JXFOwGDnF0eAcJ6LkBpp3Bp/aSUzlhajyeT7G+l5sLvGOR7gfQr15FrkPFdwAWNAAAAAElFTkSuQmCC">
+                                </button>
+                                <br>
+                                <h3>
+                                    It is half past eleven
+                                </h3>
+                            </div>
+
+                            <div>
+                                <img src="https://banner2.cleanpng.com/20180525/ghq/kisspng-alarm-clocks-clock-face-clip-art-5b0818300f1671.9610487815272571360618.jpg"
+                                    alt="" class="imgClock">
+                                <br>
+                                <button class="btn" id="clockFifteen">
+                                    <img class="imgButtons"
+                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAACXBIWXMAAAsTAAALEwEAmpwYAAABkklEQVR4nM2WP0scURDAf/4B38xibxoFU6QxHyAiFqYxjYJfQD+CpEwgBgwp0khSCMI5c2ewsdQyQT9IqlhoSEg6hdisvHPvn3eRzd26OPDYebtv5/dmZ+bNwkOTDRg1Yc+EPxaYLRxwACMu7LuSZuNNoYAUhkzZaQOkLrwtFODKdgegaIgpH7sA2htiwkpVefF/AOFDT4D2htQCz0z5boGXuQAubP4ToN0QVyYa1wjq8siF96b8bRjIFqd5IZWEGRd+eMLzpkfC2QFI67O0AfqBRNkNzJlwXglMxbkrh66s1R9mNzoM5IWkN6m91TQsbJryKepVYcmErwNDNmDYlFcmnMR3KuM8ceVb3bMxpl34NTAEYA8SVy6iHmNgymVDd+WqEE9ceW3C8W1PqmM8duFn4TEx4V0s3kxfduFLodlVDczH7KoFJrMkODJltQW52UHfdWIJT2OdWMJCfR6YjXXiELiPiv+sPHLl1JXFOwGDnF0eAcJ6LkBpp3Bp/aSUzlhajyeT7G+l5sLvGOR7gfQr15FrkPFdwAWNAAAAAElFTkSuQmCC">
+                                </button>
+                                <br>
+                                <h3>
+                                    It is thirty to eleven
+                                </h3>
+                            </div>
+
+                            <div>
+                                <img src="https://banner2.cleanpng.com/20190516/kts/kisspng-clock-face-analog-signal-analog-watch-digital-cloc-5cdcf315707415.2699471115579840214606.jpg"
+                                    alt="" class="imgClock">
+                                <br>
+                                <button class="btn" id="clockSixteen">
+                                    <img class="imgButtons"
+                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAACXBIWXMAAAsTAAALEwEAmpwYAAABkklEQVR4nM2WP0scURDAf/4B38xibxoFU6QxHyAiFqYxjYJfQD+CpEwgBgwp0khSCMI5c2ewsdQyQT9IqlhoSEg6hdisvHPvn3eRzd26OPDYebtv5/dmZ+bNwkOTDRg1Yc+EPxaYLRxwACMu7LuSZuNNoYAUhkzZaQOkLrwtFODKdgegaIgpH7sA2htiwkpVefF/AOFDT4D2htQCz0z5boGXuQAubP4ToN0QVyYa1wjq8siF96b8bRjIFqd5IZWEGRd+eMLzpkfC2QFI67O0AfqBRNkNzJlwXglMxbkrh66s1R9mNzoM5IWkN6m91TQsbJryKepVYcmErwNDNmDYlFcmnMR3KuM8ceVb3bMxpl34NTAEYA8SVy6iHmNgymVDd+WqEE9ceW3C8W1PqmM8duFn4TEx4V0s3kxfduFLodlVDczH7KoFJrMkODJltQW52UHfdWIJT2OdWMJCfR6YjXXiELiPiv+sPHLl1JXFOwGDnF0eAcJ6LkBpp3Bp/aSUzlhajyeT7G+l5sLvGOR7gfQr15FrkPFdwAWNAAAAAElFTkSuQmCC">
+                                </button>
+                                <br>
+                                <h3>
+                                    It is fifteen past twelve
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </article>
+    </main>
+
+    <!--Footer section-->
+    <footer id="footer">
+        <div class="container-fluid">
+            <div class="row">
+                <h6 class="col-9">&copy; 2023 Tutti i diritti riservati</h6>
+                <h6 class="col-3">
+                    Creato con &hearts; da <a href="https://bluebutterflies.github.io/ButterflyTech/" target="_blank"
+                        rel="noopener noreferrer">Butterfly Tech Crative Solution</a>
+                    <br>
+                    <a href="">Privacy</a>
+                </h6>
+            </div>
+        </div>
+
+        <div class="floating-button-div">
+            <a class="btn top" type="button" href="#">
+                <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAr0lEQVR4nGNgGAWjYFAAvtmPhPhmPM/mmflUhCYW8Mx9Jso3/ekl/hnP/vNPf3ada+YrSapawD3tuRjfjKeXwRbMePoXRIP4IHGa+EBg6mM9qvoII4imvJTAKk6uRbgsgAGKLSJkAcUWEWsB2RaRagHJFpFrAdEWgXIwLB9Qkv65kfITiEYpGfhnPCuiVgbjRsm4z4pQfMI/42kBtcokHqh5vJOfCFPDvFEwChhwAgBQ2+JJPmitlQAAAABJRU5ErkJggg==">
+            </a>
+        </div>
+    </footer>
+
+    <!--Bootstrap script-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+
+    <!--Our script-->
+    <script src="../js/clock.js"></script>
+</body>
+
+</html>
