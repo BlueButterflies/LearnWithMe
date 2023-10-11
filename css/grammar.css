@@ -1,0 +1,247 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    background-size: 100% 100%;
+}
+
+main {
+    margin: 0 2%;
+}
+
+/*Navbar section*/
+.navbar {
+    background-color: deepskyblue;
+}
+
+.navbar span {
+    justify-content: center;
+    text-align: center;
+    font-size: 25px;
+    color: whitesmoke;
+}
+
+.back {
+    margin-top: 5%;
+    margin-left: 1%;
+    font-size: 1.5em;
+}
+
+.back a{
+    text-decoration: none;
+    color: rgb(251, 119, 11);
+} 
+
+section h1{
+    margin-top: 5%;
+    font-size: 3em;
+}
+
+/*Pronouns*/
+.pronouns{
+    margin: 5% 0 2% 0;
+    background-color: coral;
+    color: white;
+    font-size: 1.8em;
+}
+
+.subject{
+    background-color: rgb(5, 58, 137);
+    
+}
+
+.object{
+    background-color: rgb(250, 27, 27);
+    
+}
+
+.adjective{
+    background-color: rgb(255, 81, 0);
+}
+
+.possesive{
+    background-color: rgb(38, 192, 0);
+}
+
+.firstRow, .secondRow, .thirdRow,.fourthRow, .fifthRow,.sixthRow, .seventhRow,.eighthRow, .ninthRow,.tenthRow{
+    
+    background-color:bisque;
+    font-size: 1.8em;
+}
+
+/*VERBS*/
+.verbs{
+    margin: 5% 0 2% 0;
+    font-size: 1.8em;
+    color: white;
+}
+
+.affermative{
+    background-color: darkgreen;
+    
+}
+
+.negative{
+    background-color: orangered;
+    
+}
+
+.interrogative{
+    background-color: cornflowerblue;
+}
+
+.verb{
+    background-color: darkred;
+    font-size: 1.8em;
+    color: white;
+}
+
+.container .regolarVerb,.container .irregolarVerb, .container .modalVerb{
+    margin-top: 2%;
+    background-color: rgb(238, 111, 0);
+    color: white;
+    font-size: 1.8em;
+}
+
+.present{
+    background-color: rgb(4, 114, 162);
+    
+}
+.past{
+    background-color: rgb(239, 239, 2);
+    
+}
+
+.participle{
+    background-color: rgb(41, 185, 1);
+    
+}
+
+.type{
+    background-color: rgb(25, 78, 250);
+    
+}
+
+.modals{
+    background-color: rgb(127, 3, 134);
+    
+}
+
+.example{
+    background-color: rgb(174, 7, 110);
+    
+}
+
+/*NOUN*/
+.noun{
+    margin: 5% 0 2% 0;
+    font-size: 1.8em;
+    color: white;
+}
+
+.person{
+    background-color: rgb(253, 225, 8);
+    
+}
+
+.place{
+    background-color: rgb(134, 0, 119);
+    
+}
+
+.animals{
+    background-color: rgb(255, 0, 0);
+    
+}
+
+.things{
+    background-color: rgb(49, 253, 8);
+    
+}
+
+/*Adverbs*/
+.adverbs{
+    background-color: darkkhaki;
+    margin: 5% 0 2% 0;
+    font-size: 1.8em;
+    color: white;
+}
+
+.manner{
+    background-color:rgba(0, 0, 0, 0.5);
+}
+
+.frequency{
+    background-color: dodgerblue;
+}
+
+.time{
+background-color: lightcoral;
+}
+
+.places{
+background-color: saddlebrown
+}
+
+/*Footer section*/
+#footer{
+    background-color: deepskyblue;
+    margin-top: 5%;
+    padding: 2% 0;
+    color: whitesmoke;
+}
+
+#footer a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.floating-button-div {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+}
+
+.top {
+    background-color: transparent;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (min-width: 200px) and (max-width: 767px) {
+    .back {
+        margin-top: 17%;
+        margin-left: 1.5%;
+    }
+
+    .navbar span {
+        font-size: 20px;
+    }
+
+    .pronouns, .verb, .noun,.container .regolarVerb,.container .irregolarVerb, .container .modalVerb,.firstRow, 
+    .secondRow, .thirdRow,.fourthRow, .fifthRow,.sixthRow, .seventhRow,.eighthRow, .ninthRow,.tenthRow,
+    .adverbs,.manner,.time,.frequency,.places{
+        font-size: 1em;;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+    .back {
+        margin-top: 8%;
+        margin-left: 1.5%;
+    }
+
+    .pronouns, .verb, .noun,.container .regolarVerb,.container .irregolarVerb, .container .modalVerb,.firstRow, 
+    .secondRow, .thirdRow,.fourthRow, .fifthRow,.sixthRow, .seventhRow,.eighthRow, .ninthRow,.tenthRow,
+    .adverbs,.manner,.time,.frequency,.places{
+        font-size: 1.5em;;
+    }
+}
