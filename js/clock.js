@@ -29,9 +29,9 @@ msg.lang = 'en-US';
 
 const clockOne = document.getElementById('clockOne').addEventListener('click', (e) => {
     e.preventDefault();
-    msg.text = 'It is five o\'clock';
+    msg.text = "It is five o'clock";
     window.speechSynthesis.speak(msg);
-});
+})
 
 const clockTwo = document.getElementById('clockTwo').addEventListener('click', (e) => {
     e.preventDefault();
