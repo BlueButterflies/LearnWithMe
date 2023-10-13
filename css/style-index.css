@@ -60,6 +60,22 @@
     color: whitesmoke;
 }
 
+.floating-button-div {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+  }
+  
+  .top {
+    background-color:transparent;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+  }
 @media screen and (min-width: 200px) and (max-width: 767px) {
     body{
         background-size: auto;
